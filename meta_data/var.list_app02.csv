@@ -1,0 +1,1290 @@
+FFQ1987,FFQ1997,HQ2008,FFQ2009,HQ cycle1,Toilet Habits cycle1,HQ2019,FFQ2019,HQ cycle2,Standr. Health Interview cycle2,Toilet Habits cycle2,Variable data,Variable category,Variable description,Coding
+a_marital1,,,,,,,,,,,Questionnaires,1. Family & living situation,Marital status,"1=Single, 2=Married, 3=Divorced, 4=Widow, 5=Living with someone"
+,b_marital2,,,,,,,,,,Questionnaires,1. Family & living situation,Marital status,"1=Single, 2=Married/Living with someone, 3=Divorced, 4=Widow"
+,b_liv1,,,,,,,,,,Questionnaires,1. Family & living situation,Cohabiting status: live alone,"1=No, 2=Yes"
+,b_liv2,c_liv2,,sc1_liv2,,e_liv2,,,,,Questionnaires,1. Family & living situation,Cohabiting status: number of persons in the household,Numeric value
+,b_liv3,c_liv3,,sc1_liv3,,e_liv3,,,,,Questionnaires,1. Family & living situation,Cohabiting status: number of years living alone,Numeric value
+,,c_liv4,,sc1_liv4,,e_liv4,,,,,Questionnaires,1. Family & living situation,Where do you live now?,"1=Own home, 1=Assisted living facility, 3=Nursing home, 4=Retirement home"
+,b_nsis,,,,,,,,,,Questionnaires,1. Family & living situation,Number of sisters,Numeric value
+,b_nbro,,,,,,,,,,Questionnaires,1. Family & living situation,Number of brothers,Numeric value
+,b_nsib,,,,,,,,,,Questionnaires,1. Family & living situation,Number of older siblings,Numeric value
+,,c_mother1,,sc1_mother1,,e_mother1,,,,,Questionnaires,1. Family & living situation,Age of mother at death,Numeric value (age)
+,,c_mother2,,sc1_mother2,,e_mother2,,,,,Questionnaires,1. Family & living situation,Mother still alive,1=Still alive
+,,c_father1,,sc1_father1,,e_father1,,,,,Questionnaires,1. Family & living situation,Age of father at death,Numeric value (age)
+,,c_father2,,sc1_father2,,e_father2,,,,,Questionnaires,1. Family & living situation,Father still alive,1=Still alive
+,b_growarea,,,,,,,,,,Questionnaires,1. Family & living situation,Grow up area,"1=In a city /suburb , 2=In  a medium-sized city, 3=In a smaller town/community, 4=In the country side"
+,b_emp,,,sc1_emp,,,,,,,Questionnaires,2. Education & employment - educ/emp,Employment,"1=Full time, 2=Part time, 3=Unemployed 4=Disability pension, 5=Retired, 6= House wife (women only), 7= Studying (men only)"
+,,c_emp,,sc1_emp,,e_emp,,,,,Questionnaires,2. Education & employment - educ/emp,Employment,"1=Full time, 2=Part time, 3=Unemployed 4=Disability pension, 5=Retired"
+a_educ1,,,,,,,,,,,Questionnaires,2. Education & employment - educ/emp,Education,"1, 2, 3=Primary school (? 9 years), 4=High school (10-12 years), 5=College/University (?12 years), 6=Other"
+,b_der_educ1,,,b_der_educ1,,,,,,,Questionnaires,2. Education & employment - educ/emp,Derived variable b_educ2-b_educ7: Highest education-level,"1=Primary school <=9 years, 2=High school 10-12 years, 3=University >12 years"
+,b_educ2,,,,,,,,,,Questionnaires,2. Education & employment - educ/emp,Attended compulsory school,1=Yes 
+,b_educ3,,,,,,,,,,Questionnaires,2. Education & employment - educ/emp,Attended secondary school,1=Yes 
+,b_educ4,,,,,,,,,,Questionnaires,2. Education & employment - educ/emp,Attended junior secondary school,1=Yes 
+,b_educ5,,,,,,,,,,Questionnaires,2. Education & employment - educ/emp,Attended university/college,1=Yes 
+,b_educ6,,,,,,,,,,Questionnaires,2. Education & employment - educ/emp,Attended vocational school,1=Yes 
+,b_educ7,,,,,,,,,,Questionnaires,2. Education & employment - educ/emp,Attended other education,1=Yes 
+,b_waist,c_waist,,sc1_waist,,e_waist,,,,,Questionnaires,3. Self-reported body measurements & weight history,Waist (cm),Numeric value (cm)
+,b_hip,c_hip,,sc1_hip,,e_hip,,,,,Questionnaires,3. Self-reported body measurements & weight history,Hip (cm),Numeric value (cm)
+,b_shoe,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Shoe size (European size),Numeric value (EU shoe size)
+,b_shirt,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Size in shirt collars (cm),Numeric value (cm)
+,b_der_bmi,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Derived variable: BMI (body mass index) = weight (kg) / [height (m)]2,Numeric value (BMI)
+a_height1,,c_height1,,sc1_height1,,e_height1,,,,,Questionnaires,3. Self-reported body measurements & weight history,Height (cm),Numeric value (cm)
+,b_height2,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Height at age 20 (cm),Numeric value (cm)
+a_weight1,b_weight1,c_weight1,,sc1_weight1,,e_weight1,,,,,Questionnaires,3. Self-reported body measurements & weight history,Weight (kg),Numeric value (kg)
+,b_weight2,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Weight at age 20 (kg),Numeric value (kg)
+,b_weight3,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Weight at age 30 (kg),Numeric value (kg)
+,b_weight4,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Weight at age 40 (kg),Numeric value (kg)
+,b_weight5,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Weight at age 50 (kg),Numeric value (kg)
+,b_weight6,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Weight at age 60 (kg),Numeric value (kg)
+,b_weight7,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Weight at age 70 (kg),Numeric value (kg)
+,b_weight8,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Weight at age 80 (kg),Numeric value (kg)
+,b_bweight,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Birthweight,"1=<1500 gram, 2=1500-2486, 3=2500-3999, 4=4000-4869, 5=>5000 gram, 6=Don't know"
+,b_preterm,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Born premature,"1=No, 2=Yes"
+,b_twin,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Born twin,"1=No, 2=Yes"
+,b_bshape,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Bodyshape at age 10 (7 pictures to choose from),"1=Very slim,   2   3   4   5   6   7=Very chubby"
+,b_wtlos1,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Lost >5 kg in weight during a year: no never,"1=No, never"
+,b_wtlos2,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Lost >5 kg in weight during a year: yes after pregnancy,"1=Yes, after pregnancy"
+,b_wtlos3,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Lost >5 kg in weight during a year: yes other reasons,"1=Yes, other reasons"
+,b_nwtlos1,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Lost >5 kg in weight during a year: if yes other reasons: Number of weight losses due to diet,Numeric value
+,b_nwtlos2,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Lost >5 kg in weight during a year: if yes other reasons: Number of weight losses due to illness,Numeric value
+,b_nwtlos3,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Lost >5 kg in weight during a year: if yes other reasons: Number of weight losses due more physical activity,Numeric value
+,b_nwtlos4,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,Lost >5 kg in weight during a year: if yes other reasons: Number of weight losses due other reasons,Numeric value
+,b_diet1,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,"If you have tried to loose weight, did you used weightwatchers?",1=Yes
+,b_diet2,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history," If you have tried to loose weight, did you used less fat diet?",1=Yes
+,b_diet3,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history," If you have tried to loose weight, did you used fasting?",1=Yes
+,b_diet4,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,"If you have tried to loose weight, did you used fibre pills?",1=Yes
+,b_diet5,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,"If you have tried to loose weight, did you used VLCD (very low calorie diet) prducts, e.g. Nutrilett?",1=Yes
+,b_diet6,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,"If you have tried to loose weight, did you used medications, e.g. Obecedyl?",1=Yes
+,b_diet7,,,,,,,,,,Questionnaires,3. Self-reported body measurements & weight history,"If you have tried to loose weight, did you used other?",1=Yes
+a_eat01,,,,,,,,,,,Questionnaires,4. Eating habits - eat,Type of diet,"1=Omnivorous, 2=Only lactovegetarian (no meat, fish or egg), 3=Mostly lactovegetarian, sometimes eats fish and eggs, 4=Vegan, 5=Other"
+,,,d_eat02,sc1_eat02,,,f_eat02,,,,Questionnaires,4. Eating habits - eat,What is your main type of diet? ,"1=Mixed, 2=Vegetarian, 3=Vegan"
+,,,d_eat03,sc1_eat03,,,f_eat03,sc2_eat03,,,Questionnaires,4. Eating habits - eat,Mark the image that best describes your portion size,1=Smallest up to 6=Largest
+,,,d_eat04,sc1_eat04,,,f_eat04,,,,Questionnaires,4. Eating habits - eat,Do you exclude/avoid anything gluten in your diet?,1=Yes
+,,,d_eat05,sc1_eat05,,,f_eat05,,,,Questionnaires,4. Eating habits - eat,Do you exclude/avoid anything lactose in your diet?,1=Yes
+,,,d_eat06,sc1_eat06,,,f_eat06,,,,Questionnaires,4. Eating habits - eat,Do you exclude/avoid anything milk protein in your diet?,1=Yes
+,,,d_eat07,sc1_eat07,,,f_eat07,,,,Questionnaires,4. Eating habits - eat,Do you exclude/avoid anything nuts in your diet?,1=Yes
+,,,d_eat08,sc1_eat08,,,f_eat08,,,,Questionnaires,4. Eating habits - eat,Do you exclude/avoid anything other in your diet?,1=Yes
+,,,d_eat09,sc1_eat09,,,f_eat09,,,,Questionnaires,4. Eating habits - eat,If you exclude/avoid anything other in your diet?,Open-ended response
+,,,d_eat10,sc1_eat10,,,f_eat10,,,,Questionnaires,4. Eating habits - eat,Do you NOT exclude/avoid anything other in your diet? (Nothing),1=Yes
+,,,d_eat11,sc1_eat11,,,f_eat11,sc2_eat11,,,Questionnaires,4. Eating habits - eat,"On average, how often do you eat cooked meals?",FFQ 1-81
+,,,d_eat12,sc1_eat12,,,f_eat12,sc2_eat12,,,Questionnaires,4. Eating habits - eat,"On average, how often do you eat meals outside home?",FFQ 1-81
+,,,d_eat13,sc1_eat13,,,f_eat13,sc2_eat13,,,Questionnaires,4. Eating habits - eat,"On average, how often do you eat frozen meals?",FFQ 1-81
+,,,d_eat14,sc1_eat14,,,f_eat14,sc2_eat14,,,Questionnaires,4. Eating habits - eat,"On average, how often do you eat canned food?",FFQ 1-81
+,,,d_eat15,sc1_eat15,,,f_eat15,sc2_eat15,,,Questionnaires,4. Eating habits - eat,"On average, how often do you eat ready-made food (retirement home, home help, relative)?",FFQ 1-81
+,,,d_eat16,sc1_eat16,,,f_eat16,sc2_eat16,,,Questionnaires,4. Eating habits - eat,"On average, how often do you eat fish?",FFQ 1-81
+,,,d_eat17,sc1_eat17,,,f_eat17,sc2_eat17,,,Questionnaires,4. Eating habits - eat,"On average, how often do you eat meat?",FFQ 1-81
+,b_eat18_m,,d_eat18_m,sc1_eat18_m,,,f_eat18_m,sc2_eat18_m,,,Questionnaires,4. Eating habits - eat,How often do you usually eat these fried foods? Pan-fried sausage/steak/pork chop: times/month,Numeric value (times/month)
+,b_eat18_f,,d_eat18_f,sc1_eat18_f,,,f_eat18_f,,,,Questionnaires,4. Eating habits - eat,How often do you usually eat these fried foods? Pan-fried sausage/steak/pork chop: never/seldom,1=Never/seldom
+,b_eat19_m,,d_eat19_m,sc1_eat19_m,,,f_eat19_m,sc2_eat19_m,,,Questionnaires,4. Eating habits - eat,How often do you usually eat these fried foods? Pan-fried fish: times/month,Numeric value (times/month)
+,b_eat19_f,,d_eat19_f,sc1_eat19_f,,,f_eat19_f,,,,Questionnaires,4. Eating habits - eat,How often do you usually eat these fried foods? Pan-fried fish: never/seldom,1=Never/seldom
+,b_eat20_m,,d_eat20_m,sc1_eat20_m,,,f_eat20_m,sc2_eat20_m,,,Questionnaires,4. Eating habits - eat,How often do you usually eat these fried foods? Pan-fried chicken (fillet/casserole): times/month,Numeric value (times/month)
+,b_eat20_f,,d_eat20_f,sc1_eat20_f,,,f_eat20_f,,,,Questionnaires,4. Eating habits - eat,How often do you usually eat these fried foods? Pan-fried chicken (fillet/casserole): never/seldom,1=Never/seldom
+,b_eat21_m,,d_eat21_m,sc1_eat21_m,,,f_eat21_m,sc2_eat21_m,,,Questionnaires,4. Eating habits - eat,How often do you usually eat these fried foods? Grilled/oven-baked chicken: times/month,Numeric value (times/month)
+,b_eat21_f,,d_eat21_f,sc1_eat21_f,,,f_eat21_f,,,,Questionnaires,4. Eating habits - eat,How often do you usually eat these fried foods? Grilled/oven-baked chicken: never/seldom,1=Never/seldom
+,b_eat22_m,,d_eat22_m,sc1_eat22_m,,,f_eat22_m,sc2_eat22_m,,,Questionnaires,4. Eating habits - eat,How often do you usually eat these fried foods? Gravy/meat juice: times/month,Numeric value (times/month)
+,b_eat22_f,,d_eat22_f,sc1_eat22_f,,,f_eat22_f,,,,Questionnaires,4. Eating habits - eat,How often do you usually eat these fried foods? Gravy/meat juice: never/seldom,1=Never/seldom
+,b_eat23_k,,d_eat23_k,sc1_eat23_k,,,f_eat23_k,,,,Questionnaires,4. Eating habits - eat,How often do you usually eat these fried foods? Degree of browning of fried food,"1=Light brown, 2=Brown, 3=Dark brown, 4=Charred, 5=I don't eat fried food (Only option 1-4 for 1997)"
+,,,d_eat24,sc1_eat24,,,f_eat24,sc2_eat24,,,Questionnaires,4. Eating habits - eat,Which meals do you usually eat? Breakfast,1=Yes
+,,,d_eat25,sc1_eat25,,,f_eat25,sc2_eat25,,,Questionnaires,4. Eating habits - eat,Which meals do you usually eat? Mid-morning snack,1=Yes
+,,,d_eat26,sc1_eat26,,,f_eat26,sc2_eat26,,,Questionnaires,4. Eating habits - eat,Which meals do you usually eat? Lunch,1=Yes
+,,,d_eat27,sc1_eat27,,,f_eat27,sc2_eat27,,,Questionnaires,4. Eating habits - eat,Which meals do you usually eat? Afternoon snack,1=Yes
+,,,d_eat28,sc1_eat28,,,f_eat28,sc2_eat28,,,Questionnaires,4. Eating habits - eat,Which meals do you usually eat? Dinner,1=Yes
+,,,d_eat29,sc1_eat29,,,f_eat29,sc2_eat29,,,Questionnaires,4. Eating habits - eat,Which meals do you usually eat? Evening snack,1=Yes
+,,,d_eat30,sc1_eat30,,,f_eat30,,,,Questionnaires,4. Eating habits - eat,"During childhood, did you eat more sweets (e.g. cookies, candy, puddings, fruit fool/soup) compared to your peers?","1=Yes, much more,  2=Yes, some more, 3=No, same, 4=No, some less, 5=No, ate none at all"
+,,,d_eat31,sc1_eat31,,,f_eat31,,,,Questionnaires,4. Eating habits - eat,How often did you eat these sweets? Times/week,Numeric value (times/week)
+,,,d_eat32,sc1_eat32,,,f_eat32,,,,Questionnaires,4. Eating habits - eat,How often did you eat these sweets? Times/month,Numeric value (times/month)
+,,,d_eat33,sc1_eat33,,,f_eat33,,,,Questionnaires,4. Eating habits - eat,How often did you eat these sweets? Don't know,1=Don't know
+a_food001_f,b_food001_f,,d_food001_f,sc1_food001_f,,,f_food001_f,sc2_food001_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Spinach,FFQ 1-81
+,,,d_food002_f,sc1_food002_f,,,f_food002_f,sc2_food002_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Fresh herbs,FFQ 1-81
+a_food003_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Lettuce/iceberg lettuce/Chinese cabbage/cucumber,FFQ 1-81
+,b_food004_f,,d_food004_f,sc1_food004_f,,,f_food004_f,sc2_food004_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Lettuce/iceberg lettuce,FFQ 1-81
+a_food005_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,White cabbage,FFQ 1-81
+,b_food006_f,,d_food006_f,sc1_food006_f,,,f_food006_f,sc2_food006_f,,,Questionnaires,5. Dietary intake - food/bev/alc,"Cabbage (white, red, Chinese)",FFQ 1-81
+,b_food007_f,,d_food007_f,sc1_food007_f,,,f_food007_f,sc2_food007_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Cauliflower,FFQ 1-81
+,b_food008_f,,d_food008_f,sc1_food008_f,,,f_food008_f,sc2_food008_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Broccoli/brussels sprouts,FFQ 1-81
+a_food009_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,"Root vegetables (carrots, beetroot)",FFQ 1-81
+,b_food010_f,,d_food010_f,sc1_food010_f,,,f_food010_f,sc2_food010_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Carrots,FFQ 1-81
+,b_food011_f,,d_food011_f,sc1_food011_f,,,f_food011_f,sc2_food011_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Beetroot,FFQ 1-81
+,b_food012_f,,d_food012_f,sc1_food012_f,,,f_food012_f,sc2_food012_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Garlic,FFQ 1-81
+,b_food013_f,,,sc1_food013_f,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Onion/leek,FFQ 1-81
+,,,d_food014_f,sc1_food014_f,,,f_food014_f,sc2_food014_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Onion,FFQ 1-81
+,,,d_food015_f,sc1_food015_f,,,f_food015_f,sc2_food015_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Leek,FFQ 1-81
+a_food016_f,b_food016_f,,d_food016_f,sc1_food016_f,,,f_food016_f,sc2_food016_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Tomatoes/tomato juice,FFQ 1-81
+,b_food017_f,,d_food017_f,sc1_food017_f,,,f_food017_f,sc2_food017_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Bell pepper,FFQ 1-81
+,,,d_food018_f,sc1_food018_f,,,f_food018_f,sc2_food018_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Avocado,FFQ 1-81
+,,,d_food019_f,sc1_food019_f,,,f_food019_f,sc2_food019_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Olives,FFQ 1-81
+,,,d_food020_f,sc1_food020_f,,,f_food020_f,sc2_food020_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Corn,FFQ 1-81
+,b_food021_f,,,sc1_food021_f,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Mixed vegetables,FFQ 1-81
+,,,d_food022_f,sc1_food022_f,,,f_food022_f,sc2_food022_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Mixed frozen vegetables,FFQ 1-81
+,,,d_food023_f,sc1_food023_f,,,f_food023_f,sc2_food023_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Other vegetables,FFQ 1-81
+a_food024_f,b_food024_f,,d_food024_f,sc1_food024_f,,,f_food024_f,sc2_food024_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Boiled potatoes,FFQ 1-81
+a_food025_f,b_food025_f,,d_food025_f,sc1_food025_f,,,f_food025_f,sc2_food025_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Fried potatoes,FFQ 1-81
+a_food026_f,b_food026_f,,d_food026_f,sc1_food026_f,,,f_food026_f,sc2_food026_f,,,Questionnaires,5. Dietary intake - food/bev/alc,French fries,FFQ 1-81
+,,,d_food027_f,sc1_food027_f,,,f_food027_f,sc2_food027_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Baked/mashed potatoes,FFQ 1-81
+a_food028_f,b_food028_f,,,sc1_food028_f,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Pea soup/brown beans/beans/lentils,FFQ 1-81
+,,,d_food029_f,sc1_food029_f,,,f_food029_f,sc2_food029_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Pea soup,FFQ 1-81
+,,,d_food030_f,sc1_food030_f,,,f_food030_f,sc2_food030_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Beans/lentils/chick peas,FFQ 1-81
+,b_food031_f,,d_food031_f,sc1_food031_f,,,f_food031_f,sc2_food031_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Green peas,FFQ 1-81
+,b_food032_f,,,sc1_food032_f,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Soy protein products,FFQ 1-81
+a_food033_f,b_food033_f,,d_food033_f,sc1_food033_f,,,f_food033_f,sc2_food033_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Orange/citrus fruits,FFQ 1-81
+a_food034_f,b_food034_f,,d_food034_f,sc1_food034_f,,,f_food034_f,sc2_food034_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Apple/pear,FFQ 1-81
+a_food035_f,b_food035_f,,d_food035_f,sc1_food035_f,,,f_food035_f,sc2_food035_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Banana,FFQ 1-81
+,b_food036_f,,d_food036_f,sc1_food036_f,,,f_food036_f,sc2_food036_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Other fruits,FFQ 1-81
+,b_food037_f,,d_food037_f,sc1_food037_f,,,f_food037_f,sc2_food037_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Berries (fresh or frozen),FFQ 1-81
+,,,d_food038_f,sc1_food038_f,,,f_food038_f,sc2_food038_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Raisins,FFQ 1-81
+,,,d_food039_f,sc1_food039_f,,,f_food039_f,sc2_food039_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Prunes (incl. juice),FFQ 1-81
+,,,d_food040_f,sc1_food040_f,,,f_food040_f,sc2_food040_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Apricots/other dried fruit,FFQ 1-81
+,b_food041_f,,,sc1_food041_f,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Nuts/almonds (unspecified),FFQ 1-81
+,,,d_food042_f,sc1_food042_f,,,f_food042_f,sc2_food042_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Nuts/almonds,FFQ 1-81
+,,,d_food043_f,sc1_food043_f,,,f_food043_f,sc2_food043_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Peanuts,FFQ 1-81
+,,,d_food044_f,sc1_food044_f,,,f_food044_f,sc2_food044_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Flax seeds,FFQ 1-81
+,,,d_food045_f,sc1_food045_f,,,f_food045_f,sc2_food045_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Sesame seeds,FFQ 1-81
+,,,d_food046_f,sc1_food046_f,,,f_food046_f,sc2_food046_f,,,Questionnaires,5. Dietary intake - food/bev/alc,"Sunflower/pumpkin seeds, etc.",FFQ 1-81
+a_food047_f,b_food047_f,,,sc1_food047_f,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Pasta/spaghetti/macaroni (unspecified),FFQ 1-81
+,,,d_food048_f,sc1_food048_f,,,f_food048_f,sc2_food048_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Pasta/spaghetti/macaroni (not wholegrain),FFQ 1-81
+,,,d_food049_f,sc1_food049_f,,,f_food049_f,sc2_food049_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Wholegrain pasta/spaghetti/macaroni,FFQ 1-81
+a_food050_f,b_food050_f,,,sc1_food050_f,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Rice (unspecified),FFQ 1-81
+,,,d_food051_f,sc1_food051_f,,,f_food051_f,sc2_food051_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Rice (not wholegrain),FFQ 1-81
+,,,d_food052_f,sc1_food052_f,,,f_food052_f,sc2_food052_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Wholegrain rice (rÃÂ¥ris),FFQ 1-81
+,,,d_food053_f,sc1_food053_f,,,f_food053_f,sc2_food053_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Couscous/bulgur,FFQ 1-81
+a_food054_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,White bread/sifted rye & wheat bread (limpa),FFQ 1-81
+,b_food054_d,,d_food054_d,sc1_food054_d,,,f_food054_d,sc2_food054_d,,,Questionnaires,5. Dietary intake - food/bev/alc,White bread/sifted rye & wheat bread (limpa): slices/day,Numeric value (slices/day)
+,b_food054_w,,d_food054_w,sc1_food054_w,,,f_food054_w,sc2_food054_w,,,Questionnaires,5. Dietary intake - food/bev/alc,White bread/sifted rye & wheat bread (limpa): slices/week,Numeric value (slices/week)
+,,,d_food055_d,sc1_food055_d,,,f_food055_d,sc2_food055_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Fiber enriched bread: slices/day,Numeric value (slices/day)
+,,,d_food055_w,sc1_food055_w,,,f_food055_w,sc2_food055_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Fiber enriched bread: slices/week,Numeric value (slices/week)
+a_food056_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Whole grain/meal bread,FFQ 1-81
+a_food056_d,b_food056_d,,d_food056_d,sc1_food056_d,,,f_food056_d,sc2_food056_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Whole grain/meal bread: slices/day,Numeric value (slices/day)
+,b_food056_w,,d_food056_w,sc1_food056_w,,,f_food056_w,sc2_food056_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Whole grain/meal bread: slices/week,Numeric value (slices/week)
+a_food057_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Crisp bread,FFQ 1-81
+a_food057_d,b_food057_d,,d_food057_d,sc1_food057_d,,,f_food057_d,sc2_food057_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Crisp bread: slices/day,Numeric value (slices/day)
+,b_food057_w,,d_food057_w,sc1_food057_w,,,f_food057_w,sc2_food057_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Crisp bread: slices/week,Numeric value (slices/week)
+a_food058_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Porridge/gruel (unspecified),FFQ 1-81
+,b_food059_f,,,sc1_food059_f,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Oatmeal porridge,FFQ 1-81
+,,,d_food060_f,sc1_food060_f,,,f_food060_f,sc2_food060_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Oatmeal/rye porridge,FFQ 1-81
+,b_food061_f,,d_food061_f,sc1_food061_f,,,f_food061_f,sc2_food061_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Other porridge/gruel,FFQ 1-81
+a_food062_f,b_food062_f,,,sc1_food062_f,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,MÃÂ¼esli/breakfast cereal,FFQ 1-81
+,,,d_food063_f,sc1_food063_f,,,f_food063_f,sc2_food063_f,,,Questionnaires,5. Dietary intake - food/bev/alc,MÃÂ¼esli,FFQ 1-81
+,,,d_food064_f,sc1_food064_f,,,f_food064_f,sc2_food064_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Breakfast cereal,FFQ 1-81
+,b_food065_f,,d_food065_f,sc1_food065_f,,,f_food065_f,sc2_food065_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Wheat or oat bran,FFQ 1-81
+a_food066_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Sugar,FFQ 1-81
+,,,d_food066_d,sc1_food066_d,,,f_food066_d,sc2_food066_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Sugar: tsp/day,Numeric value (tsp/day)
+,,,d_food066_w,sc1_food066_w,,,f_food066_w,sc2_food066_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Sugar: tsp/week,Numeric value (tsp/week)
+,,,d_food067_d,sc1_food067_d,,,f_food067_d,sc2_food067_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Honey: tbsp/day,Numeric value (tbsp/day)
+,,,d_food067_w,sc1_food067_w,,,f_food067_w,sc2_food067_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Honey: tbsp/week,Numeric value (tbsp/week)
+,b_food068_d,,,sc1_food068_d,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Sugar/honey: tbsp/day,Numeric value (tbsp/day)
+,b_food068_w,,,sc1_food068_w,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Sugar/honey: tbsp/week,Numeric value (tbsp/week)
+a_food069_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Buns/cookies/biscuits,FFQ 1-81
+,b_food070_f,,d_food070_f,sc1_food070_f,,,f_food070_f,sc2_food070_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Buns/cookies,FFQ 1-81
+,b_food071_f,,d_food071_f,sc1_food071_f,,,f_food071_f,sc2_food071_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Biscuits/wafers,FFQ 1-81
+,b_food072_f,,d_food072_f,sc1_food072_f,,,f_food072_f,sc2_food072_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Cakes/pastries,FFQ 1-81
+a_food073_f,b_food073_f,,d_food073_f,sc1_food073_f,,,f_food073_f,sc2_food073_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Fruit soup/kissel,FFQ 1-81
+a_food074_f,b_food074_f,,,sc1_food074_f,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Jam/marmalade/sauce,FFQ 1-81
+,,,d_food075_f,sc1_food075_f,,,f_food075_f,sc2_food075_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Lingonberry jam,FFQ 1-81
+,,,d_food076_f,sc1_food076_f,,,f_food076_f,sc2_food076_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Other jam,FFQ 1-81
+a_food077_f,b_food077_f,,d_food077_f,sc1_food077_f,,,f_food077_f,sc2_food077_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Chocolate,FFQ 1-81
+a_food078_f,b_food078_f,,d_food078_f,sc1_food078_f,,,f_food078_f,sc2_food078_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Candy (not chocolate),FFQ 1-81
+a_food079_f,b_food079_f,,d_food079_f,sc1_food079_f,,,f_food079_f,sc2_food079_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Ice cream,FFQ 1-81
+a_food080_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Whole milk (3% fat),FFQ 1-81
+,b_food080_d,,d_food080_d,sc1_food080_d,,,f_food080_d,sc2_food080_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Whole milk (3% fat): glass/day (1 glass=2 dl),Numeric value (glass/day)
+,b_food080_w,,d_food080_w,sc1_food080_w,,,f_food080_w,sc2_food080_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Whole milk (3% fat): glass/week (1 glass=2 dl),Numeric value (glass/week)
+a_food081_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Semi-skimmed milk (1.5% fat),FFQ 1-81
+,b_food081_d,,d_food081_d,sc1_food081_d,,,f_food081_d,sc2_food081_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Semi-skimmed milk (1.5% fat): glass/day (1 glass=2 dl),Numeric value (glass/day)
+,b_food081_w,,d_food081_w,sc1_food081_w,,,f_food081_w,sc2_food081_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Semi-skimmed milk (1.5% fat): glass/week (1 glass=2 dl),Numeric value (glass/week)
+a_food082_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Skimmed milk (0.5% fat),FFQ 1-81
+,b_food082_d,,d_food082_d,sc1_food082_d,,,f_food082_d,sc2_food082_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Skimmed milk (?0.5% fat): glass/day (1 glass=2 dl),Numeric value (glass/day)
+,b_food082_w,,d_food082_w,sc1_food082_w,,,f_food082_w,sc2_food082_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Skimmed milk (?0.5% fat): glass/week (1 glass=2 dl),Numeric value (glass/week)
+a_food083_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Sour milk/yogurt (?3% fat),FFQ 1-81
+,b_food083_d,,d_food083_d,sc1_food083_d,,,f_food083_d,sc2_food083_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Sour milk/yogurt (3% fat): glass/day (1 glass=2 dl),Numeric value (glass/day)
+,b_food083_w,,d_food083_w,sc1_food083_w,,,f_food083_w,sc2_food083_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Sour milk/yogurt (3% fat): glass/week (1 glass=2 dl),Numeric value (glass/week)
+,,,d_food084_d,sc1_food084_d,,,f_food084_d,sc2_food084_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Reduced fat sour milk (1.5% fat): glass/day (1 glass=2 dl),Numeric value (glass/day)
+,,,d_food084_w,sc1_food084_w,,,f_food084_w,sc2_food084_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Reduced fat sour milk (1.5% fat): glass/week (1 glass=2 dl),Numeric value (glass/week)
+a_food085_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Low-fat sour milk/yoghurt (?0.5% fat),FFQ 1-81
+,b_food085_d,,d_food085_d,sc1_food085_d,,,f_food085_d,sc2_food085_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Low-fat sour milk/yogurt (?0.5% fat): glass/day (1 glass=2 dl),Numeric value (glass/day)
+,b_food085_w,,d_food085_w,sc1_food085_w,,,f_food085_w,sc2_food085_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Low-fat sour milk/yogurt (?0.5% fat): glass/week (1 glass=2 dl),Numeric value (glass/week)
+,,,d_food086_d,sc1_food086_d,,,f_food086_d,sc2_food086_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Fruit flavoured yogurt/sour milk: glass/day (1 glass=2 dl),Numeric value (glass/day)
+,,,d_food086_w,sc1_food086_w,,,f_food086_w,sc2_food086_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Fruit flavoured yogurt/sour milk: glass/week (1 glass=2 dl),Numeric value (glass/week)
+,,,d_food087_f,sc1_food087_f,,,f_food087_f,sc2_food087_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Yogurt for cooking (8-10% fat),FFQ 1-81
+,b_food088_f,,d_food088_f,sc1_food088_f,,,f_food088_f,sc2_food088_f,,,Questionnaires,5. Dietary intake - food/bev/alc,CrÃÂ¨me fraiche (not low-fat),FFQ 1-81
+,b_food089_f,,d_food089_f,sc1_food089_f,,,f_food089_f,sc2_food089_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Low-fat crÃÂ¨me fraiche,FFQ 1-81
+,b_food090_f,,,sc1_food090_f,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Cream (unspecified),FFQ 1-81
+,,,d_food091_f,sc1_food091_f,,,f_food091_f,sc2_food091_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Cream (not low-fat),FFQ 1-81
+,,,d_food092_f,sc1_food092_f,,,f_food092_f,sc2_food092_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Low-fat cream/sour cream,FFQ 1-81
+,b_food093_d,,d_food093_d,sc1_food093_d,,,f_food093_d,sc2_food093_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Cottage cheese/quark: tbsp/day,Numeric value (glass/day)
+,b_food093_w,,d_food093_w,sc1_food093_w,,,f_food093_w,sc2_food093_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Cottage cheese/quark: tbsp/week,Numeric value (glass/week)
+a_food094_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Cheese (unspecified),FFQ 1-81
+,b_food095_d,,,sc1_food095_d,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Cheese (not low-fat): slices/day,Numeric value (slices/day)
+,b_food095_w,,,sc1_food095_w,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Cheese (not low-fat): slices/week,Numeric value (slices/week)
+,b_food096_d,,,sc1_food096_d,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Low-fat cheese: slices/day,Numeric value (slices/day)
+,b_food096_w,,,sc1_food096_w,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Low-fat cheese: slices/week,Numeric value (slices/week)
+,,,d_food097_d,sc1_food097_d,,,f_food097_d,sc2_food097_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Hard cheese (not low-fat): slices/day,Numeric value (slices/day)
+,,,d_food097_w,sc1_food097_w,,,f_food097_w,sc2_food097_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Hard cheese (not low-fat): slices/week,Numeric value (slices/week)
+,,,d_food098_d,sc1_food098_d,,,f_food098_d,sc2_food098_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Low-fat hard cheese: slices/day,Numeric value (slices/day)
+,,,d_food098_w,sc1_food098_w,,,f_food098_w,sc2_food098_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Low-fat hard cheese: slices/week,Numeric value (slices/week)
+,,,d_food099_d,sc1_food099_d,,,f_food099_d,sc2_food099_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Cheese spread (not low-fat): tbsp/day,Numeric value (tbsp/day)
+,,,d_food099_w,sc1_food099_w,,,f_food099_w,sc2_food099_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Cheese spread (not low-fat): tbsp/week,Numeric value (tbsp/week)
+,,,d_food100_d,sc1_food100_d,,,f_food100_d,sc2_food100_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Low-fat cheese spread: tbsp/day,Numeric value (tbsp/day)
+,,,d_food100_w,sc1_food100_w,,,f_food100_w,sc2_food100_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Low-fat cheese spread: tbsp/week,Numeric value (tbsp/week)
+,,,d_food101_d,sc1_food101_d,,,f_food101_d,sc2_food101_d,,,Questionnaires,5. Dietary intake - food/bev/alc,"Other cheese (""dessertost""): tbsp/day",Numeric value (tbsp/day)
+,,,d_food101_w,sc1_food101_w,,,f_food101_w,sc2_food101_w,,,Questionnaires,5. Dietary intake - food/bev/alc,"Other cheese (""dessertost""): tbsp/week",Numeric value (tbsp/week)
+,b_food102_f,,d_food102_f,sc1_food102_f,,,f_food102_f,sc2_food102_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Mayonnaise (not low-fat),FFQ 1-81
+,b_food103_f,,d_food103_f,sc1_food103_f,,,f_food103_f,sc2_food103_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Low-fat mayonnaise,FFQ 1-81
+a_food104_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Sandwich with butter,FFQ 1-81
+a_food105_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Sandwich with margarine,FFQ 1-81
+,b_food106_d,,d_food106_d,sc1_food106_d,,,f_food106_d,sc2_food106_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Sandwich with bread spread: slices/day,Numeric value (slices/day)
+,b_food106_w,,d_food106_w,sc1_food106_w,,,f_food106_w,sc2_food106_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Sandwich with bread spread: slices/week,Numeric value (slices/week)
+,b_food107_u,,d_food107_u,sc1_food107_u,,,f_food107_u,,,,Questionnaires,5. Dietary intake - food/bev/alc,"Butter, as bread spread",1=Yes
+,b_food108_u,,d_food108_u,sc1_food108_u,,,f_food108_u,,,,Questionnaires,5. Dietary intake - food/bev/alc,"Bregott (50% butter/50% margarine), as bread spread",1=Yes
+,b_food109_u,,,sc1_food109_u,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,"Hard/baking margarine, as bread spread",1=Yes
+,b_food110_u,,d_food110_u,sc1_food110_u,,,f_food110_u,,,,Questionnaires,5. Dietary intake - food/bev/alc,"Soft/table margarine, as bread spread",1=Yes
+,b_food111_u,,d_food111_u,sc1_food111_u,,,f_food111_u,,,,Questionnaires,5. Dietary intake - food/bev/alc,"Low-fat margarine (40% fat), as bread spread",1=Yes
+,,,d_food112_u,sc1_food112_u,,,f_food112_u,,,,Questionnaires,5. Dietary intake - food/bev/alc,"Becel (margarine), as bread spread",1=Yes
+,b_food113_u,,,sc1_food113_u,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,"Cooking oil (corn, sunflower, soybean), as bread spread",1=Yes
+,,,d_food114_u,sc1_food114_u,,,f_food114_u,,,,Questionnaires,5. Dietary intake - food/bev/alc,"Oil, as bread spread",1=Yes
+,,,d_food115_u,sc1_food115_u,,,f_food115_u,,,,Questionnaires,5. Dietary intake - food/bev/alc,"Other fat, as bread spread",1=Yes
+,b_food116_f,,d_food116_f,sc1_food116_f,,,f_food116_f,sc2_food116_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Salad dressing (not low-fat),FFQ 1-81
+,b_food117_f,,d_food117_f,sc1_food117_f,,,f_food117_f,sc2_food117_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Low-fat salad dressing,FFQ 1-81
+a_food118_f,b_food118_f,,d_food118_f,sc1_food118_f,,,f_food118_f,sc2_food118_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Eggs/omelette,FFQ 1-81
+a_food119_f,b_food119_f,,d_food119_f,sc1_food119_f,,,f_food119_f,sc2_food119_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Chicken/other poultry,FFQ 1-81
+a_food120_f,b_food120_f,,d_food120_f,sc1_food120_f,,,f_food120_f,sc2_food120_f,,,Questionnaires,5. Dietary intake - food/bev/alc,"Minced meat dishes (meatballs, hamburger, minced meat sauce)",FFQ 1-81
+a_food121_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Whole cuts of meat (unspecified),FFQ 1-81
+a_food122_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Meat casserole (unspecified),FFQ 1-81
+,b_food123_f,,d_food123_f,sc1_food123_f,,,f_food123_f,sc2_food123_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Pork (steak/casserole),FFQ 1-81
+,b_food124_f,,d_food124_f,sc1_food124_f,,,f_food124_f,sc2_food124_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Beef/Veal (steak/casserole),FFQ 1-81
+a_food125_f,,,d_food125_f,sc1_food125_f,,,f_food125_f,sc2_food125_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Bacon,FFQ 1-81
+,,,d_food126_f,sc1_food126_f,,,f_food126_f,sc2_food126_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Other meat,FFQ 1-81
+a_food127_f,b_food127_f,,d_food127_f,sc1_food127_f,,,f_food127_f,sc2_food127_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Liver/kidney,FFQ 1-81
+a_food128_f,b_food128_f,,,sc1_food128_f,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Sausage (unspecified),FFQ 1-81
+,,,d_food129_f,sc1_food129_f,,,f_food129_f,sc2_food129_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Falukorv (sausage),FFQ 1-81
+,,,d_food130_f,sc1_food130_f,,,f_food130_f,sc2_food130_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Lean sausage,FFQ 1-81
+,,,d_food131_f,sc1_food131_f,,,f_food131_f,sc2_food131_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Other sausage,FFQ 1-81
+a_food132_f,b_food132_f,,d_food132_f,sc1_food132_f,,,f_food132_f,sc2_food132_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Blood pudding/sausage,FFQ 1-81
+a_food133_f,b_food133_f,,,sc1_food133_f,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Liver patÃÂ© (unspecified),FFQ 1-81
+,,,d_food134_d,sc1_food134_d,,,f_food134_d,sc2_food134_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Liver patÃÂ© (not low-fat): tbsp/day,Numeric value (tbsp/day)
+,,,d_food134_w,sc1_food134_w,,,f_food134_w,sc2_food134_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Liver patÃÂ© (not low-fat): tbsp/week,Numeric value (tbsp/week)
+,,,d_food135_d,sc1_food135_d,,,f_food135_d,sc2_food135_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Low-fat liver patÃÂ©: tbsp/day,Numeric value (tbsp/day)
+,,,d_food135_w,sc1_food135_w,,,f_food135_w,sc2_food135_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Low-fat liver patÃÂ©: tbsp/week,Numeric value (tbsp/week)
+a_food136_f,b_food136_f,,,sc1_food136_f,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,"Cold cuts, meat/sausage (e.g. ham/turkey/salami)",FFQ 1-81
+,,,d_food137_f,sc1_food137_f,,,f_food137_f,sc2_food137_f,,,Questionnaires,5. Dietary intake - food/bev/alc,"Cold cuts, meat (e.g. ham/turkey)",FFQ 1-81
+,,,d_food138_f,sc1_food138_f,,,f_food138_f,sc2_food138_f,,,Questionnaires,5. Dietary intake - food/bev/alc,"Cold cuts, sausage (e.g. salami)",FFQ 1-81
+a_food139_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Salmon/herring/mackerel/sardines/tuna,FFQ 1-81
+,b_food140_f,,,sc1_food140_f,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Salmon/whitefish/red char,FFQ 1-81
+,,,d_food141_f,sc1_food141_f,,,f_food141_f,sc2_food141_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Salmon,FFQ 1-81
+,b_food142_f,,d_food142_f,sc1_food142_f,,,f_food142_f,sc2_food142_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Herring/mackerel,FFQ 1-81
+,,,d_food143_f,sc1_food143_f,,,f_food143_f,sc2_food143_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Tuna,FFQ 1-81
+,,,d_food144_f,sc1_food144_f,,,f_food144_f,sc2_food144_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Smoked fish,FFQ 1-81
+,,,d_food145_f,sc1_food145_f,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Sardines,FFQ 1-81
+a_food146_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Other fish,FFQ 1-81
+,b_food147_f,,,sc1_food147_f,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Cod/saithe/fish fingers,FFQ 1-81
+,,,d_food148_f,sc1_food148_f,,,f_food148_f,sc2_food148_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Cod/saithe/plaice/grenadier,FFQ 1-81
+,,,d_food149_f,sc1_food149_f,,,f_food149_f,sc2_food149_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Pike/perch,FFQ 1-81
+,,,d_food150_f,sc1_food150_f,,,f_food150_f,sc2_food150_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Fish fingers,FFQ 1-81
+,,,d_food151_f,sc1_food151_f,,,f_food151_f,sc2_food151_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Other fish,FFQ 1-81
+a_food152_f,b_food152_f,,d_food152_f,sc1_food152_f,,,f_food152_f,sc2_food152_f,,,Questionnaires,5. Dietary intake - food/bev/alc,"Shellfish (shrimp, crayfish)",FFQ 1-81
+,,,d_food153_f,sc1_food153_f,,,f_food153_f,sc2_food153_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Roe (e.g. from lump fish),FFQ 1-81
+,b_food154_f,,d_food154_f,sc1_food154_f,,,f_food154_f,sc2_food154_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Swedish caviar,FFQ 1-81
+a_food155_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Chips/popcorn/cheese puffs/salted nuts,FFQ 1-81
+,b_food156_f,,d_food156_f,sc1_food156_f,,,f_food156_f,sc2_food156_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Chips/popcorn/cheese puffs,FFQ 1-81
+a_food157_f,b_food157_f,,d_food157_f,sc1_food157_f,,,f_food157_f,sc2_food157_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Pancakes/crepes,FFQ 1-81
+,b_food158_f,,d_food158_f,sc1_food158_f,,,f_food158_f,sc2_food158_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Pizza,FFQ 1-81
+,b_food159_f,,d_food159_f,sc1_food159_f,,,f_food159_f,sc2_food159_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Ketchup,FFQ 1-81
+,,,d_food160_f,sc1_food160_f,,,f_food160_f,sc2_food160_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Dried herbs,FFQ 1-81
+,,,d_food161_f,sc1_food161_f,,,f_food161_f,sc2_food161_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Cinnamon,FFQ 1-81
+,,,d_food162_f,sc1_food162_f,,,f_food162_f,sc2_food162_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Pepper,FFQ 1-81
+,,,d_food163_f,sc1_food163_f,,,f_food163_f,sc2_food163_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Table salt,FFQ 1-81
+a_food164_d,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Milk: glass/day (1 glass = 2 dl),Numeric value (glass/day)
+a_food165_k,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Type of milk,"1=Whole milk, 3% fat, 2=Milk, 1.5% fat, 3=Skim milk, 0.5% fat, 4=Milk, 3.8-4.5% fat, 5=Don't drink milk"
+,,,d_food166_u,sc1_food166_u,,,f_food166_u,sc2_food166_u,,,Questionnaires,5. Dietary intake - food/bev/alc,Do you usually have milk in your coffee or tea?,"1=Yes, in coffee"
+,,,d_food167_u,sc1_food167_u,,,f_food167_u,sc2_food167_u,,,Questionnaires,5. Dietary intake - food/bev/alc,Do you usually have milk in your coffee or tea?,"1=Yes, in tea"
+,,,d_food168_u,sc1_food168_u,,,f_food168_u,sc2_food168_u,,,Questionnaires,5. Dietary intake - food/bev/alc,Do you usually have milk in your coffee or tea?,1=No
+a_food169_k,b_food169_k,,d_food169_k,sc1_food169_k,,,f_food169_k,sc2_food169_k,,,Questionnaires,5. Dietary intake - food/bev/alc,Thickness of bread spread,"1=Thick layer, 2=Thin, 3=Very thin, 4=No butter/margarine on sandwiches"
+a_food170_k,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Kind of bread spread,"1=Butter, 2=Bregott (50% butter+50% marg), 3=Hard margarine (80% fat), 4=Soft margarine (80% fat), 5=Low fat margarine, 6=No fat on sandwiches"
+,b_food171_u,,d_food171_u,sc1_food171_u,,,f_food171_u,sc2_food171_u,,,Questionnaires,5. Dietary intake - food/bev/alc,"No fat, as bread spread",1=Yes
+a_food172_k,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Kind of cooking fat,"1=Butter, 2= Bregott (50% butter+50% marg), 3=Hard margarine (80% fat), 4=Soft margarine (80% fat), 5=Oil, 6=Don't know"
+,b_food173_u,,d_food173_u,sc1_food173_u,,,f_food173_u,sc2_food173_u,,,Questionnaires,5. Dietary intake - food/bev/alc,"Butter, in cooking",1=Yes
+,,,d_food174_u,sc1_food174_u,,,f_food174_u,sc2_food174_u,,,Questionnaires,5. Dietary intake - food/bev/alc,"Liquid butter, in cooking",1=Yes
+,b_food175_u,,d_food175_u,sc1_food175_u,,,f_food175_u,sc2_food175_u,,,Questionnaires,5. Dietary intake - food/bev/alc,"Bregott (50% butter/50% margarine), in cooking",1=Yes
+,b_food176_u,,d_food176_u,sc1_food176_u,,,f_food176_u,sc2_food176_u,,,Questionnaires,5. Dietary intake - food/bev/alc,"Hard/baking margarine, in cooking",1=Yes
+,b_food177_u,,,sc1_food177_u,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,"Soft/table margarine, in cooking",1=Yes
+,b_food178_u,,,sc1_food178_u,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,"Low-fat margarine, in cooking",1=Yes
+,b_food179_u,,d_food179_u,sc1_food179_u,,,f_food179_u,sc2_food179_u,,,Questionnaires,5. Dietary intake - food/bev/alc,"Liquid margarine, in cooking",1=Yes
+,b_food180_u,,d_food180_u,sc1_food180_u,,,f_food180_u,sc2_food180_u,,,Questionnaires,5. Dietary intake - food/bev/alc,"Olive oil, in cooking",1=Yes
+,b_food181_u,,d_food181_u,sc1_food181_u,,,f_food181_u,sc2_food181_u,,,Questionnaires,5. Dietary intake - food/bev/alc,"Rapeseed oil, in cooking",1=Yes
+,b_food182_u,,d_food182_u,sc1_food182_u,,,f_food182_u,sc2_food182_u,,,Questionnaires,5. Dietary intake - food/bev/alc,"Cooking oil, in cooking",1=Yes
+,,,d_food183_u,sc1_food183_u,,,f_food183_u,sc2_food183_u,,,Questionnaires,5. Dietary intake - food/bev/alc,"Other fat, in cooking",1=Yes
+,b_food184_u,,d_food184_u,sc1_food184_u,,,f_food184_u,sc2_food184_u,,,Questionnaires,5. Dietary intake - food/bev/alc,No cooking fat,1=Yes
+,b_food185_u,,d_food185_u,sc1_food185_u,,,f_food185_u,sc2_food185_u,,,Questionnaires,5. Dietary intake - food/bev/alc,"Olive oil, in home-made dressing",1=Yes
+,b_food186_u,,d_food186_u,sc1_food186_u,,,f_food186_u,sc2_food186_u,,,Questionnaires,5. Dietary intake - food/bev/alc,"Rapeseed oil, in home-made dressing",1=Yes
+,b_food187_u,,d_food187_u,sc1_food187_u,,,f_food187_u,sc2_food187_u,,,Questionnaires,5. Dietary intake - food/bev/alc,"Cooking oil, in home-made dressing",1=Yes
+,,,d_food188_u,sc1_food188_u,,,f_food188_u,sc2_food188_u,,,Questionnaires,5. Dietary intake - food/bev/alc,"Other oil, in home-made dressing",1=Yes
+,,,d_food189_u,sc1_food189_u,,,f_food189_u,sc2_food189_u,,,Questionnaires,5. Dietary intake - food/bev/alc,"No oil, in home-made dressing",1=Yes
+a_food190_d,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,White bread: slices/day,Numeric value (slices/day)
+a_food191_d,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Sifted rye & wheat bread (limpa): slices/day,Numeric value (slices/day)
+,,,d_bev01_d,sc1_bev01_d,,,f_bev01_d,sc2_bev01_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Water (including mineral/carbonated): glass/day,Numeric value (glass/day)
+,,,d_bev01_w,sc1_bev01_w,,,f_bev01_w,sc2_bev01_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Water (including mineral/carbonated): glass/week,Numeric value (glass/week)
+a_bev02_f,b_bev02_f,,d_bev02_f,sc1_bev02_f,,,f_bev02_f,sc2_bev02_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Orange/grapefruit juice,FFQ 1-81
+a_bev03_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Soda (unspecified) carbonated ,FFQ 1-81
+a_bev04_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Squash (unspecified) non-carbonated,FFQ 1-81
+,b_bev05_d,,,sc1_bev05_d,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Soda/squash (unspecified) carbonated/non-carbonated: glass/day (1 glass=2 dl),Numeric value (glass/day)
+,b_bev05_w,,,sc1_bev05_w,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Soda/squash (unspecified) carbonated/non-carbonated: glass/week (1 glass=2 dl),Numeric value (glass/week)
+,,,d_bev06_d,sc1_bev06_d,,,f_bev06_d,sc2_bev06_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Coca-Cola/Pepsi: glass/day (1 glass=2 dl),Numeric value (glass/day)
+,,,d_bev06_w,sc1_bev06_w,,,f_bev06_w,sc2_bev06_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Coca-Cola/Pepsi: glass/week (1 glass=2 dl),Numeric value (glass/week)
+,,,d_bev07_d,sc1_bev07_d,,,f_bev07_d,sc2_bev07_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Light Coca-Cola/Pepsi: glass/day (1 glass=2 dl),Numeric value (glass/day)
+,,,d_bev07_w,sc1_bev07_w,,,f_bev07_w,sc2_bev07_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Light Coca-Cola/Pepsi: glass/week (1 glass=2 dl),Numeric value (glass/week)
+,,,d_bev08_d,sc1_bev08_d,,,f_bev08_d,sc2_bev08_d,,,Questionnaires,5. Dietary intake - food/bev/alc,"Other soda/squash, carbonated/non-carbonated: glass/day (1 glass=2 dl)",Numeric value (glass/day)
+,,,d_bev08_w,sc1_bev08_w,,,f_bev08_w,sc2_bev08_w,,,Questionnaires,5. Dietary intake - food/bev/alc,"Other soda/squash, carbonated/non-carbonated: glass/week (1 glass=2 dl)",Numeric value (glass/week)
+,,,d_bev09_d,sc1_bev09_d,,,f_bev09_d,sc2_bev09_d,,,Questionnaires,5. Dietary intake - food/bev/alc,"Other light soda/squash, carbonated/non-carbonated: glass/day (1 glass=2 dl)",Numeric value (glass/day)
+,,,d_bev09_w,sc1_bev09_w,,,f_bev09_w,sc2_bev09_w,,,Questionnaires,5. Dietary intake - food/bev/alc,"Other light soda/squash, carbonated/non-carbonated: glass/week (1 glass=2 dl)",Numeric value (glass/week)
+a_bev10_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Tea (unspecified),FFQ 1-81
+,b_bev10_d,,,sc1_bev10_d,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Tea (unspecified): cup/day (1 cup=1.5 dl),Numeric value (cup/day)
+,b_bev10_w,,,sc1_bev10_w,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Tea (unspecified): cup/week (1 cup=1.5 dl),Numeric value (cup/week)
+,,,d_bev11_d,sc1_bev11_d,,,f_bev11_d,sc2_bev11_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Black tea: cup/day (1 cup=2 dl),Numeric value (cup/day)
+,,,d_bev11_w,sc1_bev11_w,,,f_bev11_w,sc2_bev11_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Black tea: cup/week (1 cup=2 dl),Numeric value (cup/week)
+,,,d_bev12_d,sc1_bev12_d,,,f_bev12_d,sc2_bev12_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Green tea: cup/day (1 cup=2 dl),Numeric value (cup/day)
+,,,d_bev12_w,sc1_bev12_w,,,f_bev12_w,sc2_bev12_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Green tea: cup/week (1 cup=2 dl),Numeric value (cup/week)
+,,,d_bev13_d,sc1_bev13_d,,,f_bev13_d,sc2_bev13_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Herbal/red tea: cup/day (1 cup=2 dl),Numeric value (cup/day)
+,,,d_bev13_w,sc1_bev13_w,,,f_bev13_w,sc2_bev13_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Herbal/red tea: cup/week (1 cup=2 dl),Numeric value (cup/week)
+a_bev14_f,,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Coffee (unspecified),FFQ 1-81
+,b_bev14_d,,,sc1_bev14_d,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Coffee (unspecified) cups/day (1 cup=1.5 dl),Numeric value (cup/day)
+,b_bev14_w,,,sc1_bev14_w,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Coffee (unspecified) cups/week (1 cup=1.5 dl),Numeric value (cup/week)
+,,,d_bev15_d,sc1_bev15_d,,,f_bev15_d,sc2_bev15_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Filtered/instant coffee: cup/day (1 cup=2 dl),Numeric value (cup/day)
+,,,d_bev15_w,sc1_bev15_w,,,f_bev15_w,sc2_bev15_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Filtered/instant coffee: cups/week (1 cup=2 dl),Numeric value (cup/week)
+,,,d_bev16_d,sc1_bev16_d,,,f_bev16_d,sc2_bev16_d,,,Questionnaires,5. Dietary intake - food/bev/alc,Unfiltered/other coffee: cup/day (1 cup=2 dl),Numeric value (cup/day)
+,,,d_bev16_w,sc1_bev16_w,,,f_bev16_w,sc2_bev16_w,,,Questionnaires,5. Dietary intake - food/bev/alc,Unfiltered/other coffee: cups/week (1 cup=2 dl),Numeric value (cup/week)
+a_alc01_f,,,d_alc01_f,sc1_alc01_f,,,f_alc01_f,sc2_alc01_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Light beer (?2.25% alcohol),FFQ 1-7/8/92
+,b_alc01_d,,,sc1_alc01_d,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Light beer: glass/day,Numeric value (glass/day)
+,b_alc01_w,,,sc1_alc01_w,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Light beer: glass/week ,Numeric value (glass/week)
+,b_der_alc01_v,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Derived variable: Amount of lightbeer per week (dl) (b_alc01_d + b_alc01_w),Numeric value (dl/week)
+a_alc02_f,b_alc02_f,,d_alc02_f,sc1_alc02_f,,,f_alc02_f,sc2_alc02_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Medium-strong beer (2.25-3.5% alcohol),FFQ 1-7/8/92
+a_alc03_f,b_alc03_f,,d_alc03_f,sc1_alc03_f,,,f_alc03_f,sc2_alc03_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Strong beer (>3.5% alcohol),FFQ 1-7/8/92
+a_alc04_f,b_alc04_f,,,sc1_alc04_f,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Wine,FFQ 1-7/8/92
+,,,d_alc05_f,sc1_alc05_f,,,f_alc05_f,sc2_alc05_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Red wine,FFQ 1-7/8/92
+,,,d_alc06_f,sc1_alc06_f,,,f_alc06_f,sc2_alc06_f,,,Questionnaires,5. Dietary intake - food/bev/alc,White wine,FFQ 1-7/8/92
+,b_alc07_f,,,sc1_alc07_f,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Fortified wine (>18% alcohol),FFQ 1-7/8/92
+,,,d_alc08_f,sc1_alc08_f,,,f_alc08_f,sc2_alc08_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Liqueur/sherry/fortified wine (>18% alcohol),FFQ 1-7/8/92
+a_alc09_f,b_alc09_f,,d_alc09_f,sc1_alc09_f,,,f_alc09_f,sc2_alc09_f,,,Questionnaires,5. Dietary intake - food/bev/alc,Spirits,FFQ 1-7/8/92
+,b_alc10_v,,d_alc10_v,sc1_alc10_v,,,f_alc10_v,sc2_alc10_v,,,Questionnaires,5. Dietary intake - food/bev/alc,"Beer, quantity (cl) each time",Numeric value (cl/occasion)
+,b_alc11_v,,d_alc11_v,sc1_alc11_v,,,f_alc11_v,sc2_alc11_v,,,Questionnaires,5. Dietary intake - food/bev/alc,"Wine, quantity (cl) each time",Numeric value (cl/occasion)
+,,,d_alc12_v,sc1_alc12_v,,,f_alc12_v,sc2_alc12_v,,,Questionnaires,5. Dietary intake - food/bev/alc,"Liqueur, quantity (cl) each time",Numeric value (cl/occasion)
+,b_alc13_v,,d_alc13_v,sc1_alc13_v,,,f_alc13_v,sc2_alc13_v,,,Questionnaires,5. Dietary intake - food/bev/alc,"Spirits, quantity (cl) each time",Numeric value (cl/occasion)
+,b_alc14_u,,,sc1_alc14_u,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Drinks alcohol,1=Yes
+,b_der_alc14_u,,,,,,,,,,Questionnaires,5. Dietary intake - food/bev/alc,Derived variable: Ever drinker (b_alc14_u + b_alc15_u),"0=Never, 1=Previously, 2=Current"
+,b_alc15_u,,d_alc15_u,sc1_alc15_u,,,f_alc15_u,,,,Questionnaires,5. Dietary intake - food/bev/alc,Alcohol use,"1=I have never had alcohol, 2=Stopped drinking"
+,b_alc16_a,,d_alc16_a,sc1_alc16_a,,,f_alc16_a,,,,Questionnaires,5. Dietary intake - food/bev/alc,Age when stopped drinking alcohol,Numeric value (age)
+,b_supp01_u,,d_supp01_u,sc1_supp01_u,,,f_supp01_u,,,,Questionnaires,6. Supplements - supp," Use of vitamin, mineral or other supplements","1997: 1=Yes, regularly, 2=Yes, sometimes, 3=No  2009/2019: 1=Never, 2=Yes, sometimes, 3=Yes, regularly"
+,b_supp02_y2,,,,,,,,,,Questionnaires,6. Supplements - supp, Multivitamins: number of years,Numeric value (years)
+,b_supp02_w,,,,,,,,,,Questionnaires,6. Supplements - supp, Multivitamin: tablets/week,Numeric value (tablets/week)
+,b_supp03_y2,,d_supp03_y4,sc1_supp03_y2,,,f_supp03_y4,,,,Questionnaires,6. Supplements - supp, Multivitamins with minerals: number of years,"1997: Numeric value 2009/2019: 1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,b_supp03_w,,,sc1_supp03_w,,,,,,,Questionnaires,6. Supplements - supp, Multivitamins with minerals: tablets/week,Numeric value (tablets/week)
+,,,d_supp03_f,sc1_supp03_f,,,f_supp03_f,,,,Questionnaires,6. Supplements - supp, Multivitamins with minerals: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1?2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,b_supp04_y2,,d_supp04_y4,sc1_supp04_y2,,,f_supp04_y4,,,,Questionnaires,6. Supplements - supp, Multivitamins without minerals: number of years,"1997: Numeric value 2009/2019: 1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,b_supp04_w,,,sc1_supp04_w,,,,,,,Questionnaires,6. Supplements - supp, Multivitamins without minerals: tablets/week,Numeric value (tablets/week)
+,,,d_supp04_f,sc1_supp04_f,,,f_supp04_f,,,,Questionnaires,6. Supplements - supp, Multivitamins without minerals: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,b_supp05_y2,,d_supp05_y4,sc1_supp05_y2,,,f_supp05_y4,,,,Questionnaires,6. Supplements - supp, Vitamin C: number of years,"1997: Numeric value 2009/2019: 1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,b_supp05_w,,,sc1_supp05_w,,,,,,,Questionnaires,6. Supplements - supp, Vitamin C: tablets/week,Numeric value (tablets/week)
+,,,d_supp05_f,sc1_supp05_f,,,f_supp05_f,,,,Questionnaires,6. Supplements - supp, Vitamin C: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,b_supp06_y2,,d_supp06_y4,sc1_supp06_y2,,,f_supp06_y4,,,,Questionnaires,6. Supplements - supp, Vitamin E: number of years,"1997: Numeric value 2009/2019: 1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,b_supp06_w,,,sc1_supp06_w,,,,,,,Questionnaires,6. Supplements - supp, Vitamin E: tablets/week,Numeric value (tablets/week)
+,,,d_supp06_f,sc1_supp06_f,,,f_supp06_f,,,,Questionnaires,6. Supplements - supp, Vitamin E: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,b_supp07_y2,,d_supp07_y4,sc1_supp07_y2,,,f_supp07_y4,,,,Questionnaires,6. Supplements - supp, Vitamin B6: number of years,"1997: Numeric value 2009/2019: 1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,b_supp07_w,,,sc1_supp07_w,,,,,,,Questionnaires,6. Supplements - supp, Vitamin B6: tablets/week,Numeric value (tablets/week)
+,,,d_supp07_f,sc1_supp07_f,,,f_supp07_f,,,,Questionnaires,6. Supplements - supp, Vitamin B6: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,b_supp08_y2,,d_supp08_y4,sc1_supp08_y2,,,f_supp08_y4,,,,Questionnaires,6. Supplements - supp, Calcium: number of years,"1997: Numeric value 2009/2019: 1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,b_supp08_w,,,sc1_supp08_w,,,,,,,Questionnaires,6. Supplements - supp, Calcium: tablets/week,Numeric value (tablets/week)
+,,,d_supp08_f,sc1_supp08_f,,,f_supp08_f,,,,Questionnaires,6. Supplements - supp, Calcium: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,b_supp09_y2,,d_supp09_y4,sc1_supp09_y2,,,f_supp09_y4,,,,Questionnaires,6. Supplements - supp, Fish oil: number of years,"1997: Numeric value 2009/2019: 1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,b_supp09_w,,,sc1_supp09_w,,,,,,,Questionnaires,6. Supplements - supp, Fish oil: capsules/week,Numeric value (capsules/week)
+,,,d_supp09_f,sc1_supp09_f,,,f_supp09_f,,,,Questionnaires,6. Supplements - supp, Fish oil: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,b_supp10_u,,d_supp10_u,sc1_supp10_u,,,f_supp10_u,,,,Questionnaires,6. Supplements - supp, Ginseng (2009/2019: Ginseng/Gerimax),1=Yes
+,b_supp11_u,,,sc1_supp11_u,,,,,,,Questionnaires,6. Supplements - supp, Vit B-complex,1=Yes
+,,,d_supp11_y4,sc1_supp11_y4,,,f_supp11_y4,,,,Questionnaires,6. Supplements - supp, Vitamin B complex: number of years,"1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,,,d_supp11_f,sc1_supp11_f,,,f_supp11_f,,,,Questionnaires,6. Supplements - supp, Vitamin B complex: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,,,d_supp12_y4,sc1_supp12_y4,,,f_supp12_y4,,,,Questionnaires,6. Supplements - supp, Vitamin B12: number of years,"1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,,,d_supp12_f,sc1_supp12_f,,,f_supp12_f,,,,Questionnaires,6. Supplements - supp, Vitamin B12: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,b_supp13_u,,,sc1_supp13_u,,,,,,,Questionnaires,6. Supplements - supp, Selenium,1=Yes
+,,,d_supp13_y4,sc1_supp13_y4,,,f_supp13_y4,,,,Questionnaires,6. Supplements - supp, Selenium: number of years,"1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,,,d_supp13_f,sc1_supp13_f,,,f_supp13_f,,,,Questionnaires,6. Supplements - supp, Selenium: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,b_supp14_u,,,sc1_supp14_u,,,,,,,Questionnaires,6. Supplements - supp, Folic acid,1=Yes
+,,,d_supp14_y4,sc1_supp14_y4,,,f_supp14_y4,,,,Questionnaires,6. Supplements - supp, Folic acid: number of years,"1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,,,d_supp14_f,sc1_supp14_f,,,f_supp14_f,,,,Questionnaires,6. Supplements - supp, Folic acid: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,b_supp15_u,,,sc1_supp15_u,,,,,,,Questionnaires,6. Supplements - supp, Gerimax,1=Yes
+,b_supp16_u,,,sc1_supp16_u,,,,,,,Questionnaires,6. Supplements - supp, Beta-carotene,1=Yes
+,,,d_supp16_y4,sc1_supp16_y4,,,f_supp16_y4,,,,Questionnaires,6. Supplements - supp, Beta-carotene: number of years,"1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,,,d_supp16_f,sc1_supp16_f,,,f_supp16_f,,,,Questionnaires,6. Supplements - supp, Beta-carotene: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,b_supp17_u,,,sc1_supp17_u,,,,,,,Questionnaires,6. Supplements - supp, Zinc,1=Yes
+,,,d_supp17_y4,sc1_supp17_y4,,,f_supp17_y4,,,,Questionnaires,6. Supplements - supp, Zinc: number of years,"1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,,,d_supp17_f,sc1_supp17_f,,,f_supp17_f,,,,Questionnaires,6. Supplements - supp, Zinc: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,b_supp18_u,,,sc1_supp18_u,,,,,,,Questionnaires,6. Supplements - supp, Oxigard,1=Yes
+,b_supp19_u,,,sc1_supp19_u,,,,,,,Questionnaires,6. Supplements - supp, Protector,1=Yes
+,b_supp20_u,,,sc1_supp20_u,,,,,,,Questionnaires,6. Supplements - supp, Magnesium,1=Yes
+,,,d_supp20_y4,sc1_supp20_y4,,,f_supp20_y4,,,,Questionnaires,6. Supplements - supp, Magnesium: number of years,"1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,,,d_supp20_f,sc1_supp20_f,,,f_supp20_f,,,,Questionnaires,6. Supplements - supp, Magnesium: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,b_supp21_u,,d_supp21_u,sc1_supp21_u,,,f_supp21_u,,,,Questionnaires,6. Supplements - supp, Q10,1=Yes
+,b_supp22_u,,d_supp22_u,sc1_supp22_u,,,f_supp22_u,,,,Questionnaires,6. Supplements - supp, Remifemin,1=Yes
+,b_supp23_u,,,,,,,,,,Questionnaires,6. Supplements - supp, Enomdan,1=Yes
+,b_supp24_u,,,,,,,,,,Questionnaires,6. Supplements - supp, Vitamineral,1=Yes
+,b_supp25_u,,,,,,,,,,Questionnaires,6. Supplements - supp, Vitaplex,1=Yes
+,b_supp26_u,,,,,,,,,,Questionnaires,6. Supplements - supp, Omnibionta,1=Yes
+,b_supp27_u,,,,,,,,,,Questionnaires,6. Supplements - supp, Dulcivit,1=Yes
+,,,d_supp28_y4,sc1_supp28_y4,,,f_supp28_y4,,,,Questionnaires,6. Supplements - supp, Vitamin D: number of years,"1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,,,d_supp28_f,sc1_supp28_f,,,f_supp28_f,,,,Questionnaires,6. Supplements - supp, Vitamin D: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,,,d_supp29_y4,sc1_supp29_y4,,,f_supp29_y4,,,,Questionnaires,6. Supplements - supp, Iron: number of years,"1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,,,d_supp29_f,sc1_supp29_f,,,f_supp29_f,,,,Questionnaires,6. Supplements - supp, Iron: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,,,d_supp31_y4,sc1_supp31_y4,,,f_supp31_y4,,,,Questionnaires,6. Supplements - supp, Flax seed oil: number of years,"1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,,,d_supp31_f,sc1_supp31_f,,,f_supp31_f,,,,Questionnaires,6. Supplements - supp, Flax seed oil: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,,,d_supp32_y4,sc1_supp32_y4,,,f_supp32_y4,,,,Questionnaires,6. Supplements - supp, Live bacterial culture (probiotics): number of years,"1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,,,d_supp32_f,sc1_supp32_f,,,f_supp32_f,,,,Questionnaires,6. Supplements - supp, Live bacterial culture (probiotics): how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,,,d_supp33_u,sc1_supp33_u,,,f_supp33_u,,,,Questionnaires,6. Supplements - supp, Yeast preparation,1=Yes
+,,,d_supp34_u,sc1_supp34_u,,,f_supp34_u,,,,Questionnaires,6. Supplements - supp, St. JohnÃÂs wort,1=Yes
+,,,d_supp35_u,sc1_supp35_u,,,f_supp35_u,,,,Questionnaires,6. Supplements - supp, Arctic root,1=Yes
+,b_supp36_u,,d_supp36_u,sc1_supp36_u,,,f_supp36_u,,,,Questionnaires,6. Supplements - supp, Chromium,1=Yes
+,b_supp37_u,,d_supp37_u,sc1_supp37_u,,,f_supp37_u,,,,Questionnaires,6. Supplements - supp, Curbisin (1997) Curbisin/Sabamin (2009/2019),1=Yes
+,,,d_supp38_u,sc1_supp38_u,,,f_supp38_u,,,,Questionnaires,6. Supplements - supp, Ginkgo Biloba,1=Yes
+,,,d_supp39_u,sc1_supp39_u,,,f_supp39_u,,,,Questionnaires,6. Supplements - supp, Tone ,1=Yes
+,,,d_supp40_u,sc1_supp40_u,,,f_supp40_u,,,,Questionnaires,6. Supplements - supp, Intestinal regulators,1=Yes
+,,,d_supp41_u,sc1_supp41_u,,,f_supp41_u,,,,Questionnaires,6. Supplements - supp, Fiber supplement,1=Yes
+,b_supp42_u,,d_supp42_u,sc1_supp42_u,,,f_supp42_u,,,,Questionnaires,6. Supplements - supp, Cernitol,1=Yes
+,,,d_supp43_u,sc1_supp43_u,,,f_supp43_u,,,,Questionnaires,6. Supplements - supp, Valerina Night/Forte,1=Yes
+,,,d_supp44_u,sc1_supp44_u,,,f_supp44_u,,,,Questionnaires,6. Supplements - supp, Litozin,1=Yes
+,b_supp45_u,,d_supp45_u,sc1_supp45_u,,,f_supp45_u,,,,Questionnaires,6. Supplements - supp, Garlic tablets,1=Yes
+,b_supp46_u,,d_supp46_u,sc1_supp46_u,,,f_supp46_u,,,,Questionnaires,6. Supplements - supp, Echinacea (1997) Echinacea/Kan Jang/Esberitox (2009/2019),1=Yes
+,b_supp47_u,,,,,,,,,,Questionnaires,6. Supplements - supp, Esbericum,1=yes
+,b_supp48_u,,,,,,,,,,Questionnaires,6. Supplements - supp, Hyperiforce,1=yes
+,b_supp49_u,,,,,,,,,,Questionnaires,6. Supplements - supp, Other supplements,1=yes
+,b_med01_u,c_med01_u,,sc1_med01_u,,e_med01_u,,,,,Questionnaires,7. Medication - med,"Ever used Acetylsalicylic acid (e.g. Magnecyl, Bamyl, Dispril, Aspirin, Alka-Seltzer, Treo, Albyl, Bamycor, Trombyl)","1=No, 2=Yes"
+,b_med01_y1,,,,,,,,,,Questionnaires,7. Medication - med, if ever used acetylsalicylic acid: since what year,YYYY
+,b_med01_y2,c_med01_y3,d_med01_y4,sc1_med01_y4,,e_med01_y3,f_med01_y4,,,,Questionnaires,7. Medication - med, if ever used acetylsalicylic acid: number of years,"1997: Numeric value  2008/2019: 1= <10 years, 2= 10-20 years, 3= >20 years  2009/2019: 1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,b_med01_w,c_med01_w,,sc1_med01_w,,e_med01_w,,,,,Questionnaires,7. Medication - med, if ever used acetylsalicylic acid: tablets/week,Numeriv values (tablets/week)
+,,,d_med01_f,sc1_med01_f,,,f_med01_f,,,,Questionnaires,7. Medication - med, if ever used acetylsalicylic acid: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,b_med02_u,c_med02_u,,sc1_med02_u,,e_med02_u,,,,,Questionnaires,7. Medication - med,"Ever used Paracetamol containing drugs (e.g. Alvedon, Panodil, Citadon, Curadon,  Distalgesic, Lemsip, Panocod, Reliv)","1=No, 2=Yes.  "
+,b_med02_y2,c_med02_y3,d_med02_y4,sc1_med02_y4,,e_med02_y3,f_med02_y4,,,,Questionnaires,7. Medication - med,if ever used paracetamol containing drugs: number of years,"1997: Numeric value  2008/2019: 1= <10 years, 2= 10-20 years, 3= >20 years  2009/2019: 1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years. "
+,b_med02_w,c_med02_w,,sc1_med02_w,,e_med02_w,,,,,Questionnaires,7. Medication - med,if ever used paracetamol containing drugs: tablets/week,Numeric value (tablets/week)
+,,,d_med02_f,sc1_med02_f,,,f_med02_f,,,,Questionnaires,7. Medication - med,if ever used paracetamol containing drugs: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)."
+,,c_med03_u,,sc1_med03_u,,e_med03_u,,,,,Questionnaires,7. Medication - med,"Ever used Non-steroidal anti-inflammatory drugs (e.g. Ipren, Diklofenak, Voltaren, Ibumetin, Naproxen)","1=No, 2=Yes"
+,,c_med03_y3,d_med03_y4,sc1_med03_y4,,e_med03_y3,f_med03_y4,,,,Questionnaires,7. Medication - med,if ever used non-steroidal anti-inflammatory drugs: number of years,"2008/2019: 1= <10 years, 2= 10-20 years, 3= >20 years  2009/2019: 1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,,c_med03_w,,sc1_med03_w,,e_med03_w,,,,,Questionnaires,7. Medication - med,if ever used non-steroidal anti-inflammatory drugs: tablets/week,Numeric value (tablets/week)
+,,,d_med03_f,sc1_med03_f,,,f_med03_f,,,,Questionnaires,7. Medication - med,if ever used non-steroidal anti-inflammatory drugs: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1?2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,b_med04_u,,,,,,,,,,Questionnaires,7. Medication - med,"Ever used Indometacin (e.g. IndomeÃÂ©, Confortid, Indometacin)","1=No, 2=Yes"
+,b_med04_y2,,,,,,,,,,Questionnaires,7. Medication - med,if ever used indometacin: number of years,Numeric value (years)
+,b_med04_w,,,,,,,,,,Questionnaires,7. Medication - med,if ever used indometacin: tablets/week,Numeric value (tablets/week)
+,b_med05_u,,,,,,,,,,Questionnaires,7. Medication - med,Ever used medication for sleeping disorders,"1=No, 2=Yes"
+,b_med05_y1,,,,,,,,,,Questionnaires,7. Medication - med,if ever used sleep aid/medication: since what year,YYYY
+,b_med05_y2,,d_med05_y4,sc1_med05_y4,,,f_med05_y4,,,,Questionnaires,7. Medication - med,if ever used sleep aid/medication: number of years,"1997: Numeric value  2009/2019: 1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,b_med05_m,,,,,,,,,,Questionnaires,7. Medication - med,if ever used sleep aid/medication: tablets/month,Numeric value (tablets/month)
+,,,d_med05_f,sc1_med05_f,,,f_med05_f,,,,Questionnaires,7. Medication - med,if ever used sleep aid/medication: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,b_med06_u,,,,,,,,,,Questionnaires,7. Medication - med,Ever used cortisone tablets,"1=No, 2=Yes"
+,b_med06_f,,,,,,,,,,Questionnaires,7. Medication - med,if ever used cortisone tablets: number of courses,Numeric value (courses)
+,b_med07_n,,,,,,,,,,Questionnaires,7. Medication - med,Ever used cortisone inhalations (current use),"1=No, 2=Yes, using now"
+,b_med07_p,,,,,,,,,,Questionnaires,7. Medication - med,if ever used cortisone inhalations: previous use,1=Yes
+,b_med07_y2,,,,,,,,,,Questionnaires,7. Medication - med,if ever used cortisone inhalation use: number of years,Numeric value (years)
+,,c_med08_u,,sc1_med08_u,,e_med08_u,,,,,Questionnaires,7. Medication - med,Ever used cortisone tablets/inhalations,"1=No, 2=Yes"
+,,c_med08_y2,d_med08_y4,sc1_med08_y4,,e_med08_y2,f_med08_y4,,,,Questionnaires,7. Medication - med,if ever used cortisone tablets/inhalation: number of years,"2008/2019: Number of years in total (numeric)  2009/2019: 1=<1 year, 2=1-4 years, 3=5-9 years, 4=10-19, 5=?20 years"
+,,,d_med08_f,sc1_med08_f,,,f_med08_f,,,,Questionnaires,7. Medication - med,if ever used cortisone tablets/inhalation: how often,"1=Never, 2=Sometimes, 3=Regularly (Never=None or very few, Sometimes=1-2 tablets/week or <100 tablets/year, Regularly=3-7 tablets/week)"
+,,c_med09_x,,sc1_med09_x,,e_med09_x,,,,,Questionnaires,7. Medication - med,"Diabetes, treatment","1=Insulin, 2=Tablets, 3=Dietary advice, 9=More than one"
+,,c_med010_u,,sc1_med010_u,,e_med010_u,,,,,Questionnaires,7. Medication - med,Have you used anitbiotics during the past 10 years?,"1=No, 2=Yes"
+,,c_med010_f,,sc1_med010_f,,e_med010_f,,,,,Questionnaires,7. Medication - med,if you have used antibiotics during the past 10 years: number of courses/year,"1=<1 course/year, 2=1 course/year, 3=2-3 courses/year, 4=>3 courses/year"
+,b_med11_u,,,sc1_med11_u,,,,,,,Questionnaires,7. Medication - med,Ever used medication for prostate problems,"1=No, 2=Yes"
+,b_med12_a,,,,,,,,,,Questionnaires,7. Medication - med,if ever used proscar: started at age,Numeric value (age)
+,b_med12_y2,,,,,,,,,,Questionnaires,7. Medication - med,if ever used proscar: number of years,Numeric value (years)
+,b_med13_u,,,sc1_med13_u,,,,,,,Questionnaires,7. Medication - med,"if ever used peripress, Alfadil, Xatral, Hytrinex, Sinalfa for prostate problems",1=Yes
+,b_med13_a,,,,,,,,,,Questionnaires,7. Medication - med,if ever used peripress etc: started at age,Numeric value (age)
+,b_med13_y2,,,,,,,,,,Questionnaires,7. Medication - med,if ever used peripress etc: number of years,Numeric value (years)
+,b_smok01_u,,d_smok01_u,sc1_smok01_u,,,f_smok01_u,,,,Questionnaires,8. Tobacco use - smok,Ever smoked cigarettes regularly,"1997: 1=Yes, 0=No  2009/2019: 1=No, 2=Yes, currently, 3=Yes, but I stopped"
+,b_smok02_a,,,,,,,,,,Questionnaires,8. Tobacco use - smok,Age when started smoking,Numeric value (age)
+,b_smok03_n,,,,,,,,,,Questionnaires,8. Tobacco use - smok,Still smoking,"1=Yes, 0=No"
+,b_smok04_y2,,d_smok04_y2,sc1_smok04_y2,,,f_smok04_y2,,,,Questionnaires,8. Tobacco use - smok,Number of years since quit smoking,Numeric value (years)
+,b_smok05,,,,,,,,,,Questionnaires,8. Tobacco use - smok,Cigarettes/day at age 15-20,Numeric value
+,b_smok06,,,,,,,,,,Questionnaires,8. Tobacco use - smok,Cigarettes/day at age 21-30,Numeric value
+,b_smok07,,,,,,,,,,Questionnaires,8. Tobacco use - smok,Cigarettes/day at age 31-40,Numeric value
+,b_smok08,,,,,,,,,,Questionnaires,8. Tobacco use - smok,Cigarettes/day at age 41-50,Numeric value
+,b_smok09,,d_smok09,sc1_smok09,,,f_smok09,,,,Questionnaires,8. Tobacco use - smok,Cigarettes/day at age 51-60,Numeric value
+,,,d_smok10,sc1_smok10,,,f_smok10,,,,Questionnaires,8. Tobacco use - smok,Cigarettes/day at age 61-80,Numeric value
+,,,d_smok11,sc1_smok11,,,f_smok11,,,,Questionnaires,8. Tobacco use - smok,Cigarettes/day at age 71-80,Numeric value
+,,,d_smok12,sc1_smok12,,,f_smok12,,,,Questionnaires,8. Tobacco use - smok,Cigarettes/day at age 81+,Numeric value
+,b_smok13,,d_smok13,sc1_smok13,,,f_smok13,,,,Questionnaires,8. Tobacco use - smok,Cigarettes/day this year,Numeric value
+,b_der_smok01,,d_der_smok01,,,,,,,,Questionnaires,8. Tobacco use - smok,Derived variable: Ever smoked cigarettes regularly ,"1=Current, 2=Ex, 3=Never"
+,b_der_smok_a,,,,,,,,,,Questionnaires,8. Tobacco use - smok,Derived variable: Age at stopped smoking (b_age minus b_smok02_clean),Numeric value (age)
+,b_der_smok_t,,,,,,,,,,Questionnaires,8. Tobacco use - smok,Derived variable: Duration of smoking (b_smok04_der minus b_smok03_clean),Numeric value (years)
+,b_der_smok_d,,,,,,,,,,Questionnaires,8. Tobacco use - smok,"Derived variable: Current/latest quantity, cig/day (b_smok07?b_smok11) ",Numeric value (cigarettes/day)
+,b_der_smok_y,,,,,,,,,,Questionnaires,8. Tobacco use - smok,Derived variable: Pack years,Numeric value ( pack years)
+,b_smok14_u,,d_smok14_u,sc1_smok14_u,,,f_smok14_u,,,,Questionnaires,8. Tobacco use - smok,Ever used moist snuff regularly,"1997: 1=Yes, 2=No  2009/2019: 1=No, 2=Yes, currently, 3=Yes, but I stopped *Although the question is present in the COSM 97 questionnaire, no data from 1997 are available for men."
+,,,d_smok15_y2,sc1_smok15_y2,,,f_smok15_y2,,,,Questionnaires,8. Tobacco use - smok,Number of years since quit using snuff,Numeric value (age)
+,,,d_smok16,sc1_smok16,,,f_smok16,,,,Questionnaires,8. Tobacco use - smok,Servings of snuff/day at age 50-60,Numeric value
+,,,d_smok17,sc1_smok17,,,f_smok17,,,,Questionnaires,8. Tobacco use - smok,Servings of snuff/day at age 61-80,Numeric value
+,,,d_smok18,sc1_smok18,,,f_smok18,,,,Questionnaires,8. Tobacco use - smok,Servings of snuff/day at age 71-80,Numeric value
+,,,d_smok19,sc1_smok19,,,f_smok19,,,,Questionnaires,8. Tobacco use - smok,Servings of snuff/day at age 81+,Numeric value
+,,,d_smok20,sc1_smok20,,,f_smok20,,,,Questionnaires,8. Tobacco use - smok,Servings of snuff/day last year,Numeric value
+,b_act01,,,sc1_act01,,,,,,,Questionnaires,9. Physical activity - act,"Household work, age 15","1=<1 hour/day, 2=1-2 hours/day, 3=3-4 hours/day, 4=5-6 hours/day, 5=7-8 hours/day, 6=>8 hours/day"
+,b_act02,,,sc1_act02,,,,,,,Questionnaires,9. Physical activity - act,"Household work, age 30","1=<1 hour/day, 2=1-2 hours/day, 3=3-4 hours/day, 4=5-6 hours/day, 5=7-8 hours/day, 6=>8 hours/day"
+,b_act03,,,sc1_act03,,,,,,,Questionnaires,9. Physical activity - act,"Household work, age 50","1=<1 hour/day, 2=1-2 hours/day, 3=3-4 hours/day, 4=5-6 hours/day, 5=7-8 hours/day, 6=>8 hours/day"
+,b_act04,,d_act04,sc1_act04,,,f_act04,,,,Questionnaires,9. Physical activity - act,"Household work, this year","1=<1 hour/day, 2=1-2 hours/day, 3=3-4 hours/day, 4=5-6 hours/day, 5=7-8 hours/day, 6=>8 hours/day"
+,b_act05,,,sc1_act05,,,,,,,Questionnaires,9. Physical activity - act,"Walking/biking, age 15","1=Never/seldom, 2=< 20 min/day, 3=20-40 min, 4=40-60 min, 5=1-1.5 hours/day, 6=>1.5 hours/day"
+,b_act06,,,sc1_act06,,,,,,,Questionnaires,9. Physical activity - act,"Walking/biking, age 30","1=Never/seldom, 2=< 20 min/day, 3=20-40 min, 4=40-60 min, 5=1-1.5 hours/day, 6=>1.5 hours/day"
+,b_act07,,,sc1_act07,,,,,,,Questionnaires,9. Physical activity - act,"Walking/biking, age 50","1=Never/seldom, 2=< 20 min/day, 3=20-40 min, 4=40-60 min, 5=1-1.5 hours/day, 6=>1.5 hours/day"
+,b_act08,,d_act08,sc1_act08,,,f_act08,,,,Questionnaires,9. Physical activity - act,"Walking/biking, this year","1=Never/seldom, 2=< 20 min/day, 3=20-40 min, 4=40-60 min, 5=1-1.5 hours/day, 6=>1.5 hours/day"
+,b_act09,,,sc1_act09,,,,,,,Questionnaires,9. Physical activity - act,"Occupational activity, age 15","1=Mostly sitting, 2=Sitting half of the work time, 3=Mostly standing, 4=Mostly walking/some lifting, 5=Mostly walking/a lot of lifting, 6=Heavy labour work"
+,b_act10,,,sc1_act10,,,,,,,Questionnaires,9. Physical activity - act,"Occupational activity, age 30","1=Mostly sitting, 2=Sitting half of the work time, 3=Mostly standing, 4=Mostly walking/some lifting, 5=Mostly walking/a lot of lifting, 6=Heavy labour work"
+,b_act11,,,sc1_act11,,,,,,,Questionnaires,9. Physical activity - act,"Occupational activity, age 50","1=Mostly sitting, 2=Sitting half of the work time, 3=Mostly standing, 4=Mostly walking/some lifting, 5=Mostly walking/a lot of lifting, 6=Heavy labour work"
+,b_act12,,d_act12,sc1_act12,,,f_act12,,,,Questionnaires,9. Physical activity - act,"Occupational activity, this year","1=Mostly sitting, 2=Sitting half of the work time, 3=Mostly standing, 4=Mostly walking/some lifting, 5=Mostly walking/a lot of lifting, 6=Heavy labour work"
+,b_act13,,,sc1_act13,,,,,,,Questionnaires,9. Physical activity - act,"Reading/watching TV, age 15","1=<1 hour/day, 2=1-2 hours/day, 3=3-4 hours/day, 4=5-6 hours/day, 5=>6 hours/day"
+,b_act14,,,sc1_act14,,,,,,,Questionnaires,9. Physical activity - act,"Reading/watching TV, age 30","1=<1 hour/day, 2=1-2 hours/day, 3=3-4 hours/day, 4=5-6 hours/day, 5=>6 hours/day"
+,b_act15,,,sc1_act15,,,,,,,Questionnaires,9. Physical activity - act,"Reading/watching TV, age 50","1=<1 hour/day, 2=1-2 hours/day, 3=3-4 hours/day, 4=5-6 hours/day, 5=>6 hours/day"
+,b_act16,,d_act16,sc1_act16,,,f_act16,,,,Questionnaires,9. Physical activity - act,"Reading/watching TV, this year","1997/2019: 1=<1 hour/day, 2=1-2 hours/day, 3=3-4 hours/day, 4=5-6 hours/day, 5=>6 hours/day 2009: 1=<1 hour/day, 2=1-2 hours/day, 3=3-4 hours/day, 4=5-6 hours/day, 5=7-8 hours/day 6=>8 hours/day"
+,b_act17,,,sc1_act17,,,,,,,Questionnaires,9. Physical activity - act,"Exercise, age 15","1=< 1 hour/week, 2=1 hour, 3=2-3 hours/week, 4=4-5 hours/week, 5=>5 hours/week"
+,b_act18,,,sc1_act18,,,,,,,Questionnaires,9. Physical activity - act,"Exercise, age 30","1=< 1 hour/week, 2=1 hour, 3=2-3 hours/week, 4=4-5 hours/week, 5=>5 hours/week"
+,b_act19,,,sc1_act19,,,,,,,Questionnaires,9. Physical activity - act,"Exercise, age 50","1=< 1 hour/week, 2=1 hour, 3=2-3 hours/week, 4=4-5 hours/week, 5=>5 hours/week"
+,b_act20,,d_act20,sc1_act20,,,f_act20,,,,Questionnaires,9. Physical activity - act,"Exercise, this year","1997/2019: 1=<1 hour/week, 2=1 hour/week, 3=2-3 hours/week, 4=4-5 hours/week, 5=>5 hours/week 2009: 1= Almost never, 2=<1 hour/week, 3=1 hour/week, 4=2-3 hours/week, 5=4-5 hours/week, 6=>5 hours/week"
+,b_act21,,,sc1_act21,,,,,,,Questionnaires,9. Physical activity - act,How many hours do you sleep per day?,
+,b_act22,,,sc1_act22,,,,,,,Questionnaires,9. Physical activity - act,"Sit/lie down, hours/day",
+,,,d_act23,sc1_act23,,,f_act23,sc2_act23,,,Questionnaires,9. Physical activity - act,How far can you walk outdoors?,"1=Cannot walk outdoors, 2=Only short distances, 3=Almost as far as I want, 4=Unlimited distances"
+,,,d_act24,sc1_act24,,,f_act24,sc2_act24,,,Questionnaires,9. Physical activity - act,Do you usually perform any physical activity (that makes you short of breath) for more than two hours per week? ,"1=Yes, 2=No"
+,b_der_act25,,,,,,,,,,Questionnaires,9. Physical activity - act,Current total activity score (MET*hours/d),
+,,c_sleep01,,sc1_sleep01,,e_sleep01,,,,,Questionnaires,10. Sleep - sleep,How many hours of sleep do you need each day?,
+,b_act21,c_sleep02,,sc1_act21,,e_sleep02,,,,,Questionnaires,10. Sleep - sleep,"How many hours do you actually sleep? (1997: ""How many hours do you sleep per day?"")",
+,,c_sleep03,,sc1_sleep03,,e_sleep03,,,,,Questionnaires,10. Sleep - sleep,What time do you usually fall asleep?,
+,,c_sleep04,,sc1_sleep04,,e_sleep04,,,,,Questionnaires,10. Sleep - sleep,What time do you usually wake up?  ,
+,,c_sleep05,,sc1_sleep05,,e_sleep05,,,,,Questionnaires,10. Sleep - sleep,Do you regularly take a nap during the day?   ,"1=No, 2=yes"
+,,c_sleep06,,sc1_sleep06,,e_sleep06,,,,,Questionnaires,10. Sleep - sleep,"Nap, from (hh:mm)",
+,,c_sleep07,,sc1_sleep07,,e_sleep07,,,,,Questionnaires,10. Sleep - sleep,"Nap, to (hh:mm)",
+,,c_sleep08,,sc1_sleep08,,e_sleep08,,,,,Questionnaires,10. Sleep - sleep,How would you grade your sleeping habits?,"1=Very good, 2=Good, 3=Neither good nor bad, 4=Bad, 5=Very bad"
+,,c_sleep09,,sc1_sleep09,,e_sleep09,,,,,Questionnaires,10. Sleep - sleep,How often you had difficulty falling asleep during the past 3 months?,"1=Never, 2=Seldom, 3=Often, 4=Mostly, 5=Always"
+,,c_sleep10,,sc1_sleep10,,e_sleep10,,,,,Questionnaires,10. Sleep - sleep,How often you had repeated awakenings with difficulty falling asleep during the past 3 months?,"1=Never, 2=Seldom, 3=Often, 4=Mostly, 5=Always"
+,,c_sleep11,,sc1_sleep11,,e_sleep11,,,,,Questionnaires,10. Sleep - sleep,How often you had premature awakening during the past 3 months?,"1=Never, 2=Seldom, 3=Often, 4=Mostly, 5=Always"
+,,c_sleep12,,sc1_sleep12,,e_sleep12,,,,,Questionnaires,10. Sleep - sleep,How often you had disturbed / restless sleep during the past 3 months?,"1=Never, 2=Seldom, 3=Often, 4=Mostly, 5=Always"
+,,c_sleep13,,sc1_sleep13,,e_sleep13,,,,,Questionnaires,10. Sleep - sleep,How often you had sleep apnea / apnea during the past 3 months?,"1=Never, 2=Seldom, 3=Often, 4=Mostly, 5=Always"
+,,c_sleep14,,sc1_sleep14,,e_sleep14,,,,,Questionnaires,10. Sleep - sleep,How often you had disturbing snoring during the past 3 months?,"1=Never, 2=Seldom, 3=Often, 4=Mostly, 5=Always"
+,,c_sleep15,,sc1_sleep15,,e_sleep15,,,,,Questionnaires,10. Sleep - sleep,Have you had working hours where you to occasionally worked at night?,"1=No, 2=yes"
+,,c_sleep16,,sc1_sleep16,,e_sleep16,,,,,Questionnaires,10. Sleep - sleep,"Night work, for how many years",
+,,,d_outdoor1,sc1_outdoor1,,,f_outdoor1,,,,Questionnaires,11. Outdoor activity - outdoor,"How often are you outdoors during spring and summer, hours/week",
+,,,d_outdoor2,sc1_outdoor2,,,f_outdoor2,,,,Questionnaires,11. Outdoor activity - outdoor,"How often are you outdoors during spring and summer, very seldom",1=Very seldom
+,,,d_outdoor3,sc1_outdoor3,,,f_outdoor3,,,,Questionnaires,11. Outdoor activity - outdoor,"How often are you outdoors during autumn and winter, hours/week",
+,,,d_outdoor4,sc1_outdoor4,,,f_outdoor4,,,,Questionnaires,11. Outdoor activity - outdoor,"How often are you outdoors during autumn and winter, very seldom",1=Very seldom
+,,,d_sun1,sc1_sun1,,,f_sun1,,,,Questionnaires,12. Sun habits - sun,12. Sun habits - sun: Do you travel to sunny resorts during winter time?,"1=No, 2=Yes, sometimes, 3=Yes, every year"
+,,,d_sun2,sc1_sun2,,,f_sun2,,,,Questionnaires,12. Sun habits - sun,12. Sun habits - sun:How does your skin react when you are in the sun?,"1=Always red/never tanned, 2=Always red/sometimes tanned, 3=Sometimes red/always tanned, 4=Never red/always tanned"
+,,,d_sun3,sc1_sun3,,,f_sun3,sc2_sun3,,,Questionnaires,12. Sun habits - sun,"12. Sun habits - sun:When it is sunny, you prefer:","1=The sun all the time, 2= Both the sun and the shade. 3=Seeking shade all the time"
+,,,d_sun4,sc1_sun4,,,f_sun4,sc2_sun4,,,Questionnaires,12. Sun habits - sun,12. Sun habits - sun:Do you use sunblock? ,"1=Yes, always, 2=Most of the time. 3=Sometimes, 4=Never"
+,b_toilet01,,,,,,,,,,Questionnaires,13. Toilet habits - toilet,Difficulty to urinate,1=Yes
+,b_toilet02,,,,,,,,,,Questionnaires,13. Toilet habits - toilet,"Difficulty to urinate, since when",
+,,c_toilet03,,sc1_toilet03,,e_toilet03,,,,,Questionnaires,13. Toilet habits - toilet,Are you experiencing symptoms from the lower urinary tract? (This question concern urination over the past month),"1=Not at all, 2=A little, 3=Moderately, 4=Much"
+,,c_toilet04,,sc1_toilet04,,e_toilet04,,,,,Questionnaires,13. Toilet habits - toilet,Do you think you urinate often? (This question concern urination over the past month),"1=Not at all, 2=A little, 3=Moderately, 4=Much"
+,,c_toilet05,,sc1_toilet05,,e_toilet05,,,,,Questionnaires,13. Toilet habits - toilet,Do you have a strong urge to urinate? (This question concern urination over the past month),"1=Not at all, 2=A little, 3=Moderately, 4=Much"
+,,c_toilet06,,sc1_toilet06,,e_toilet06,,,,,Questionnaires,13. Toilet habits - toilet,Are you experiencing urinary leakage? (This question concern urination over the past month),"1=Not at all, 2=A little, 3=Moderately, 4=Much"
+,,c_toilet07,,sc1_toilet07,,e_toilet07,,,,,Questionnaires,13. Toilet habits - toilet,Is there leakage of urine at physical exertion / cough? (This question concern urination over the past month),"1=Not at all, 2=A little, 3=Moderately, 4=Much"
+,,c_toilet08,,sc1_toilet08,,e_toilet08,,,,,Questionnaires,13. Toilet habits - toilet,Is there leakage of urine without any activity? (This question concern urination over the past month),"1=Not at all, 2=A little, 3=Moderately, 4=Much"
+,,c_toilet09,,sc1_toilet09,,e_toilet09,,,,,Questionnaires,13. Toilet habits - toilet,Does the urine leak in drops? (This question concern urination over the past month),"1=Not at all, 2=A little, 3=Moderately, 4=Much"
+,,c_toilet10,,sc1_toilet10,,e_toilet10,,,,,Questionnaires,13. Toilet habits - toilet,Is there leakage of large amounts of urine? (This question concern urination over the past month),"1=Not at all, 2=A little, 3=Moderately, 4=Much"
+,,c_toilet11,,sc1_toilet11,,e_toilet11,,,,,Questionnaires,13. Toilet habits - toilet,Do you go up at night to urinate? (This question concern urination over the past month),"1=Not at all, 2=A little, 3=Moderately, 4=Much"
+,,c_toilet12,,sc1_toilet12,,e_toilet12,,,,,Questionnaires,13. Toilet habits - toilet,Are you experiencing difficulty in passing urine? (This question concern urination over the past month),"1=Not at all, 2=A little, 3=Moderately, 4=Much"
+,,c_toilet13,,sc1_toilet13,,e_toilet13,,,,,Questionnaires,13. Toilet habits - toilet,Does it feel like your bladder does not empty? (This question concern urination over the past month),"1=Not at all, 2=A little, 3=Moderately, 4=Much"
+,,c_toilet14,,sc1_toilet14,,e_toilet14,,,,,Questionnaires,13. Toilet habits - toilet,Is there pain when you urinate? (This question concern urination over the past month),"1=Not at all, 2=A little, 3=Moderately, 4=Much"
+,b_toilet15,c_toilet15,,sc1_toilet15,,e_toilet15,,,,,Questionnaires,13. Toilet habits - toilet,How often do you feel like you cannot empty your bladder?,"1=Never, 2=<every 5th visit, 3=<half the time, 4=About half of the time, 5=>half of the time, 6=Almost always"
+,b_toilet16,c_toilet16,,sc1_toilet16,,e_toilet16,,,,,Questionnaires,13. Toilet habits - toilet,How often do you have to urinate within 2 hours of going?,"1=Never, 2=<every 5th time, 3=<every 2nd time, 4=About half of the time, 5=More than every 2nd time, 6=Almost every time"
+,b_toilet17,c_toilet17,,sc1_toilet17,,e_toilet17,,,,,Questionnaires,13. Toilet habits - toilet,How often is your urine intermittent instead of continuous?,"1=Never, 2=<every 5th time, 3=<every 2nd time, 4=About half of the time, 5=More than every 2nd time, 6=Almost every time"
+,b_toilet18,c_toilet18,,sc1_toilet18,,e_toilet18,,,,,Questionnaires,13. Toilet habits - toilet,How often is it hard to hold in urination?,"1=Never, 2=<every 5th time, 3=<every 2nd time, 4=About half of the time, 5=More than every 2nd time, 6=Almost every time"
+,b_toilet19,c_toilet19,,sc1_toilet19,,e_toilet19,,,,,Questionnaires,13. Toilet habits - toilet,How often do you have a weak urine stream?,"1=Never, 2=<every 5th time, 3=<every 2nd time, 4=About half of the time, 5=More than every 2nd time, 6=Almost every time"
+,b_toilet20,c_toilet20,,sc1_toilet20,,e_toilet20,,,,,Questionnaires,13. Toilet habits - toilet,How often must you apply pressure to urinate?,"1=Never, 2=<every 5th time, 3=<every 2nd time, 4=About half of the time, 5=More than every 2nd time, 6=Almost every time"
+,b_toilet21,c_toilet21,,sc1_toilet21,,e_toilet21,,,,,Questionnaires,13. Toilet habits - toilet,How often do you usually urinate at night?,"1=Never, 2=1 time, 3=2 times, 4=3 times, 5=4 times, 6=>5 times"
+,,c_toilet22,,sc1_toilet22,,e_toilet22,,,,,Questionnaires,13. Toilet habits - toilet,Have you had a urinary tract infection / urinary retention?,"1=Never, 2=1 time, 3=2 times, 4=3 times, 5=4 times, 6=>5 times"
+,b_toilet23,c_toilet23,,sc1_toilet23,,e_toilet23,,,,,Questionnaires,13. Toilet habits - toilet,If you had to live with urination the way it is today how would you feel?,"1=Very good, 2=Good, 3=Acceptable, 4=Neither good or bad, 5=Fairly bad, 6=Very bad, 7=Terrible"
+,,c_toilet24,,sc1_toilet24,,e_toilet24,,,,,Questionnaires,13. Toilet habits - toilet,Do you have a bowel movement every day? ,"1=Yes, 2=No"
+,,c_toilet25,,sc1_toilet25,,e_toilet25,,,,,Questionnaires,13. Toilet habits - toilet,If you have NOT a bowel movement every day. Number of days between bowel movement,
+,,c_toilet26,,sc1_toilet26,,e_toilet26,,,,,Questionnaires,13. Toilet habits - toilet,Do you have a bowel movement several times a day?,"1=Yes, 2=No"
+,,c_toilet27,,sc1_toilet27,,e_toilet27,,,,,Questionnaires,13. Toilet habits - toilet,How often do you experience difficulty with bowel movements?,"1=Never, 2=<1 time/week, 3=1-6 times/week, 4=Always"
+,,c_toilet28,,sc1_toilet28,,e_toilet28,,,,,Questionnaires,13. Toilet habits - toilet,"Do you have, or have you had fecal leakage?","1=No, 2=Yes, I have had it before, 3=Yes, I have it now"
+,,c_dvisit,,sc1_dvisit,,e_dvisit,,,,,Questionnaires,14. General health,How many doctor visits have you had in the past 12 months?,Numeric value
+,b_health,c_health,,sc1_health,,e_health,,,,,Questionnaires,14. General health,How is your health in general?,"1=Very good, 2=Good, 3=Neither good/ nor bad, 4=Bad, 5=Very bad"
+,,c_mem,,sc1_mem,,e_mem,,,,,Questionnaires,14. General health,How is your memory in general?,"1=Very good, 2=Good, 3=Neither good/ nor bad, 4=Bad, 5=Very bad"
+,,c_physic,,sc1_physic,,e_physic,,,,,Questionnaires,14. General health,How is your physical condition in general?,"1=Very good, 2=Good, 3=Neither good/ nor bad, 4=Bad, 5=Very bad"
+,,c_appetite,,sc1_appetite,,e_appetite,,,,,Questionnaires,14. General health,How is your appetite in general?,"1=Very good, 2=Good, 3=Neither good/ nor bad, 4=Bad, 5=Very bad"
+,,c_mood,,sc1_mood,,e_mood,,,,,Questionnaires,14. General health,How is your mood in general?,"1=Very good, 2=Good, 3=Neither good/ nor bad, 4=Bad, 5=Very bad"
+,,c_energy,,sc1_energy,,e_energy,,,,,Questionnaires,14. General health,How is your energy in general?,"1=Very good, 2=Good, 3=Neither good/ nor bad, 4=Bad, 5=Very bad"
+,,c_viewlife,,sc1_viewlife,,e_viewlife,,,,,Questionnaires,14. General health,What is your view of life in general?,"1=Very positive, 2=Positive, 3=Negative, 4=Very negative"
+,,c_feel01,,sc1_feel01,,e_feel01,,,,,Questionnaires,15. Well-being - feel,Felt that I could cope with serious problems or major changes (during the past week),"1=Always/almost all the time, 2=Often/fairly often, 3=Sometimes/Very rarely, 4= Never/almost never"
+,,c_feel02,,sc1_feel02,,e_feel02,,,,,Questionnaires,15. Well-being - feel,Felt calm and relaxed (during the past week),"1=Always/almost all the time, 2=Often/fairly often, 3=Sometimes/Very rarely, 4= Never/almost never"
+,,c_feel03,,sc1_feel03,,e_feel03,,,,,Questionnaires,15. Well-being - feel,"Felt energetic, active and enterprising (during the past week)","1=Always/almost all the time, 2=Often/fairly often, 3=Sometimes/Very rarely, 4= Never/almost never"
+,,c_feel04,,sc1_feel04,,e_feel04,,,,,Questionnaires,15. Well-being - feel,"Woke up, felt fresh and rested (during the past week)","1=Always/almost all the time, 2=Often/fairly often, 3=Sometimes/Very rarely, 4= Never/almost never"
+,,c_feel05,,sc1_feel05,,e_feel05,,,,,Questionnaires,15. Well-being - feel,Felt happy or satisfied and pleased with personal life (during the past week),"1=Always/almost all the time, 2=Often/fairly often, 3=Sometimes/Very rarely, 4= Never/almost never"
+,,c_feel06,,sc1_feel06,,e_feel06,,,,,Questionnaires,15. Well-being - feel,Felt sad and down (during the past week),"1=Always/almost all the time, 2=Often/fairly often, 3=Sometimes/Very rarely, 4= Never/almost never"
+,,c_feel07,,sc1_feel07,,e_feel07,,,,,Questionnaires,15. Well-being - feel,Satisfied with life (during the past week),"1=Always/almost all the time, 2=Often/fairly often, 3=Sometimes/Very rarely, 4= Never/almost never"
+,,c_feel08,,sc1_feel08,,e_feel08,,,,,Questionnaires,15. Well-being - feel,I live the kind of life I want to live (during the past week),"1=Always/almost all the time, 2=Often/fairly often, 3=Sometimes/Very rarely, 4= Never/almost never"
+,,c_feel09,,sc1_feel09,,e_feel09,,,,,Questionnaires,15. Well-being - feel,Been eager to address the work or make new decisions (during the past week),"1=Always/almost all the time, 2=Often/fairly often, 3=Sometimes/Very rarely, 4= Never/almost never"
+,,c_feel10,,sc1_feel10,,e_feel10,,,,,Questionnaires,15. Well-being - feel,Felt that life is full of interesting things (during the past week),"1=Always/almost all the time, 2=Often/fairly often, 3=Sometimes/Very rarely, 4= Never/almost never"
+,,c_stress01,,sc1_stress01,,e_stress01,,,,,Questionnaires,16. Stress - stress,"I have never experienced stress, in private life",1=Never
+,,c_stress02,,sc1_stress02,,e_stress02,,,,,Questionnaires,16. Stress - stress,"I have experienced a stressful period, in private life",1=Yes
+,,c_stress03,,sc1_stress03,,e_stress03,,,,,Questionnaires,16. Stress - stress,"I have experienced a stressful period in the past 5 years, in private life",1=Yes
+,,c_stress04,,sc1_stress04,,e_stress04,,,,,Questionnaires,16. Stress - stress,"I have experienced several periods of stress in the past 5 years, in private life",1=Yes
+,,c_stress05,,sc1_stress05,,e_stress05,,,,,Questionnaires,16. Stress - stress,"I have experienced constant stress in the past year, in private life",1=Yes
+,,c_stress06,,sc1_stress06,,e_stress06,,,,,Questionnaires,16. Stress - stress,"I have experienced constant stress in the past 5 years, in private life",1=Yes
+,,c_stress07,,sc1_stress07,,e_stress07,,,,,Questionnaires,16. Stress - stress,"I have had many long periods of stress in my life, in private life",1=Yes
+,,c_stress08,,sc1_stress08,,e_stress08,,,,,Questionnaires,16. Stress - stress,"I have never experienced stress, in working life",1=Never
+,,c_stress09,,sc1_stress09,,e_stress09,,,,,Questionnaires,16. Stress - stress,"I have experienced a stressful period, in working life",1=Yes
+,,c_stress10,,sc1_stress10,,e_stress10,,,,,Questionnaires,16. Stress - stress,"I have experienced a stressful period in the past 5 years, in working life",1=Yes
+,,c_stress11,,sc1_stress11,,e_stress11,,,,,Questionnaires,16. Stress - stress,"I have experienced several periods of stress in the past 5 years, in working life",1=Yes
+,,c_stress12,,sc1_stress12,,e_stress12,,,,,Questionnaires,16. Stress - stress,"I have experienced constant stress in the past year, in working life",1=Yes
+,,c_stress13,,sc1_stress13,,e_stress13,,,,,Questionnaires,16. Stress - stress,"I have experienced constant stress in the past 5 years, in working life",1=Yes
+,,c_stress14,,sc1_stress14,,e_stress14,,,,,Questionnaires,16. Stress - stress,"I have had many long periods of stress in my life, in working life",1=Yes
+,b_stress15,c_stress15,,sc1_stress15,,e_stress15,,,,,Questionnaires,16. Stress - stress,How often do you feel very strong anger? Times per day,
+,b_stress16,c_stress16,,sc1_stress16,,e_stress16,,,,,Questionnaires,16. Stress - stress,How often do you feel very strong anger? Times per week,
+,b_stress17,c_stress17,,sc1_stress17,,e_stress17,,,,,Questionnaires,16. Stress - stress,How often do you feel very strong anger? ,"1=Seldom, 2=Never"
+,,c_social1,,sc1_social1,,e_social1,,,,,Questionnaires,17. Social network - social,"How many people, with the same interests as you, do you know and have contact with?","1=0, 2=1-2, 3=3-5, 4=6-10, 5=11-15, 6=>15"
+,,c_social2,,sc1_social2,,e_social2,,,,,Questionnaires,17. Social network - social,How many people do you meet or talk with during a normal week?,"1=0, 2=1-2, 3=3-5, 4=6-10, 5=11-15, 6=>15"
+,,c_social3,,sc1_social3,,e_social3,,,,,Questionnaires,17. Social network - social,How many friends do you have that can come to your home and feel at home?,"1=0, 2=1-2, 3=3-5, 4=6-10, 5=11-15, 6=>15"
+,,c_social4,,sc1_social4,,e_social4,,,,,Questionnaires,17. Social network - social,How many are there who you can talk openly with?,"1=0, 2=1-2, 3=3-5, 4=6-10, 5=11-15, 6=>15"
+,,c_social5,,sc1_social5,,e_social5,,,,,Questionnaires,17. Social network - social,How many people are there in your environment who you can easily ask for things?,"1=0, 2=1-2, 3=3-5, 4=6-10, 5=11-15, 6=>15"
+,,c_social6,,sc1_social6,,e_social6,,,,,Questionnaires,17. Social network - social,How many are there that you can turn to if you are in difficulty?,"1=0, 2=1-2, 3=3-5, 4=6-10, 5=11-15, 6=>15"
+,,c_social7,,sc1_social7,,e_social7,,,,,Questionnaires,17. Social network - social,Do you have pets (e.g. dog or cat) at home?,"1=Yes, 2=No"
+,,c_social8,,sc1_social8,,e_social8,,,,,Questionnaires,17. Social network - social,Are you active in any club/organization?,"1=Yes, 2=No"
+,,c_social9,,sc1_social9,,e_social9,,,,,Questionnaires,17. Social network - social,Did you have help from someone to complete the survey?,"1=No, 2=yes"
+,,c_pain1,,sc1_pain1,,e_pain1,,,,,Questionnaires,18. Pain - pain,Have you had back pain during the past 12 months?,"1=No, 2=yes"
+,,c_pain2,,sc1_pain2,,e_pain2,,,,,Questionnaires,18. Pain - pain,Have you had should pain during the past 12 months?,"1=No, 2=yes"
+,,c_pain3,,sc1_pain3,,e_pain3,,,,,Questionnaires,18. Pain - pain,Have you had should neck pain during the past 12 months?,"1=No, 2=yes"
+,,c_pain4,,sc1_pain4,,e_pain4,,,,,Questionnaires,18. Pain - pain,Have you had knee pain during the past 12 months? (for >3 month),"1=No, 2=yes"
+,,c_pain5,,sc1_pain5,,e_pain5,,,,,Questionnaires,18. Pain - pain,Have you had hip pain during the past 12 months? (for >3 month),"1=No, 2=yes"
+,,c_senses01,,sc1_senses01,,e_senses01,,,,,Questionnaires,"19. Hearing, vision, taste and balance - senses",Do you use glasses?,"1=No, 2=yes"
+,,c_senses02,,sc1_senses02,,e_senses02,,,,,Questionnaires,"19. Hearing, vision, taste and balance - senses",At what age did you start wearing glasses?,"1=Before age 30, 2=30-40, 3=40-50, 4=50-60, 5=60-68, 6=68-80, 7=after 80"
+,,c_senses03,,sc1_senses03,,e_senses03,,,,,Questionnaires,"19. Hearing, vision, taste and balance - senses",Do you use a hearing aid?,"1=No, 2=yes"
+,,c_senses04,,sc1_senses04,,e_senses04,,,,,Questionnaires,"19. Hearing, vision, taste and balance - senses",At which age did you start using a hearing aid?,"1=Before age 30, 2=30-40, 3=40-50, 4=50-60, 5=60-68, 6=68-80, 7=after 80"
+,,c_senses05,,sc1_senses05,,e_senses05,,,,,Questionnaires,"19. Hearing, vision, taste and balance - senses",Do you have a good sense of taste?,"1=Yes, 2=No"
+,,c_senses06,,sc1_senses06,,e_senses06,,,,,Questionnaires,"19. Hearing, vision, taste and balance - senses",At which age did you lose your sense of taste?,"1=Before age 30, 2=30-40, 3=40-50, 4=50-60, 5=60-68, 6=68-80, 7=after 80"
+,,c_senses07,,sc1_senses07,,e_senses07,,,,,Questionnaires,"19. Hearing, vision, taste and balance - senses",Do you have good balance?    ,"1=Yes, 2=No"
+,,c_senses08,,sc1_senses08,,e_senses08,,,,,Questionnaires,"19. Hearing, vision, taste and balance - senses",At which age did your balance become impaired? ,"1=Before age 30, 2=30-40, 3=40-50, 4=50-60, 5=60-68, 6=68-80, 7=after 80"
+,,c_senses09,,sc1_senses09,,e_senses09,,,,,Questionnaires,"19. Hearing, vision, taste and balance - senses",Have you fallen during the past 12 months?,"1=No, 2=yes"
+,,c_senses10,,sc1_senses10,,e_senses10,,,,,Questionnaires,"19. Hearing, vision, taste and balance - senses",if you have fallen during 12 months. Number of times,
+,,c_dental1,,sc1_dental1,,e_dental1,,,,,Questionnaires,20. Dental health - dental,Do you have all of your teeth (not including wisdom teeth)?,"1=No, 2=yes"
+,,c_dental2,,sc1_dental2,,e_dental2,,,,,Questionnaires,20. Dental health - dental,Do you have pulled out / lost teeth (in addition to wisdom teeth) in adulthood?,"1=No, 2=yes"
+,,c_dental3,,sc1_dental3,,e_dental3,,,,,Questionnaires,20. Dental health - dental,Number of pulled/lost teeth,
+,,c_dental4,,sc1_dental4,,e_dental4,,,,,Questionnaires,20. Dental health - dental,Do you have whole or partial dentures (not counting bridge or implant)?,"1=No, 2=yes"
+,,c_dental5,,sc1_dental5,,e_dental5,,,,,Questionnaires,20. Dental health - dental,Do you have bleeding of the gums when you brush your teeth?,"1=No, 2=yes"
+,,c_dental6,,sc1_dental6,,e_dental6,,,,,Questionnaires,20. Dental health - dental,Do you have peridontal disease / periodontitis?,"1=No, 2=yes"
+,,c_dental7,,sc1_dental7,,e_dental7,,,,,Questionnaires,20. Dental health - dental,Do you have problems with dry mouth?,"1=No, 2=yes"
+,,c_dental8,,sc1_dental8,,e_dental8,,,,,Questionnaires,20. Dental health - dental,Do you have problems with chewing?,"1=No, 2=yes"
+,b_diag01_x,,,,,,,,,,Questionnaires,21. Diagnoses - diag,Ever diagnosed with: Benign lump in the breast,1=Yes
+,b_diag01,,,,,,,,,,Questionnaires,21. Diagnoses - diag,Benign breast lump: what age,
+,b_diag02_x,c_diag02_x,,sc1_diag02_x,,e_diag02_x,,,,,Questionnaires,21. Diagnoses - diag,Ever diagnosed with: Hypertension,1=Yes
+,b_diag02,,,,,,,,,,Questionnaires,21. Diagnoses - diag,Hypertension: what age/year,
+,,c_bp1,,sc1_bp1,,e_bp1,,,,,Questionnaires,21. Diagnoses - diag,If no BP medication: Has your blood pressure been measured in the past 3 years?,"1=No, 2=yes"
+,,c_bp2,,sc1_bp2,,e_bp2,,,,,Questionnaires,21. Diagnoses - diag,If no BP medication and BP measured in the past 3 years- what result?,"1=Too low, 2=Normal, 3=Slightly elevated, 4=Markedly elevated"
+,b_diag03_x,c_diag03_x,,sc1_diag03_x,,e_diag03_x,,,,,Questionnaires,21. Diagnoses - diag,Ever diagnosed with: High cholesterol ,1=Yes
+,b_diag03,,,,,,,,,,Questionnaires,21. Diagnoses - diag,High cholesterol: what age/year,
+,b_diag04_x,,,,,,,,,,Questionnaires,21. Diagnoses - diag,Ever diagnosed with: Deep vein trombosis (leg),1=Yes
+,b_diag04,,,,,,,,,,Questionnaires,21. Diagnoses - diag,Deep vein trombosis: what age/year,
+,b_diag05_x,c_diag05_x,,sc1_diag05_x,,e_diag05_x,,,,,Questionnaires,21. Diagnoses - diag,Ever diagnosed with: Angina pectoris,1=Yes
+,b_diag05,,,,,,,,,,Questionnaires,21. Diagnoses - diag,Angina pectoris: what age/year,
+,b_diag06_x,,,,,,,,,,Questionnaires,21. Diagnoses - diag,Ever diagnosed with: Heart attack ,1=Yes
+,b_diag06,,,,,,,,,,Questionnaires,21. Diagnoses - diag,Heart attack: what age/year,
+,b_diag07_x,,,,,,,,,,Questionnaires,21. Diagnoses - diag,Ever diagnosed with: Stroke,1=Yes
+,b_diag07,,,,,,,,,,Questionnaires,21. Diagnoses - diag,Stroke: what age/year,
+,b_diag08_x,c_diag08_x,,sc1_diag08_x,,e_diag08_x,,,,,Questionnaires,21. Diagnoses - diag,Ever diagnosed with: Diabetes ,1=Yes
+,b_diag08,c_diag08_a,,sc1_diag08_a,,e_diag08_a,,,,,Questionnaires,21. Diagnoses - diag,Diabetes: what age (97: what age/year),
+,b_diag09_x,,,,,,,,,,Questionnaires,21. Diagnoses - diag,Ever diagnosed with: Fracture of the wrist/vertebra/femur ,1=Yes
+,b_diag09,,,,,,,,,,Questionnaires,21. Diagnoses - diag,Fracture of the wrist/vertebra/femur: what age/year,
+,b_diag10_x,c_diag10_x,,sc1_diag10_x,,e_diag10_x,,,,,Questionnaires,21. Diagnoses - diag,Ever diagnosed with: Asthma ,1=Yes
+,b_diag10,,,,,,,,,,Questionnaires,21. Diagnoses - diag,Asthma: what age/year,
+,b_diag11_x,,,,,,,,,,Questionnaires,21. Diagnoses - diag,Ever diagnosed with: Cataract,1=Yes
+,b_diag11,,,,,,,,,,Questionnaires,21. Diagnoses - diag,Cataract: what age/year,
+,b_diag12_x,c_diag12_x,,sc1_diag12_x,,e_diag12_x,,,,,Questionnaires,21. Diagnoses - diag,Ever diagnosed with: Kidney stone ,1=Yes
+,b_diag12,,,,,,,,,,Questionnaires,21. Diagnoses - diag,Kidney stone: what age/year,
+,b_diag13_x,c_diag13_x,,sc1_diag13_x,,e_diag13_x,,,,,Questionnaires,21. Diagnoses - diag,Ever diagnosed with: Gallstone,1=Yes
+,b_diag13,,,,,,,,,,Questionnaires,21. Diagnoses - diag,Gallstone: what age/year,
+,b_diag14_x,c_diag14_x,,sc1_diag14_x,,e_diag14_x,,,,,Questionnaires,21. Diagnoses - diag,Ever diagnosed with: Rheumatoid arthritis,1=Yes
+,b_diag14,,,,,,,,,,Questionnaires,21. Diagnoses - diag,Rheumatoid arthritis: what age,
+,,c_diag15_x,,sc1_diag15_x,,e_diag15_x,,,,,Questionnaires,21. Diagnoses - diag,Intermittent claudication,1=Yes
+,,c_diag16_x,,sc1_diag16_x,,e_diag16_x,,,,,Questionnaires,21. Diagnoses - diag,Heart failure,1=Yes
+,,c_diag17_x,,sc1_diag17_x,,e_diag17_x,,,,,Questionnaires,21. Diagnoses - diag,Dizziness,1=Yes
+,,c_diag18_x,,sc1_diag18_x,,e_diag18_x,,,,,Questionnaires,21. Diagnoses - diag,Tinnitus,1=Yes
+,,c_diag19_x,,sc1_diag19_x,,e_diag19_x,,,,,Questionnaires,21. Diagnoses - diag,Osteoporosis,1=Yes
+,,c_diag20_x,,sc1_diag20_x,,e_diag20_x,,,,,Questionnaires,21. Diagnoses - diag,Allergy,1=Yes
+,,c_diag21_x,,sc1_diag21_x,,e_diag21_x,,,,,Questionnaires,21. Diagnoses - diag,COPD (chronic lung disease),1=Yes
+,,c_diag22_x,,sc1_diag22_x,,e_diag22_x,,,,,Questionnaires,21. Diagnoses - diag,Chronic bronchitis,1=Yes
+,,c_diag23_x,,sc1_diag23_x,,e_diag23_x,,,,,Questionnaires,21. Diagnoses - diag,Hay fever,1=Yes
+,,c_diag24_x,,sc1_diag24_x,,e_diag24_x,,,,,Questionnaires,21. Diagnoses - diag,Pollen allergy,1=Yes
+,,c_diag25_x,,sc1_diag25_x,,e_diag25_x,,,,,Questionnaires,21. Diagnoses - diag,Endrometriosis,1=Yes
+,,c_diag26_x,,sc1_diag26_x,,e_diag26_x,,,,,Questionnaires,21. Diagnoses - diag,Severe menopausal symptoms,1=Yes
+,,c_diag27_x,,sc1_diag27_x,,e_diag27_x,,,,,Questionnaires,21. Diagnoses - diag,Migraine,1=Yes
+,,c_diag28_x,,sc1_diag28_x,,e_diag28_x,,,,,Questionnaires,21. Diagnoses - diag,Joint pain,1=Yes
+,,c_diag29_x,,sc1_diag29_x,,e_diag29_x,,,,,Questionnaires,21. Diagnoses - diag,ParkinsonÃÂs disease,1=Yes
+,,c_diag30_x,,sc1_diag30_x,,e_diag30_x,,,,,Questionnaires,21. Diagnoses - diag,MS (multiple sclerosis),1=Yes
+,,c_diag31_x,,sc1_diag31_x,,e_diag31_x,,,,,Questionnaires,21. Diagnoses - diag,Psoriasis,1=Yes
+,,c_diag32_x,,sc1_diag32_x,,e_diag32_x,,,,,Questionnaires,21. Diagnoses - diag,Eczema,1=Yes
+,,c_diag33_x,,sc1_diag33_x,,e_diag33_x,,,,,Questionnaires,21. Diagnoses - diag,Atopic eczema (as a child),1=Yes
+,,c_diag34_x,,sc1_diag34_x,,e_diag34_x,,,,,Questionnaires,21. Diagnoses - diag,Gastritis,1=Yes
+,,C_diag35_x,,sc1_diag35_x,,e_diag35_x,,,,,Questionnaires,21. Diagnoses - diag,Ulcerative colitis,1=Yes
+,,C_diag36_x,,sc1_diag36_x,sc1_diag36_x,e_diag36_x,,,,sc2_diag36_x,Questionnaires,21. Diagnoses - diag,IBS / irritable bowel,1=Yes
+,,C_diag37_x,,sc1_diag37_x,,e_diag37_x,,,,,Questionnaires,21. Diagnoses - diag,CrohnÃÂs disease,1=Yes
+,,C_diag38_x,,sc1_diag38_x,,e_diag38_x,,,,,Questionnaires,21. Diagnoses - diag,Depression,1=Yes
+,,c_diag39_x,,sc1_diag39_x,,e_diag39_x,,,,,Questionnaires,21. Diagnoses - diag,Glaucoma,1=Yes
+,,c_diag40_x,,sc1_diag40_x,,e_diag40_x,,,,,Questionnaires,21. Diagnoses - diag,Impotence,1=Yes
+,,c_diag41_x,,sc1_diag41_x,,e_diag41_x,,,,,Questionnaires,21. Diagnoses - diag,Hemorrhoids,1=Yes
+,,c_surgery1,,sc1_surgery1,,e_surgery1,,,,,Questionnaires,22. Surgeries - surgery,Have you ever had surgery for torn cartilage?,"1=No, 2=yes"
+,,c_surgery2,,sc1_surgery2,,e_surgery2,,,,,Questionnaires,22. Surgeries - surgery,Have you ever had surgery for ligament damage?,"1=No, 2=yes"
+,,c_surgery3,,sc1_surgery3,,e_surgery3,,,,,Questionnaires,22. Surgeries - surgery,Have you ever had surgery for artifical knee part?,"1=No, 2=yes"
+,,c_surgery4,,sc1_surgery4,,e_surgery4,,,,,Questionnaires,22. Surgeries - surgery,Have you ever had surgery for artificial hip part?,"1=No, 2=yes"
+,,c_surgery5,,sc1_surgery5,,e_surgery5,,,,,Questionnaires,22. Surgeries - surgery,Have you ever had surgery for cataract?,"1=No, 2=yes"
+,,c_surgery5_a,,sc1_surgery5_a,,e_surgery5_a,,,,,Questionnaires,22. Surgeries - surgery,If you have had surgery for cataract: at what age,
+a_child1,,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Birth year of 1st child,
+a_der_child_01,,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Derived variable: Age at first child birth ( a_child1 - a_age),
+,b_child1,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Age at first birth,
+a_child2,,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Birth year of 2nd child,
+a_child3,,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Birth year of 3rd child,
+a_child4,,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Birth year of 4th child,
+a_child5,,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Birth year of 5th child,
+a_child6,,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Birth year of 6th child,
+,b_child7,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Number of children given birth to,
+a_der_child_02,,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Derived variable: Total number of children given birth to (a_child1 + a_child2 + a_child3 + a_child4 + a_child5 + a_child6),
+,b_gyn01,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Age at first menstruation,
+,b_gyn02,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,DonÃÂ´t know age at first mentruation,1= Don't know
+,b_gyn03,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Ever treated for infertility,"1=Yes, 2=No"
+,b_gyn04,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Infertility treatment: surgery,1=Yes
+,b_gyn05,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Infertility treatment: hormone therapy,1=Yes
+,b_gyn06,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Infertility treatment: other,1=Yes
+,b_gyn07,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Ever used contraceptive pills or injections,"1=Yes, 2=No"
+,b_gyn08,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Contraceptive pills/injections: started at age,
+,b_gyn09,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Contraceptive pills/injections: number of years,
+,b_gyn10,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Still have menstruation,"1=Yes, natural, 2=Yes, due to hormonal treatment, 3=No"
+,b_gyn11,c_gyn11,,sc1_gyn11,,e_gyn11,,,,,Questionnaires,23. Gynaecological history - child/gyn,"No menstruation: stopped at age (2008/2019: ""At what age did you enter menopause?"")",
+,b_gyn12,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,No menstruation: stopped natural,1=Yes
+,b_gyn13,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,No menstruation: ovaries removed,1=Yes
+,b_gyn14,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,No menstruation: womb removed,1=Yes
+,b_gyn15,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Estrogen therapy for hot flushes,"1=Yes, to ease hot flushes, sweating "
+,b_gyn16,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Estrogen for hot flushes: started at age,
+,b_gyn17,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Estrogen for hot flushes: number of years,
+,b_gyn18,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Estrogen for hot flushes: current use,1=Yes
+,b_gyn19,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Estrogen therapy for vaginal dryness,"1=Yes, to ease dryness in the vagina"
+,b_gyn20,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Estrogen for vaginal dryness: started at age,
+,b_gyn21,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Estrogen for vaginal dryness: number of years,
+,b_gyn22,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Estrogen for vaginal dryness: current use,
+,b_gyn23,,,,,,,,,,Questionnaires,23. Gynaecological history - child/gyn,Never received estrogen therapy,"1=No, I have never received hormonal treatment"
+,,c_gyn24,,sc1_gyn24,,e_gyn24,,,,,Questionnaires,23. Gynaecological history - child/gyn,Estrogen therapy,"1=No, 2=Yes"
+,,c_gyn25,,sc1_gyn25,,e_gyn25,,,,,Questionnaires,23. Gynaecological history - child/gyn,Estrogen therapy: number of years,"1=<5 years, 2=5-10 years, 3=>10 years"
+,,c_gyn26,,sc1_gyn26,,e_gyn26,,,,,Questionnaires,23. Gynaecological history - child/gyn,Estrogen therapy: type,"1=cream / pessaries, 2=tablets, 3=patches, 9=More than one"
+a_fhx01_fm,b_fhx01_fm,c_fhx01_fm,,sc1_fhx01_fm,,e_fhx01_fm,,,,,Questionnaires,24. Family history of disease - fhx,Breast cancer: mother,"1987: 1=No, 2=Yes, 3=DonÃÂ´t know 1997/2008/2019: 1=Yes"
+,b_fhx01_ff,,,,,,,,,,Questionnaires,24. Family history of disease - fhx,Breast cancer: father,1=Yes
+a_fhx01_fs,,c_fhx01_fs,,sc1_fhx01_fs,,e_fhx01_fs,,,,,Questionnaires,24. Family history of disease - fhx,Breast cancer: sibling,"1987: 1=No, 2=Yes, 3=Don't know, 4=Don't have a sister 2008/2019: 1=Yes"
+,b_fhx01_ns,,,,,,,,,,Questionnaires,24. Family history of disease - fhx,Breast cancer: number of siblings,
+a_fhx01_fd,,,,,,,,,,,Questionnaires,24. Family history of disease - fhx,Breast cancer: daughter,"1=No, 2=Yes, 3=Don't know, 4=Don't have a daughter"
+,b_fhx01_no,c_fhx01_no,,sc1_fhx01_no,,e_fhx01_no,,,,,Questionnaires,24. Family history of disease - fhx,Relatives diagnosed in breast cancer: no,1=No
+,b_fhx01_dk,c_fhx01_dk,,sc1_fhx01_dk,,e_fhx01_dk,,,,,Questionnaires,24. Family history of disease - fhx,Relatives diagnosed in breast cancer: don't know,1=Don't know
+,b_fhx02_fm,c_fhx02_fm,,sc1_fhx02_fm,,e_fhx02_fm,,,,,Questionnaires,24. Family history of disease - fhx,Colon cancer: mother,1=Yes
+,b_fhx02_ff,c_fhx02_ff,,sc1_fhx02_ff,,e_fhx02_ff,,,,,Questionnaires,24. Family history of disease - fhx,Colon cancer: father,1=Yes
+,,c_fhx02_fs,,sc1_fhx02_fs,,e_fhx02_fs,,,,,Questionnaires,24. Family history of disease - fhx,Colon cancer: sibling,1=Yes
+,b_fhx02_ns,,,,,,,,,,Questionnaires,24. Family history of disease - fhx,Colon cancer: number of siblings,
+,b_fhx02_no,c_fhx02_no,,sc1_fhx02_no,,e_fhx02_no,,,,,Questionnaires,24. Family history of disease - fhx,Relative diagnosed in colon cancer: no,1=No
+,b_fhx02_dk,c_fhx02_dk,,sc1_fhx02_dk,,e_fhx02_dk,,,,,Questionnaires,24. Family history of disease - fhx,Relative diagnosed in colon cancer: don't know,1=Don't know
+,b_fhx03_ff,c_fhx03_ff,,sc1_fhx03_ff,,e_fhx03_ff,,,,,Questionnaires,24. Family history of disease - fhx,Prostate cancer: father,1=Yes
+,,c_fhx03_fs,,sc1_fhx03_fs,,e_fhx03_fs,,,,,Questionnaires,24. Family history of disease - fhx,Prostate cancer: sibling,1=Yes
+,b_fhx03_ns,,,,,,,,,,Questionnaires,24. Family history of disease - fhx,Prostate cancer: number of siblings,
+,b_fhx03_no,c_fhx03_no,,sc1_fhx03_no,,e_fhx03_no,,,,,Questionnaires,24. Family history of disease - fhx,Relative diagnosed in prostate cancer: no,1=No
+,b_fhx03_dk,c_fhx03_dk,,sc1_fhx03_dk,,e_fhx03_dk,,,,,Questionnaires,24. Family history of disease - fhx,Relative diagnosed in prostate cancer: don't know,1=Don't know
+,b_fhx04_fm,c_fhx04_fm,,sc1_fhx04_fm,,e_fhx04_fm,,,,,Questionnaires,24. Family history of disease - fhx,Other cancer: mother,1=Yes
+,b_fhx04_ff,c_fhx04_ff,,sc1_fhx04_ff,,e_fhx04_ff,,,,,Questionnaires,24. Family history of disease - fhx,Other cancer: father,1=Yes
+,,c_fhx04_fs,,sc1_fhx04_fs,,e_fhx04_fs,,,,,Questionnaires,24. Family history of disease - fhx,Other cancer: sibling,1=Yes
+,b_fhx04_ns,,,,,,,,,,Questionnaires,24. Family history of disease - fhx,Other cancer: number of siblings,
+,b_fhx04_no,c_fhx04_no,,sc1_fhx04_no,,e_fhx04_no,,,,,Questionnaires,24. Family history of disease - fhx,Relative diagnosed in other cancer: no,1=No
+,b_fhx04_dk,c_fhx04_dk,,sc1_fhx04_dk,,e_fhx04_dk,,,,,Questionnaires,24. Family history of disease - fhx,Relative diagnosed in other cancer: don't know,1=Don't know
+,b_fhx05_fm,c_fhx05_fm,,sc1_fhx05_fm,,e_fhx05_fm,,,,,Questionnaires,24. Family history of disease - fhx,Heart attack before age 60: mother,1=Yes
+,b_fhx05_ff,c_fhx05_ff,,sc1_fhx05_ff,,e_fhx05_ff,,,,,Questionnaires,24. Family history of disease - fhx,Heart attack before age 60: father,1=Yes
+,,c_fhx05_fs,,sc1_fhx05_fs,,e_fhx05_fs,,,,,Questionnaires,24. Family history of disease - fhx,Heart attack before age 60: sibling,1=Yes
+,b_fhx05_ns,,,,,,,,,,Questionnaires,24. Family history of disease - fhx,Heart attack before age 60: number of siblings,
+,b_fhx05_no,c_fhx05_no,,sc1_fhx05_no,,e_fhx05_no,,,,,Questionnaires,24. Family history of disease - fhx,Relatives diagnosed with heart attack before age 60: no,1=No
+,b_fhx05_dk,c_fhx05_dk,,sc1_fhx05_dk,,e_fhx05_dk,,,,,Questionnaires,24. Family history of disease - fhx,Relatives diagnosed with heart attack before age 60: don't know,1=Don't know
+,,c_fhx06_fm,,sc1_fhx06_fm,,e_fhx06_fm,,,,,Questionnaires,24. Family history of disease - fhx,Rheumatoid arthritis: mother,1=Yes
+,,c_fhx06_ff,,sc1_fhx06_ff,,e_fhx06_ff,,,,,Questionnaires,24. Family history of disease - fhx,Rheumatoid arthritis: father,1=Yes
+,,c_fhx06_fs,,sc1_fhx06_fs,,e_fhx06_fs,,,,,Questionnaires,24. Family history of disease - fhx,Rheumatoid arthritis: sibling,1=Yes
+,,c_fhx06_no,,sc1_fhx06_no,,e_fhx06_no,,,,,Questionnaires,24. Family history of disease - fhx,Relatives diagnosed with rheumatoid arthritis: no,1=No
+,,c_fhx06_dk,,sc1_fhx06_dk,,e_fhx06_dk,,,,,Questionnaires,24. Family history of disease - fhx,Relatives diagnosed with rheumatoid arthritis: don't know,1=Don't know
+,,c_fhx07_fm,,sc1_fhx07_fm,,e_fhx07_fm,,,,,Questionnaires,24. Family history of disease - fhx,Psoriasis: mother,1=Yes
+,,c_fhx07_ff,,sc1_fhx07_ff,,e_fhx07_ff,,,,,Questionnaires,24. Family history of disease - fhx,Psoriasis: father,1=Yes
+,,c_fhx07_fs,,sc1_fhx07_fs,,e_fhx07_fs,,,,,Questionnaires,24. Family history of disease - fhx,Psoriasis: sibling,1=Yes
+,,c_fhx07_no,,sc1_fhx07_no,,e_fhx07_no,,,,,Questionnaires,24. Family history of disease - fhx,Relatives diagnosed with psoriasis: no,1=No
+,,c_fhx07_dk,,sc1_fhx07_dk,,e_fhx07_dk,,,,,Questionnaires,24. Family history of disease - fhx,Relatives diagnosed with psoriasis: dont know,1=Don't know
+,,c_fhx08_fm,,sc1_fhx08_fm,,e_fhx08_fm,,,,,Questionnaires,24. Family history of disease - fhx,Diabetes: mother,1=Yes
+,,c_fhx08_ff,,sc1_fhx08_ff,,e_fhx08_ff,,,,,Questionnaires,24. Family history of disease - fhx,Diabetes: father,1=Yes
+,,c_fhx08_fs,,sc1_fhx08_fs,,e_fhx08_fs,,,,,Questionnaires,24. Family history of disease - fhx,Diabetes: sibling,1=Yes
+,,c_fhx08_no,,sc1_fhx08_no,,e_fhx08_no,,,,,Questionnaires,24. Family history of disease - fhx,Relatives diagnosed with diabetes: no,1=No
+,,c_fhx08_dk,,sc1_fhx08_dk,,e_fhx08_dk,,,,,Questionnaires,24. Family history of disease - fhx,Relatives diagnosed with diabetes: dont know,1=Don't know
+,,c_fhx09_fm,,sc1_fhx09_fm,,e_fhx09_fm,,,,,Questionnaires,24. Family history of disease - fhx,Hypertension: mother,1=Yes
+,,c_fhx09_ff,,sc1_fhx09_ff,,e_fhx09_ff,,,,,Questionnaires,24. Family history of disease - fhx,Hypertension: father,1=Yes
+,,c_fhx09_fs,,sc1_fhx09_fs,,e_fhx09_fs,,,,,Questionnaires,24. Family history of disease - fhx,Hypertension: sibling,1=Yes
+,,c_fhx09_no,,sc1_fhx09_no,,e_fhx09_no,,,,,Questionnaires,24. Family history of disease - fhx,Relatives diagnosed with hypertensions: no,1=No
+,,c_fhx09_dk,,sc1_fhx09_dk,,e_fhx09_dk,,,,,Questionnaires,24. Family history of disease - fhx,Relatives diagnosed with hypertensions: dont know,1=Don't know
+a_fq_food001,b_fq_food001,,d_fq_food001,sc1_fq_food001,,,f_fq_food001,sc2_fq_food001,,,Derived food freq&gram,VEGETABLES & POTATOES,Spinach,fq_= times/day (frequency)
+a_g_food001,b_g_food001,,d_g_food001,sc1_g_food001,,,f_g_food001,sc2_g_food001,,,Derived food freq&gram,VEGETABLES & POTATOES,Spinach,g_= gram/day
+,,,d_fq_food002,sc1_fq_food002,,,f_fq_food002,sc2_fq_food002,,,Derived food freq&gram,VEGETABLES & POTATOES,Fresh herbs,fq_= times/day (frequency)
+,,,d_g_food002,sc1_g_food002,,,f_g_food002,sc2_g_food002,,,Derived food freq&gram,VEGETABLES & POTATOES,Fresh herbs,g_= gram/day
+a_fq_food003,,,,,,,,,,,Derived food freq&gram,VEGETABLES & POTATOES,Lettuce/iceberg lettuce/Chinese cabbage/cucumber,fq_= times/day (frequency)
+a_g_food003,,,,,,,,,,,Derived food freq&gram,VEGETABLES & POTATOES,Lettuce/iceberg lettuce/Chinese cabbage/cucumber,g_= gram/day
+,b_fq_food004,,d_fq_food004,sc1_fq_food004,,,f_fq_food004,sc2_fq_food004,,,Derived food freq&gram,VEGETABLES & POTATOES,Lettuce/iceberg lettuce,fq_= times/day (frequency)
+,b_g_food004,,d_g_food004,sc1_g_food004,,,f_g_food004,sc2_g_food004,,,Derived food freq&gram,VEGETABLES & POTATOES,Lettuce/iceberg lettuce,g_= gram/day
+a_fq_food005,,,,,,,,,,,Derived food freq&gram,VEGETABLES & POTATOES,White cabbage,fq_= times/day (frequency)
+a_g_food005,,,,,,,,,,,Derived food freq&gram,VEGETABLES & POTATOES,White cabbage,g_= gram/day
+,b_fq_food006,,d_fq_food006,sc1_fq_food006,,,f_fq_food006,sc2_fq_food006,,,Derived food freq&gram,VEGETABLES & POTATOES,"Cabbage (white, red, Chinese)",fq_= times/day (frequency)
+,b_g_food006,,d_g_food006,sc1_g_food006,,,f_g_food006,sc2_g_food006,,,Derived food freq&gram,VEGETABLES & POTATOES,"Cabbage (white, red, Chinese)",g_= gram/day
+,b_fq_food007,,d_fq_food007,sc1_fq_food007,,,f_fq_food007,sc2_fq_food007,,,Derived food freq&gram,VEGETABLES & POTATOES,Cauliflower,fq_= times/day (frequency)
+,b_g_food007,,d_g_food007,sc1_g_food007,,,f_g_food007,sc2_g_food007,,,Derived food freq&gram,VEGETABLES & POTATOES,Cauliflower,g_= gram/day
+,b_fq_food008,,d_fq_food008,sc1_fq_food008,,,f_fq_food008,sc2_fq_food008,,,Derived food freq&gram,VEGETABLES & POTATOES,Broccoli/brussels sprouts,fq_= times/day (frequency)
+,b_g_food008,,d_g_food008,sc1_g_food008,,,f_g_food008,sc2_g_food008,,,Derived food freq&gram,VEGETABLES & POTATOES,Broccoli/brussels sprouts,g_= gram/day
+a_fq_food009,,,,,,,,,,,Derived food freq&gram,VEGETABLES & POTATOES,"Root vegetables (carrots, beetroot)",fq_= times/day (frequency)
+a_g_food009,,,,,,,,,,,Derived food freq&gram,VEGETABLES & POTATOES,"Root vegetables (carrots, beetroot)",g_= gram/day
+,b_fq_food010,,d_fq_food010,sc1_fq_food010,,,f_fq_food010,sc2_fq_food010,,,Derived food freq&gram,VEGETABLES & POTATOES,Carrots,fq_= times/day (frequency)
+,b_g_food010,,d_g_food010,sc1_g_food010,,,f_g_food010,sc2_g_food010,,,Derived food freq&gram,VEGETABLES & POTATOES,Carrots,g_= gram/day
+,b_fq_food011,,d_fq_food011,sc1_fq_food011,,,f_fq_food011,sc2_fq_food011,,,Derived food freq&gram,VEGETABLES & POTATOES,Beetroot,fq_= times/day (frequency)
+,b_g_food011,,d_g_food011,sc1_g_food011,,,f_g_food011,sc2_g_food011,,,Derived food freq&gram,VEGETABLES & POTATOES,Beetroot,g_= gram/day
+,b_fq_food012,,d_fq_food012,sc1_fq_food012,,,f_fq_food012,sc2_fq_food012,,,Derived food freq&gram,VEGETABLES & POTATOES,Garlic,fq_= times/day (frequency)
+,b_g_food012,,d_g_food012,sc1_g_food012,,,f_g_food012,sc2_g_food012,,,Derived food freq&gram,VEGETABLES & POTATOES,Garlic,g_= gram/day
+,b_fq_food013,,,sc1_fq_food013,,,,sc2_fq_food013,,,Derived food freq&gram,VEGETABLES & POTATOES,Onion/leek,fq_= times/day (frequency)
+,b_g_food013,,,sc1_g_food013,,,,sc2_g_food013,,,Derived food freq&gram,VEGETABLES & POTATOES,Onion/leek,g_= gram/day
+,,,d_fq_food014,sc1_fq_food014,,,f_fq_food014,sc2_fq_food014,,,Derived food freq&gram,VEGETABLES & POTATOES,Onion,fq_= times/day (frequency)
+,,,d_g_food014,sc1_g_food014,,,f_g_food014,sc2_g_food014,,,Derived food freq&gram,VEGETABLES & POTATOES,Onion,g_= gram/day
+,,,d_fq_food015,sc1_fq_food015,,,f_fq_food015,sc2_fq_food015,,,Derived food freq&gram,VEGETABLES & POTATOES,Leek,fq_= times/day (frequency)
+,,,d_g_food015,sc1_g_food015,,,f_g_food015,sc2_g_food015,,,Derived food freq&gram,VEGETABLES & POTATOES,Leek,g_= gram/day
+a_fq_food016,b_fq_food016,,d_fq_food016,sc1_fq_food016,,,f_fq_food016,sc2_fq_food016,,,Derived food freq&gram,VEGETABLES & POTATOES,Tomatoes/tomato juice,fq_= times/day (frequency)
+a_g_food016,b_g_food016,,d_g_food016,sc1_g_food016,,,f_g_food016,sc2_g_food016,,,Derived food freq&gram,VEGETABLES & POTATOES,Tomatoes/tomato juice,g_= gram/day
+,b_fq_food017,,d_fq_food017,sc1_fq_food017,,,f_fq_food017,sc2_fq_food017,,,Derived food freq&gram,VEGETABLES & POTATOES,Bell pepper,fq_= times/day (frequency)
+,b_g_food017,,d_g_food017,sc1_g_food017,,,f_g_food017,sc2_g_food017,,,Derived food freq&gram,VEGETABLES & POTATOES,Bell pepper,g_= gram/day
+,,,d_fq_food018,sc1_fq_food018,,,f_fq_food018,sc2_fq_food018,,,Derived food freq&gram,VEGETABLES & POTATOES,Avocado,fq_= times/day (frequency)
+,,,d_g_food018,sc1_g_food018,,,f_g_food018,sc2_g_food018,,,Derived food freq&gram,VEGETABLES & POTATOES,Avocado,g_= gram/day
+,,,d_fq_food019,sc1_fq_food019,,,f_fq_food019,sc2_fq_food019,,,Derived food freq&gram,VEGETABLES & POTATOES,Olives,fq_= times/day (frequency)
+,,,d_g_food019,sc1_g_food019,,,f_g_food019,sc2_g_food019,,,Derived food freq&gram,VEGETABLES & POTATOES,Olives,g_= gram/day
+,,,d_fq_food020,sc1_fq_food020,,,f_fq_food020,sc2_fq_food020,,,Derived food freq&gram,VEGETABLES & POTATOES,Corn,fq_= times/day (frequency)
+,,,d_g_food020,sc1_g_food020,,,f_g_food020,sc2_g_food020,,,Derived food freq&gram,VEGETABLES & POTATOES,Corn,g_= gram/day
+,b_fq_food021,,,sc1_fq_food021,,,,sc2_fq_food021,,,Derived food freq&gram,VEGETABLES & POTATOES,Mixed vegetables,fq_= times/day (frequency)
+,b_g_food021,,,sc1_g_food021,,,,sc2_g_food021,,,Derived food freq&gram,VEGETABLES & POTATOES,Mixed vegetables,g_= gram/day
+,,,d_fq_food022,sc1_fq_food022,,,f_fq_food022,sc2_fq_food022,,,Derived food freq&gram,VEGETABLES & POTATOES,Mixed frozen vegetables,fq_= times/day (frequency)
+,,,d_g_food022,sc1_g_food022,,,f_g_food022,sc2_g_food022,,,Derived food freq&gram,VEGETABLES & POTATOES,Mixed frozen vegetables,g_= gram/day
+,,,d_fq_food023,sc1_fq_food023,,,f_fq_food023,sc2_fq_food023,,,Derived food freq&gram,VEGETABLES & POTATOES,Other vegetables,fq_= times/day (frequency)
+,,,d_g_food023,sc1_g_food023,,,f_g_food023,sc2_g_food023,,,Derived food freq&gram,VEGETABLES & POTATOES,Other vegetables,g_= gram/day
+a_fq_food024,b_fq_food024,,d_fq_food024,sc1_fq_food024,,,f_fq_food024,sc2_fq_food024,,,Derived food freq&gram,VEGETABLES & POTATOES,Boiled potatoes,fq_= times/day (frequency)
+a_g_food024,b_g_food024,,d_g_food024,sc1_g_food024,,,f_g_food024,sc2_g_food024,,,Derived food freq&gram,VEGETABLES & POTATOES,Boiled potatoes,g_= gram/day
+a_fq_food025,b_fq_food025,,d_fq_food025,sc1_fq_food025,,,f_fq_food025,sc2_fq_food025,,,Derived food freq&gram,VEGETABLES & POTATOES,Fried potatoes,fq_= times/day (frequency)
+a_g_food025,b_g_food025,,d_g_food025,sc1_g_food025,,,f_g_food025,sc2_g_food025,,,Derived food freq&gram,VEGETABLES & POTATOES,Fried potatoes,g_= gram/day
+a_fq_food026,b_fq_food026,,d_fq_food026,sc1_fq_food026,,,f_fq_food026,sc2_fq_food026,,,Derived food freq&gram,VEGETABLES & POTATOES,French fries,fq_= times/day (frequency)
+a_g_food026,b_g_food026,,d_g_food026,sc1_g_food026,,,f_g_food026,sc2_g_food026,,,Derived food freq&gram,VEGETABLES & POTATOES,French fries,g_= gram/day
+,,,d_fq_food027,sc1_fq_food027,,,f_fq_food027,sc2_fq_food027,,,Derived food freq&gram,VEGETABLES & POTATOES,Baked/mashed potatoes,fq_= times/day (frequency)
+,,,d_g_food027,sc1_g_food027,,,f_g_food027,sc2_g_food027,,,Derived food freq&gram,VEGETABLES & POTATOES,Baked/mashed potatoes,g_= gram/day
+a_fq_food028,b_fq_food028,,,sc1_fq_food028,,,,sc2_fq_food028,,,Derived food freq&gram,VEGETABLES & POTATOES,Pea soup/brown beans/beans/lentils,fq_= times/day (frequency)
+a_g_food028,b_g_food028,,,sc1_g_food028,,,,sc2_g_food028,,,Derived food freq&gram,VEGETABLES & POTATOES,Pea soup/brown beans/beans/lentils,g_= gram/day
+,,,d_fq_food029,sc1_fq_food029,,,f_fq_food029,sc2_fq_food029,,,Derived food freq&gram,VEGETABLES & POTATOES,Pea soup,fq_= times/day (frequency)
+,,,d_g_food029,sc1_g_food029,,,f_g_food029,sc2_g_food029,,,Derived food freq&gram,VEGETABLES & POTATOES,Pea soup,g_= gram/day
+,,,d_fq_food030,sc1_fq_food030,,,f_fq_food030,sc2_fq_food030,,,Derived food freq&gram,VEGETABLES & POTATOES,Beans/lentils/chick peas,fq_= times/day (frequency)
+,,,d_g_food030,sc1_g_food030,,,f_g_food030,sc2_g_food030,,,Derived food freq&gram,VEGETABLES & POTATOES,Beans/lentils/chick peas,g_= gram/day
+,b_fq_food031,,d_fq_food031,sc1_fq_food031,,,f_fq_food031,sc2_fq_food031,,,Derived food freq&gram,VEGETABLES & POTATOES,Green peas,fq_= times/day (frequency)
+,b_g_food031,,d_g_food031,sc1_g_food031,,,f_g_food031,sc2_g_food031,,,Derived food freq&gram,VEGETABLES & POTATOES,Green peas,g_= gram/day
+,b_fq_food032,,,sc1_fq_food032,,,,,,,Derived food freq&gram,VEGETABLES & POTATOES,Soy protein products,fq_= times/day (frequency)
+,b_g_food032,,,sc1_g_food032,,,,,,,Derived food freq&gram,VEGETABLES & POTATOES,Soy protein products,g_= gram/day
+a_fq_food033,b_fq_food033,,d_fq_food033,sc1_fq_food033,,,f_fq_food033,sc2_fq_food033,,,Derived food freq&gram,FRUITS & BERRIES,Orange/citrus fruits,fq_= times/day (frequency)
+a_g_food033,b_g_food033,,d_g_food033,sc1_g_food033,,,f_g_food033,sc2_g_food033,,,Derived food freq&gram,FRUITS & BERRIES,Orange/citrus fruits,g_= gram/day
+a_fq_food034,b_fq_food034,,d_fq_food034,sc1_fq_food034,,,f_fq_food034,sc2_fq_food034,,,Derived food freq&gram,FRUITS & BERRIES,Apple/pear,fq_= times/day (frequency)
+a_g_food034,b_g_food034,,d_g_food034,sc1_g_food034,,,f_g_food034,sc2_g_food034,,,Derived food freq&gram,FRUITS & BERRIES,Apple/pear,g_= gram/day
+a_fq_food035,b_fq_food035,,d_fq_food035,sc1_fq_food035,,,f_fq_food035,sc2_fq_food035,,,Derived food freq&gram,FRUITS & BERRIES,Banana,fq_= times/day (frequency)
+a_g_food035,b_g_food035,,d_g_food035,sc1_g_food035,,,f_g_food035,sc2_g_food035,,,Derived food freq&gram,FRUITS & BERRIES,Banana,g_= gram/day
+,b_fq_food036,,d_fq_food036,sc1_fq_food036,,,f_fq_food036,sc2_fq_food036,,,Derived food freq&gram,FRUITS & BERRIES,Other fruits,fq_= times/day (frequency)
+,b_g_food036,,d_g_food036,sc1_g_food036,,,f_g_food036,sc2_g_food036,,,Derived food freq&gram,FRUITS & BERRIES,Other fruits,g_= gram/day
+,b_fq_food037,,d_fq_food037,sc1_fq_food037,,,f_fq_food037,sc2_fq_food037,,,Derived food freq&gram,FRUITS & BERRIES,Berries (fresh or frozen),fq_= times/day (frequency)
+,b_g_food037,,d_g_food037,sc1_g_food037,,,f_g_food037,sc2_g_food037,,,Derived food freq&gram,FRUITS & BERRIES,Berries (fresh or frozen),g_= gram/day
+,,,d_fq_food038,sc1_fq_food038,,,f_fq_food038,sc2_fq_food038,,,Derived food freq&gram,FRUITS & BERRIES,Raisins,fq_= times/day (frequency)
+,,,d_g_food038,sc1_g_food038,,,f_g_food038,sc2_g_food038,,,Derived food freq&gram,FRUITS & BERRIES,Raisins,g_= gram/day
+,,,d_fq_food039,sc1_fq_food039,,,f_fq_food039,sc2_fq_food039,,,Derived food freq&gram,FRUITS & BERRIES,Prunes (incl. juice),fq_= times/day (frequency)
+,,,d_g_food039,sc1_g_food039,,,f_g_food039,sc2_g_food039,,,Derived food freq&gram,FRUITS & BERRIES,Prunes (incl. juice),g_= gram/day
+,,,d_fq_food040,sc1_fq_food040,,,f_fq_food040,sc2_fq_food040,,,Derived food freq&gram,FRUITS & BERRIES,Apricots/other dried fruit,fq_= times/day (frequency)
+,,,d_g_food040,sc1_g_food040,,,f_g_food040,sc2_g_food040,,,Derived food freq&gram,FRUITS & BERRIES,Apricots/other dried fruit,g_= gram/day
+,b_fq_food041,,,sc1_fq_food041,,,,sc2_fq_food041,,,Derived food freq&gram,NUTS & SEEDS,Nuts/almonds (unspecified),fq_= times/day (frequency)
+,b_g_food041,,,sc1_g_food041,,,,sc2_g_food041,,,Derived food freq&gram,NUTS & SEEDS,Nuts/almonds (unspecified),g_= gram/day
+,,,d_fq_food042,sc1_fq_food042,,,f_fq_food042,sc2_fq_food042,,,Derived food freq&gram,NUTS & SEEDS,Nuts/almonds,fq_= times/day (frequency)
+,,,d_g_food042,sc1_g_food042,,,f_g_food042,sc2_g_food042,,,Derived food freq&gram,NUTS & SEEDS,Nuts/almonds,g_= gram/day
+,,,d_fq_food043,sc1_fq_food043,,,f_fq_food043,sc2_fq_food043,,,Derived food freq&gram,NUTS & SEEDS,Peanuts,fq_= times/day (frequency)
+,,,d_g_food043,sc1_g_food043,,,f_g_food043,sc2_g_food043,,,Derived food freq&gram,NUTS & SEEDS,Peanuts,g_= gram/day
+,,,d_fq_food044,sc1_fq_food044,,,f_fq_food044,sc2_fq_food044,,,Derived food freq&gram,NUTS & SEEDS,Flax seeds,fq_= times/day (frequency)
+,,,d_g_food044,sc1_g_food044,,,f_g_food044,sc2_g_food044,,,Derived food freq&gram,NUTS & SEEDS,Flax seeds,g_= gram/day
+,,,d_fq_food045,sc1_fq_food045,,,f_fq_food045,sc2_fq_food045,,,Derived food freq&gram,NUTS & SEEDS,Sesame seeds,fq_= times/day (frequency)
+,,,d_g_food045,sc1_g_food045,,,f_g_food045,sc2_g_food045,,,Derived food freq&gram,NUTS & SEEDS,Sesame seeds,g_= gram/day
+,,,d_fq_food046,sc1_fq_food046,,,f_fq_food046,sc2_fq_food046,,,Derived food freq&gram,NUTS & SEEDS,"Sunflower/pumpkin seeds, etc.",fq_= times/day (frequency)
+,,,d_g_food046,sc1_g_food046,,,f_g_food046,sc2_g_food046,,,Derived food freq&gram,NUTS & SEEDS,"Sunflower/pumpkin seeds, etc.",g_= gram/day
+a_fq_food047,b_fq_food047,,,sc1_fq_food047,,,,sc2_fq_food047,,,Derived food freq&gram,CEREAL PRODUCTS,Pasta/spaghetti/macaroni (unspecified),fq_= times/day (frequency)
+a_g_food047,b_g_food047,,,sc1_g_food047,,,,sc2_g_food047,,,Derived food freq&gram,CEREAL PRODUCTS,Pasta/spaghetti/macaroni (unspecified),g_= gram/day
+,,,d_fq_food048,sc1_fq_food048,,,f_fq_food048,sc2_fq_food048,,,Derived food freq&gram,CEREAL PRODUCTS,Pasta/spaghetti/macaroni (not wholegrain),fq_= times/day (frequency)
+,,,d_g_food048,sc1_g_food048,,,f_g_food048,sc2_g_food048,,,Derived food freq&gram,CEREAL PRODUCTS,Pasta/spaghetti/macaroni (not wholegrain),g_= gram/day
+,,,d_fq_food049,sc1_fq_food049,,,f_fq_food049,sc2_fq_food049,,,Derived food freq&gram,CEREAL PRODUCTS,Wholegrain pasta/spaghetti/macaroni,fq_= times/day (frequency)
+,,,d_g_food049,sc1_g_food049,,,f_g_food049,sc2_g_food049,,,Derived food freq&gram,CEREAL PRODUCTS,Wholegrain pasta/spaghetti/macaroni,g_= gram/day
+a_fq_food050,b_fq_food050,,,sc1_fq_food050,,,,sc2_fq_food050,,,Derived food freq&gram,CEREAL PRODUCTS,Rice (unspecified),fq_= times/day (frequency)
+a_g_food050,b_g_food050,,,sc1_g_food050,,,,sc2_g_food050,,,Derived food freq&gram,CEREAL PRODUCTS,Rice (unspecified),g_= gram/day
+,,,d_fq_food051,sc1_fq_food051,,,f_fq_food051,sc2_fq_food051,,,Derived food freq&gram,CEREAL PRODUCTS,Rice (not wholegrain),fq_= times/day (frequency)
+,,,d_g_food051,sc1_g_food051,,,f_g_food051,sc2_g_food051,,,Derived food freq&gram,CEREAL PRODUCTS,Rice (not wholegrain),g_= gram/day
+,,,d_fq_food052,sc1_fq_food052,,,f_fq_food052,sc2_fq_food052,,,Derived food freq&gram,CEREAL PRODUCTS,Wholegrain rice (rÃÂ¥ris),fq_= times/day (frequency)
+,,,d_g_food052,sc1_g_food052,,,f_g_food052,sc2_g_food052,,,Derived food freq&gram,CEREAL PRODUCTS,Wholegrain rice (rÃÂ¥ris),g_= gram/day
+,,,d_fq_food053,sc1_fq_food053,,,f_fq_food053,sc2_fq_food053,,,Derived food freq&gram,CEREAL PRODUCTS,Couscous/bulgur,fq_= times/day (frequency)
+,,,d_g_food053,sc1_g_food053,,,f_g_food053,sc2_g_food053,,,Derived food freq&gram,CEREAL PRODUCTS,Couscous/bulgur,g_= gram/day
+a_fq_food054,b_fq_food054,,d_fq_food054,sc1_fq_food054,,,f_fq_food054,sc2_fq_food054,,,Derived food freq&gram,CEREAL PRODUCTS,White bread/sifted rye and wheat bread (limpa),fq_= times/day (frequency)
+a_g_food054,b_g_food054,,d_g_food054,sc1_g_food054,,,f_g_food054,sc2_g_food054,,,Derived food freq&gram,CEREAL PRODUCTS,White bread/sifted rye and wheat bread (limpa),g_= gram/day
+,,,d_fq_food055,sc1_fq_food055,,,f_fq_food055,sc2_fq_food055,,,Derived food freq&gram,CEREAL PRODUCTS,Fiber enriched bread,fq_= times/day (frequency)
+,,,d_g_food055,sc1_g_food055,,,f_g_food055,sc2_g_food055,,,Derived food freq&gram,CEREAL PRODUCTS,Fiber enriched bread,g_= gram/day
+a_fq_food056,b_fq_food056,,d_fq_food056,sc1_fq_food056,,,f_fq_food056,sc2_fq_food056,,,Derived food freq&gram,CEREAL PRODUCTS,Whole grain/meal bread,fq_= times/day (frequency)
+a_g_food056,b_g_food056,,d_g_food056,sc1_g_food056,,,f_g_food056,sc2_g_food056,,,Derived food freq&gram,CEREAL PRODUCTS,Whole grain/meal bread,g_= gram/day
+a_fq_food057,b_fq_food057,,d_fq_food057,sc1_fq_food057,,,f_fq_food057,sc2_fq_food057,,,Derived food freq&gram,CEREAL PRODUCTS,Crisp bread,fq_= times/day (frequency)
+a_g_food057,b_g_food057,,d_g_food057,sc1_g_food057,,,f_g_food057,sc2_g_food057,,,Derived food freq&gram,CEREAL PRODUCTS,Crisp bread,g_= gram/day
+a_fq_food058,,,,,,,,,,,Derived food freq&gram,CEREAL PRODUCTS,"Porridge, gruel (unspecified)",fq_= times/day (frequency)
+a_g_food058,,,,,,,,,,,Derived food freq&gram,CEREAL PRODUCTS,"Porridge, gruel (unspecified)",g_= gram/day
+,b_fq_food059,,,sc1_fq_food059,,,,,,,Derived food freq&gram,CEREAL PRODUCTS,Oatmeal porridge,fq_= times/day (frequency)
+,b_g_food059,,,sc1_g_food059,,,,,,,Derived food freq&gram,CEREAL PRODUCTS,Oatmeal porridge,g_= gram/day
+,,,d_fq_food060,sc1_fq_food060,,,f_fq_food060,sc2_fq_food060,,,Derived food freq&gram,CEREAL PRODUCTS,Oatmeal/rye porridge,fq_= times/day (frequency)
+,,,d_g_food060,sc1_g_food060,,,f_g_food060,sc2_g_food060,,,Derived food freq&gram,CEREAL PRODUCTS,Oatmeal/rye porridge,g_= gram/day
+,b_fq_food061,,d_fq_food061,sc1_fq_food061,,,f_fq_food061,sc2_fq_food061,,,Derived food freq&gram,CEREAL PRODUCTS,Other porridge/gruel,fq_= times/day (frequency)
+,b_g_food061,,d_g_food061,sc1_g_food061,,,f_g_food061,sc2_g_food061,,,Derived food freq&gram,CEREAL PRODUCTS,Other porridge/gruel,g_= gram/day
+a_fq_food062,b_fq_food062,,,sc1_fq_food062,,,,sc2_fq_food062,,,Derived food freq&gram,CEREAL PRODUCTS,MÃÂ¼esli/breakfast cereal,fq_= times/day (frequency)
+a_g_food062,b_g_food062,,,sc1_g_food062,,,,sc2_g_food062,,,Derived food freq&gram,CEREAL PRODUCTS,MÃÂ¼esli/breakfast cereal,g_= gram/day
+,,,d_fq_food063,sc1_fq_food063,,,f_fq_food063,sc2_fq_food063,,,Derived food freq&gram,CEREAL PRODUCTS,MÃÂ¼esli,fq_= times/day (frequency)
+,,,d_g_food063,sc1_g_food063,,,f_g_food063,sc2_g_food063,,,Derived food freq&gram,CEREAL PRODUCTS,MÃÂ¼esli,g_= gram/day
+,,,d_fq_food064,sc1_fq_food064,,,f_fq_food064,sc2_fq_food064,,,Derived food freq&gram,CEREAL PRODUCTS,Breakfast cereal,fq_= times/day (frequency)
+,,,d_g_food064,sc1_g_food064,,,f_g_food064,sc2_g_food064,,,Derived food freq&gram,CEREAL PRODUCTS,Breakfast cereal,g_= gram/day
+,b_fq_food065,,d_fq_food065,sc1_fq_food065,,,f_fq_food065,sc2_fq_food065,,,Derived food freq&gram,CEREAL PRODUCTS,Wheat or oat bran,fq_= times/day (frequency)
+,b_g_food065,,d_g_food065,sc1_g_food065,,,f_g_food065,sc2_g_food065,,,Derived food freq&gram,CEREAL PRODUCTS,Wheat or oat bran,g_= gram/day
+a_fq_food066,,,d_fq_food066,sc1_fq_food066,,,f_fq_food066,sc2_fq_food066,,,Derived food freq&gram,SUGAR & SWEETS,Sugar,fq_= times/day (frequency)
+a_g_food066,,,d_g_food066,sc1_g_food066,,,f_g_food066,sc2_g_food066,,,Derived food freq&gram,SUGAR & SWEETS,Sugar,g_= gram/day
+,,,d_fq_food067,sc1_fq_food067,,,f_fq_food067,sc2_fq_food067,,,Derived food freq&gram,SUGAR & SWEETS,Honey,fq_= times/day (frequency)
+,,,d_g_food067,sc1_g_food067,,,f_g_food067,sc2_g_food067,,,Derived food freq&gram,SUGAR & SWEETS,Honey,g_= gram/day
+,b_fq_food068,,,sc1_fq_food068,,,,sc2_fq_food068,,,Derived food freq&gram,SUGAR & SWEETS,Sugar/honey,fq_= times/day (frequency)
+,b_g_food068,,,sc1_g_food068,,,,sc2_g_food068,,,Derived food freq&gram,SUGAR & SWEETS,Sugar/honey,g_= gram/day
+a_fq_food069,,,,,,,,,,,Derived food freq&gram,SUGAR & SWEETS,Buns/cookies/biscuits,fq_= times/day (frequency)
+a_g_food069,,,,,,,,,,,Derived food freq&gram,SUGAR & SWEETS,Buns/cookies/biscuits,g_= gram/day
+,b_fq_food070,,d_fq_food070,sc1_fq_food070,,,f_fq_food070,sc2_fq_food070,,,Derived food freq&gram,SUGAR & SWEETS,Buns/cookies,fq_= times/day (frequency)
+,b_g_food070,,d_g_food070,sc1_g_food070,,,f_g_food070,sc2_g_food070,,,Derived food freq&gram,SUGAR & SWEETS,Buns/cookies,g_= gram/day
+,b_fq_food071,,d_fq_food071,sc1_fq_food071,,,f_fq_food071,sc2_fq_food071,,,Derived food freq&gram,SUGAR & SWEETS,Biscuits/wafers,fq_= times/day (frequency)
+,b_g_food071,,d_g_food071,sc1_g_food071,,,f_g_food071,sc2_g_food071,,,Derived food freq&gram,SUGAR & SWEETS,Biscuits/wafers,g_= gram/day
+,b_fq_food072,,d_fq_food072,sc1_fq_food072,,,f_fq_food072,sc2_fq_food072,,,Derived food freq&gram,SUGAR & SWEETS,Cakes/pastries,fq_= times/day (frequency)
+,b_g_food072,,d_g_food072,sc1_g_food072,,,f_g_food072,sc2_g_food072,,,Derived food freq&gram,SUGAR & SWEETS,Cakes/pastries,g_= gram/day
+a_fq_food073,b_fq_food073,,d_fq_food073,sc1_fq_food073,,,f_fq_food073,sc2_fq_food073,,,Derived food freq&gram,SUGAR & SWEETS,Fruit soup/kissel,fq_= times/day (frequency)
+a_g_food073,b_g_food073,,d_g_food073,sc1_g_food073,,,f_g_food073,sc2_g_food073,,,Derived food freq&gram,SUGAR & SWEETS,Fruit soup/kissel,g_= gram/day
+a_fq_food074,b_fq_food074,,,sc1_fq_food074,,,,sc2_fq_food074,,,Derived food freq&gram,SUGAR & SWEETS,Jam/marmalade/sauce,fq_= times/day (frequency)
+a_g_food074,b_g_food074,,,sc1_g_food074,,,,sc2_g_food074,,,Derived food freq&gram,SUGAR & SWEETS,Jam/marmalade/sauce,g_= gram/day
+,,,d_fq_food075,sc1_fq_food075,,,f_fq_food075,sc2_fq_food075,,,Derived food freq&gram,SUGAR & SWEETS,Lingonberry jam,fq_= times/day (frequency)
+,,,d_g_food075,sc1_g_food075,,,f_g_food075,sc2_g_food075,,,Derived food freq&gram,SUGAR & SWEETS,Lingonberry jam,g_= gram/day
+,,,d_fq_food076,sc1_fq_food076,,,f_fq_food076,sc2_fq_food076,,,Derived food freq&gram,SUGAR & SWEETS,Other jam,fq_= times/day (frequency)
+,,,d_g_food076,sc1_g_food076,,,f_g_food076,sc2_g_food076,,,Derived food freq&gram,SUGAR & SWEETS,Other jam,g_= gram/day
+a_fq_food077,b_fq_food077,,d_fq_food077,sc1_fq_food077,,,f_fq_food077,sc2_fq_food077,,,Derived food freq&gram,SUGAR & SWEETS,Chocolate,fq_= times/day (frequency)
+a_g_food077,b_g_food077,,d_g_food077,sc1_g_food077,,,f_g_food077,sc2_g_food077,,,Derived food freq&gram,SUGAR & SWEETS,Chocolate,g_= gram/day
+a_fq_food078,b_fq_food078,,d_fq_food078,sc1_fq_food078,,,f_fq_food078,sc2_fq_food078,,,Derived food freq&gram,SUGAR & SWEETS,Candy (not chocolate),fq_= times/day (frequency)
+a_g_food078,b_g_food078,,d_g_food078,sc1_g_food078,,,f_g_food078,sc2_g_food078,,,Derived food freq&gram,SUGAR & SWEETS,Candy (not chocolate),g_= gram/day
+a_fq_food079,b_fq_food079,,d_fq_food079,sc1_fq_food079,,,f_fq_food079,sc2_fq_food079,,,Derived food freq&gram,SUGAR & SWEETS,Ice cream,fq_= times/day (frequency)
+a_g_food079,b_g_food079,,d_g_food079,sc1_g_food079,,,f_g_food079,sc2_g_food079,,,Derived food freq&gram,SUGAR & SWEETS,Ice cream,g_= gram/day
+a_fq_food080,b_fq_food080,,d_fq_food080,sc1_fq_food080,,,f_fq_food080,sc2_fq_food080,,,Derived food freq&gram,DAIRY PRODUCTS,Whole milk (3% fat),fq_= times/day (frequency)
+a_g_food080,b_g_food080,,d_g_food080,sc1_g_food080,,,f_g_food080,sc2_g_food080,,,Derived food freq&gram,DAIRY PRODUCTS,Whole milk (3% fat),g_= gram/day
+a_fq_food081,b_fq_food081,,d_fq_food081,sc1_fq_food081,,,f_fq_food081,sc2_fq_food081,,,Derived food freq&gram,DAIRY PRODUCTS,Semi-skimmed milk (1.5% fat),fq_= times/day (frequency)
+a_g_food081,b_g_food081,,d_g_food081,sc1_g_food081,,,f_g_food081,sc2_g_food081,,,Derived food freq&gram,DAIRY PRODUCTS,Semi-skimmed milk (1.5% fat),g_= gram/day
+a_fq_food082,b_fq_food082,,d_fq_food082,sc1_fq_food082,,,f_fq_food082,sc2_fq_food082,,,Derived food freq&gram,DAIRY PRODUCTS,Skimmed milk (0.5% fat),fq_= times/day (frequency)
+a_g_food082,b_g_food082,,d_g_food082,sc1_g_food082,,,f_g_food082,sc2_g_food082,,,Derived food freq&gram,DAIRY PRODUCTS,Skimmed milk (0.5% fat),g_= gram/day
+a_fq_food083,b_fq_food083,,d_fq_food083,sc1_fq_food083,,,f_fq_food083,sc2_fq_food083,,,Derived food freq&gram,DAIRY PRODUCTS,Sour milk/yogurt (?3% fat),fq_= times/day (frequency)
+a_g_food083,b_g_food083,,d_g_food083,sc1_g_food083,,,f_g_food083,sc2_g_food083,,,Derived food freq&gram,DAIRY PRODUCTS,Sour milk/yogurt (?3% fat),g_= gram/day
+,,,d_fq_food084,sc1_fq_food084,,,f_fq_food084,sc2_fq_food084,,,Derived food freq&gram,DAIRY PRODUCTS,Reduced fat sour milk (1.5% fat),fq_= times/day (frequency)
+,,,d_g_food084,sc1_g_food084,,,f_g_food084,sc2_g_food084,,,Derived food freq&gram,DAIRY PRODUCTS,Reduced fat sour milk (1.5% fat),g_= gram/day
+a_fq_food085,b_fq_food085,,d_fq_food085,sc1_fq_food085,,,f_fq_food085,sc2_fq_food085,,,Derived food freq&gram,DAIRY PRODUCTS,Low-fat sour milk/yoghurt (?0.5% fat),fq_= times/day (frequency)
+a_g_food085,b_g_food085,,d_g_food085,sc1_g_food085,,,f_g_food085,sc2_g_food085,,,Derived food freq&gram,DAIRY PRODUCTS,Low-fat sour milk/yoghurt (?0.5% fat),g_= gram/day
+,,,d_fq_food086,sc1_fq_food086,,,f_fq_food086,sc2_fq_food086,,,Derived food freq&gram,DAIRY PRODUCTS,Fruit flavoured yogurt/sour milk,fq_= times/day (frequency)
+,,,d_g_food086,sc1_g_food086,,,f_g_food086,sc2_g_food086,,,Derived food freq&gram,DAIRY PRODUCTS,Fruit flavoured yogurt/sour milk,g_= gram/day
+,,,d_fq_food087,sc1_fq_food087,,,f_fq_food087,sc2_fq_food087,,,Derived food freq&gram,DAIRY PRODUCTS,Yogurt for cooking (8-10% fat),fq_= times/day (frequency)
+,,,d_g_food087,sc1_g_food087,,,f_g_food087,sc2_g_food087,,,Derived food freq&gram,DAIRY PRODUCTS,Yogurt for cooking (8-10% fat),g_= gram/day
+,b_fq_food088,,d_fq_food088,sc1_fq_food088,,,f_fq_food088,sc2_fq_food088,,,Derived food freq&gram,DAIRY PRODUCTS,CrÃÂ¨me fraiche (not low-fat),fq_= times/day (frequency)
+,b_g_food088,,d_g_food088,sc1_g_food088,,,f_g_food088,sc2_g_food088,,,Derived food freq&gram,DAIRY PRODUCTS,CrÃÂ¨me fraiche (not low-fat),g_= gram/day
+,b_fq_food089,,d_fq_food089,sc1_fq_food089,,,f_fq_food089,sc2_fq_food089,,,Derived food freq&gram,DAIRY PRODUCTS,Low-fat crÃÂ¨me fraiche,fq_= times/day (frequency)
+,b_g_food089,,d_g_food089,sc1_g_food089,,,f_g_food089,sc2_g_food089,,,Derived food freq&gram,DAIRY PRODUCTS,Low-fat crÃÂ¨me fraiche,g_= gram/day
+,b_fq_food090,,,sc1_fq_food090,,,,sc2_fq_food090,,,Derived food freq&gram,DAIRY PRODUCTS,Cream (unspecified),fq_= times/day (frequency)
+,b_g_food090,,,sc1_g_food090,,,,sc2_g_food090,,,Derived food freq&gram,DAIRY PRODUCTS,Cream (unspecified),g_= gram/day
+,,,d_fq_food091,sc1_fq_food091,,,f_fq_food091,sc2_fq_food091,,,Derived food freq&gram,DAIRY PRODUCTS,Cream (not low-fat),fq_= times/day (frequency)
+,,,d_g_food091,sc1_g_food091,,,f_g_food091,sc2_g_food091,,,Derived food freq&gram,DAIRY PRODUCTS,Cream (not low-fat),g_= gram/day
+,,,d_fq_food092,sc1_fq_food092,,,f_fq_food092,sc2_fq_food092,,,Derived food freq&gram,DAIRY PRODUCTS,Low-fat cream/sour cream,fq_= times/day (frequency)
+,,,d_g_food092,sc1_g_food092,,,f_g_food092,sc2_g_food092,,,Derived food freq&gram,DAIRY PRODUCTS,Low-fat cream/sour cream,g_= gram/day
+,b_fq_food093,,d_fq_food093,sc1_fq_food093,,,f_fq_food093,sc2_fq_food093,,,Derived food freq&gram,DAIRY PRODUCTS,Cottage cheese/quark,fq_= times/day (frequency)
+,b_g_food093,,d_g_food093,sc1_g_food093,,,f_g_food093,sc2_g_food093,,,Derived food freq&gram,DAIRY PRODUCTS,Cottage cheese/quark,g_= gram/day
+a_fq_food094,,,,,,,,,,,Derived food freq&gram,DAIRY PRODUCTS,Cheese (unspecified),fq_= times/day (frequency)
+a_g_food094,,,,,,,,,,,Derived food freq&gram,DAIRY PRODUCTS,Cheese (unspecified),g_= gram/day
+,b_fq_food095,,,sc1_fq_food095,,,,sc2_fq_food095,,,Derived food freq&gram,DAIRY PRODUCTS,Cheese (not low-fat),fq_= times/day (frequency)
+,b_g_food095,,,sc1_g_food095,,,,sc2_g_food095,,,Derived food freq&gram,DAIRY PRODUCTS,Cheese (not low-fat),g_= gram/day
+,b_fq_food096,,,sc1_fq_food096,,,,sc2_fq_food096,,,Derived food freq&gram,DAIRY PRODUCTS,Low-fat  cheese,fq_= times/day (frequency)
+,b_g_food096,,,sc1_g_food096,,,,sc2_g_food096,,,Derived food freq&gram,DAIRY PRODUCTS,Low-fat  cheese,g_= gram/day
+,,,d_fq_food097,sc1_fq_food097,,,f_fq_food097,sc2_fq_food097,,,Derived food freq&gram,DAIRY PRODUCTS,Hard cheese (not low-fat),fq_= times/day (frequency)
+,,,d_g_food097,sc1_g_food097,,,f_g_food097,sc2_g_food097,,,Derived food freq&gram,DAIRY PRODUCTS,Hard cheese (not low-fat),g_= gram/day
+,,,d_fq_food098,sc1_fq_food098,,,f_fq_food098,sc2_fq_food098,,,Derived food freq&gram,DAIRY PRODUCTS,Low-fat hard cheese,fq_= times/day (frequency)
+,,,d_g_food098,sc1_g_food098,,,f_g_food098,sc2_g_food098,,,Derived food freq&gram,DAIRY PRODUCTS,Low-fat hard cheese,g_= gram/day
+,,,d_fq_food099,sc1_fq_food099,,,f_fq_food099,sc2_fq_food099,,,Derived food freq&gram,DAIRY PRODUCTS,Cheese spread (not low-fat),fq_= times/day (frequency)
+,,,d_g_food099,sc1_g_food099,,,f_g_food099,sc2_g_food099,,,Derived food freq&gram,DAIRY PRODUCTS,Cheese spread (not low-fat),g_= gram/day
+,,,d_fq_food100,sc1_fq_food100,,,f_fq_food100,sc2_fq_food100,,,Derived food freq&gram,DAIRY PRODUCTS,Low-fat cheese spread,fq_= times/day (frequency)
+,,,d_g_food100,sc1_g_food100,,,f_g_food100,sc2_g_food100,,,Derived food freq&gram,DAIRY PRODUCTS,Low-fat cheese spread,g_= gram/day
+,,,d_fq_food101,sc1_fq_food101,,,f_fq_food101,sc2_fq_food101,,,Derived food freq&gram,DAIRY PRODUCTS,"Other cheese (""dessertost"")",fq_= times/day (frequency)
+,,,d_g_food101,sc1_g_food101,,,f_g_food101,sc2_g_food101,,,Derived food freq&gram,DAIRY PRODUCTS,"Other cheese (""dessertost"")",g_= gram/day
+,b_fq_food102,,d_fq_food102,sc1_fq_food102,,,f_fq_food102,sc2_fq_food102,,,Derived food freq&gram,FAT,Mayonnaise (not low-fat),fq_= times/day (frequency)
+,b_g_food102,,d_g_food102,sc1_g_food102,,,f_g_food102,sc2_g_food102,,,Derived food freq&gram,FAT,Mayonnaise (not low-fat),g_= gram/day
+,b_fq_food103,,d_fq_food103,sc1_fq_food103,,,f_fq_food103,sc2_fq_food103,,,Derived food freq&gram,FAT,Low-fat mayonnaise,fq_= times/day (frequency)
+,b_g_food103,,d_g_food103,sc1_g_food103,,,f_g_food103,sc2_g_food103,,,Derived food freq&gram,FAT,Low-fat mayonnaise,g_= gram/day
+a_fq_food104,,,,,,,,,,,Derived food freq&gram,FAT,"Sandwich with butter (derived, see methods)",fq_= times/day (frequency)
+a_g_food104,,,,,,,,,,,Derived food freq&gram,FAT,"Sandwich with butter (derived, see methods)",g_= gram/day
+a_fq_food105,,,,,,,,,,,Derived food freq&gram,FAT,"Sandwich with margarine (derived, see methods)",fq_= times/day (frequency)
+a_g_food105,,,,,,,,,,,Derived food freq&gram,FAT,"Sandwich with margarine (derived, see methods)",g_= gram/day
+,b_fq_food106,,d_fq_food106,sc1_fq_food106,,,f_fq_food106,sc2_fq_food106,,,Derived food freq&gram,FAT,Sandwich with bread spread (see methods),fq_= times/day (frequency)
+,b_g_food106,,d_g_food106,sc1_g_food106,,,f_g_food106,sc2_g_food106,,,Derived food freq&gram,FAT,Sandwich with bread spread (see methods),g_= gram/day
+a_fq_food107,b_fq_food107,,d_fq_food107,sc1_fq_food107,,,f_fq_food107,sc2_fq_food107,,,Derived food freq&gram,FAT,"Butter, as bread spread (derived, see methods)",fq_= times/day (frequency)
+a_g_food107,b_g_food107,,d_g_food107,sc1_g_food107,,,f_g_food107,sc2_g_food107,,,Derived food freq&gram,FAT,"Butter, as bread spread (derived, see methods)",g_= gram/day
+a_fq_food108,b_fq_food108,,d_fq_food108,sc1_fq_food108,,,f_fq_food108,sc2_fq_food108,,,Derived food freq&gram,FAT,"Bregott (50% butter/50% marg) as bread spread (derived, see methods)",fq_= times/day (frequency)
+a_g_food108,b_g_food108,,d_g_food108,sc1_g_food108,,,f_g_food108,sc2_g_food108,,,Derived food freq&gram,FAT,"Bregott (50% butter/50% marg) as bread spread (derived, see methods)",g_= gram/day
+a_fq_food109,b_fq_food109,,,sc1_fq_food109,,,,sc2_fq_food109,,,Derived food freq&gram,FAT,"Hard/baking margarine as bread spread (derived, see methods)",fq_= times/day (frequency)
+a_g_food109,b_g_food109,,,sc1_g_food109,,,,sc2_g_food109,,,Derived food freq&gram,FAT,"Hard/baking margarine as bread spread (derived, see methods)",g_= gram/day
+a_fq_food110,b_fq_food110,,d_fq_food110,sc1_fq_food110,,,f_fq_food110,sc2_fq_food110,,,Derived food freq&gram,FAT,"Soft/table margarine as bread spread (derived, see methods)",fq_= times/day (frequency)
+a_g_food110,b_g_food110,,d_g_food110,sc1_g_food110,,,f_g_food110,sc2_g_food110,,,Derived food freq&gram,FAT,"Soft/table margarine as bread spread (derived, see methods)",g_= gram/day
+a_fq_food111,b_fq_food111,,d_fq_food111,sc1_fq_food111,,,f_fq_food111,sc2_fq_food111,,,Derived food freq&gram,FAT,"Low-fat margarine as bread spread (derived, see methods)",fq_= times/day (frequency)
+a_g_food111,b_g_food111,,d_g_food111,sc1_g_food111,,,f_g_food111,sc2_g_food111,,,Derived food freq&gram,FAT,"Low-fat margarine as bread spread (derived, see methods)",g_= gram/day
+,,,d_fq_food112,sc1_fq_food112,,,f_fq_food112,sc2_fq_food112,,,Derived food freq&gram,FAT,"Becel (margarine) as bread spread (derived, see methods)",fq_= times/day (frequency)
+,,,d_g_food112,sc1_g_food112,,,f_g_food112,sc2_g_food112,,,Derived food freq&gram,FAT,"Becel (margarine) as bread spread (derived, see methods)",g_= gram/day
+,b_fq_food113,,,sc1_fq_food113,,,,sc2_fq_food113,,,Derived food freq&gram,FAT,"Cooking oil (corn, sunflower, soybean) as bread spread (derived, see methods)",fq_= times/day (frequency)
+,b_g_food113,,,sc1_g_food113,,,,sc2_g_food113,,,Derived food freq&gram,FAT,"Cooking oil (corn, sunflower, soybean) as bread spread (derived, see methods)",g_= gram/day
+,,,d_fq_food114,sc1_fq_food114,,,f_fq_food114,sc2_fq_food114,,,Derived food freq&gram,FAT,"Oil, as bread spread (derived, see methods)",fq_= times/day (frequency)
+,,,d_g_food114,sc1_g_food114,,,f_g_food114,sc2_g_food114,,,Derived food freq&gram,FAT,"Oil, as bread spread (derived, see methods)",g_= gram/day
+,,,d_fq_food115,sc1_fq_food115,,,f_fq_food115,sc2_fq_food115,,,Derived food freq&gram,FAT,"Other, as bread spread (derived, see methods)",fq_= times/day (frequency)
+,,,d_g_food115,sc1_g_food115,,,f_g_food115,sc2_g_food115,,,Derived food freq&gram,FAT,"Other, as bread spread (derived, see methods)",g_= gram/day
+,b_fq_food116,,d_fq_food116,sc1_fq_food116,,,f_fq_food116,sc2_fq_food116,,,Derived food freq&gram,FAT,Salad dressing (not low-fat),fq_= times/day (frequency)
+,b_g_food116,,d_g_food116,sc1_g_food116,,,f_g_food116,sc2_g_food116,,,Derived food freq&gram,FAT,Salad dressing (not low-fat),g_= gram/day
+,b_fq_food117,,d_fq_food117,sc1_fq_food117,,,f_fq_food117,sc2_fq_food117,,,Derived food freq&gram,FAT,Low-fat salad dressing,fq_= times/day (frequency)
+,b_g_food117,,d_g_food117,sc1_g_food117,,,f_g_food117,sc2_g_food117,,,Derived food freq&gram,FAT,Low-fat salad dressing,g_= gram/day
+a_fq_food118,b_fq_food118,,d_fq_food118,sc1_fq_food118,,,f_fq_food118,sc2_fq_food118,,,Derived food freq&gram,MEAT & EGGS,Eggs/omelette,fq_= times/day (frequency)
+a_g_food118,b_g_food118,,d_g_food118,sc1_g_food118,,,f_g_food118,sc2_g_food118,,,Derived food freq&gram,MEAT & EGGS,Eggs/omelette,g_= gram/day
+a_fq_food119,b_fq_food119,,d_fq_food119,sc1_fq_food119,,,f_fq_food119,sc2_fq_food119,,,Derived food freq&gram,MEAT & EGGS,Chicken/other poultry,fq_= times/day (frequency)
+a_g_food119,b_g_food119,,d_g_food119,sc1_g_food119,,,f_g_food119,sc2_g_food119,,,Derived food freq&gram,MEAT & EGGS,Chicken/other poultry,g_= gram/day
+a_fq_food120,b_fq_food120,,d_fq_food120,sc1_fq_food120,,,f_fq_food120,sc2_fq_food120,,,Derived food freq&gram,MEAT & EGGS,"Minced meat dishes (meatballs, hamburger, minced meat sauce)",fq_= times/day (frequency)
+a_g_food120,b_g_food120,,d_g_food120,sc1_g_food120,,,f_g_food120,sc2_g_food120,,,Derived food freq&gram,MEAT & EGGS,"Minced meat dishes (meatballs, hamburger, minced meat sauce)",g_= gram/day
+a_fq_food121,,,,,,,,,,,Derived food freq&gram,MEAT & EGGS,Whole cuts of meat (unspecified),fq_= times/day (frequency)
+a_g_food121,,,,,,,,,,,Derived food freq&gram,MEAT & EGGS,Whole cuts of meat (unspecified),g_= gram/day
+a_fq_food122,,,,,,,,,,,Derived food freq&gram,MEAT & EGGS,Meat casserole (unspecified),fq_= times/day (frequency)
+a_g_food122,,,,,,,,,,,Derived food freq&gram,MEAT & EGGS,Meat casserole (unspecified),g_= gram/day
+,b_fq_food123,,d_fq_food123,sc1_fq_food123,,,f_fq_food123,sc2_fq_food123,,,Derived food freq&gram,MEAT & EGGS,Pork (steak/casserole),fq_= times/day (frequency)
+,b_g_food123,,d_g_food123,sc1_g_food123,,,f_g_food123,sc2_g_food123,,,Derived food freq&gram,MEAT & EGGS,Pork (steak/casserole),g_= gram/day
+,b_fq_food124,,d_fq_food124,sc1_fq_food124,,,f_fq_food124,sc2_fq_food124,,,Derived food freq&gram,MEAT & EGGS,Beef/veal (steak/casserole),fq_= times/day (frequency)
+,b_g_food124,,d_g_food124,sc1_g_food124,,,f_g_food124,sc2_g_food124,,,Derived food freq&gram,MEAT & EGGS,Beef/veal (steak/casserole),g_= gram/day
+a_fq_food125,,,d_fq_food125,sc1_fq_food125,,,f_fq_food125,sc2_fq_food125,,,Derived food freq&gram,MEAT & EGGS,Bacon,fq_= times/day (frequency)
+a_g_food125,,,d_g_food125,sc1_g_food125,,,f_g_food125,sc2_g_food125,,,Derived food freq&gram,MEAT & EGGS,Bacon,g_= gram/day
+,,,d_fq_food126,sc1_fq_food126,,,f_fq_food126,sc2_fq_food126,,,Derived food freq&gram,MEAT & EGGS,Other meat,fq_= times/day (frequency)
+,,,d_g_food126,sc1_g_food126,,,f_g_food126,sc2_g_food126,,,Derived food freq&gram,MEAT & EGGS,Other meat,g_= gram/day
+a_fq_food127,b_fq_food127,,d_fq_food127,sc1_fq_food127,,,f_fq_food127,sc2_fq_food127,,,Derived food freq&gram,MEAT & EGGS,Liver/kidney,fq_= times/day (frequency)
+a_g_food127,b_g_food127,,d_g_food127,sc1_g_food127,,,f_g_food127,sc2_g_food127,,,Derived food freq&gram,MEAT & EGGS,Liver/kidney,g_= gram/day
+a_fq_food128,b_fq_food128,,,sc1_fq_food128,,,,sc2_fq_food128,,,Derived food freq&gram,MEAT & EGGS,Sausage (unspecified),fq_= times/day (frequency)
+a_g_food128,b_g_food128,,,sc1_g_food128,,,,sc2_g_food128,,,Derived food freq&gram,MEAT & EGGS,Sausage (unspecified),g_= gram/day
+,,,d_fq_food129,sc1_fq_food129,,,f_fq_food129,sc2_fq_food129,,,Derived food freq&gram,MEAT & EGGS,Falukorv (sausage),fq_= times/day (frequency)
+,,,d_g_food129,sc1_g_food129,,,f_g_food129,sc2_g_food129,,,Derived food freq&gram,MEAT & EGGS,Falukorv (sausage),g_= gram/day
+,,,d_fq_food130,sc1_fq_food130,,,f_fq_food130,sc2_fq_food130,,,Derived food freq&gram,MEAT & EGGS,Lean sausage,fq_= times/day (frequency)
+,,,d_g_food130,sc1_g_food130,,,f_g_food130,sc2_g_food130,,,Derived food freq&gram,MEAT & EGGS,Lean sausage,g_= gram/day
+,,,d_fq_food131,sc1_fq_food131,,,f_fq_food131,sc2_fq_food131,,,Derived food freq&gram,MEAT & EGGS,Other sausage,fq_= times/day (frequency)
+,,,d_g_food131,sc1_g_food131,,,f_g_food131,sc2_g_food131,,,Derived food freq&gram,MEAT & EGGS,Other sausage,g_= gram/day
+a_fq_food132,b_fq_food132,,d_fq_food132,sc1_fq_food132,,,f_fq_food132,sc2_fq_food132,,,Derived food freq&gram,MEAT & EGGS,Blood pudding/sausage,fq_= times/day (frequency)
+a_g_food132,b_g_food132,,d_g_food132,sc1_g_food132,,,f_g_food132,sc2_g_food132,,,Derived food freq&gram,MEAT & EGGS,Blood pudding/sausage,g_= gram/day
+a_fq_food133,b_fq_food133,,,sc1_fq_food133,,,,sc2_fq_food133,,,Derived food freq&gram,MEAT & EGGS,Liver patÃÂ© (unspecified),fq_= times/day (frequency)
+a_g_food133,b_g_food133,,,sc1_g_food133,,,,sc2_g_food133,,,Derived food freq&gram,MEAT & EGGS,Liver patÃÂ© (unspecified),g_= gram/day
+,,,d_fq_food134,sc1_fq_food134,,,f_fq_food134,sc2_fq_food134,,,Derived food freq&gram,MEAT & EGGS,Liver patÃÂ© (not low-fat),fq_= times/day (frequency)
+,,,d_g_food134,sc1_g_food134,,,f_g_food134,sc2_g_food134,,,Derived food freq&gram,MEAT & EGGS,Liver patÃÂ© (not low-fat),g_= gram/day
+,,,d_fq_food135,sc1_fq_food135,,,f_fq_food135,sc2_fq_food135,,,Derived food freq&gram,MEAT & EGGS,Low-fat liver patÃÂ© ,fq_= times/day (frequency)
+,,,d_g_food135,sc1_g_food135,,,f_g_food135,sc2_g_food135,,,Derived food freq&gram,MEAT & EGGS,Low-fat liver patÃÂ© ,g_= gram/day
+a_fq_food136,b_fq_food136,,,sc1_fq_food136,,,,sc2_fq_food136,,,Derived food freq&gram,MEAT & EGGS,"Cold cuts, meat/sausage (e.g. ham/turkey/salami)",fq_= times/day (frequency)
+a_g_food136,b_g_food136,,,sc1_g_food136,,,,sc2_g_food136,,,Derived food freq&gram,MEAT & EGGS,"Cold cuts, meat/sausage (e.g. ham/turkey/salami)",g_= gram/day
+,,,d_fq_food137,sc1_fq_food137,,,f_fq_food137,sc2_fq_food137,,,Derived food freq&gram,MEAT & EGGS,"Cold cuts, meat (e.g. ham/turkey)",fq_= times/day (frequency)
+,,,d_g_food137,sc1_g_food137,,,f_g_food137,sc2_g_food137,,,Derived food freq&gram,MEAT & EGGS,"Cold cuts, meat (e.g. ham/turkey)",g_= gram/day
+,,,d_fq_food138,sc1_fq_food138,,,f_fq_food138,sc2_fq_food138,,,Derived food freq&gram,MEAT & EGGS,"Cold cuts, sausage (e.g. salami)",fq_= times/day (frequency)
+,,,d_g_food138,sc1_g_food138,,,f_g_food138,sc2_g_food138,,,Derived food freq&gram,MEAT & EGGS,"Cold cuts, sausage (e.g. salami)",g_= gram/day
+a_fq_food139,,,,,,,,,,,Derived food freq&gram,MEAT & EGGS,Salmon/herring/mackerel/sardines/tuna,fq_= times/day (frequency)
+a_g_food139,,,,,,,,,,,Derived food freq&gram,MEAT & EGGS,Salmon/herring/mackerel/sardines/tuna,g_= gram/day
+,b_fq_food140,,,sc1_fq_food140,,,,sc2_fq_food140,,,Derived food freq&gram,MEAT & EGGS,Salmon/whitefish/red char,fq_= times/day (frequency)
+,b_g_food140,,,sc1_g_food140,,,,sc2_g_food140,,,Derived food freq&gram,MEAT & EGGS,Salmon/whitefish/red char,g_= gram/day
+,,,d_fq_food141,sc1_fq_food141,,,f_fq_food141,sc2_fq_food141,,,Derived food freq&gram,MEAT & EGGS,Salmon,fq_= times/day (frequency)
+,,,d_g_food141,sc1_g_food141,,,f_g_food141,sc2_g_food141,,,Derived food freq&gram,MEAT & EGGS,Salmon,g_= gram/day
+,b_fq_food142,,d_fq_food142,sc1_fq_food142,,,f_fq_food142,sc2_fq_food142,,,Derived food freq&gram,MEAT & EGGS,Herring/mackerel,fq_= times/day (frequency)
+,b_g_food142,,d_g_food142,sc1_g_food142,,,f_g_food142,sc2_g_food142,,,Derived food freq&gram,MEAT & EGGS,Herring/mackerel,g_= gram/day
+,,,d_fq_food143,sc1_fq_food143,,,f_fq_food143,sc2_fq_food143,,,Derived food freq&gram,MEAT & EGGS,Tuna,fq_= times/day (frequency)
+,,,d_g_food143,sc1_g_food143,,,f_g_food143,sc2_g_food143,,,Derived food freq&gram,MEAT & EGGS,Tuna,g_= gram/day
+,,,d_fq_food144,sc1_fq_food144,,,f_fq_food144,sc2_fq_food144,,,Derived food freq&gram,MEAT & EGGS,Smoked fish,fq_= times/day (frequency)
+,,,d_g_food144,sc1_g_food144,,,f_g_food144,sc2_g_food144,,,Derived food freq&gram,MEAT & EGGS,Smoked fish,g_= gram/day
+,,,d_fq_food145,sc1_fq_food145,,,,sc2_fq_food145,,,Derived food freq&gram,MEAT & EGGS,Sardines,fq_= times/day (frequency)
+,,,d_g_food145,sc1_g_food145,,,,sc2_g_food145,,,Derived food freq&gram,MEAT & EGGS,Sardines,g_= gram/day
+a_fq_food146,,,,,,,,,,,Derived food freq&gram,MEAT & EGGS,Other fish,fq_= times/day (frequency)
+a_g_food146,,,,,,,,,,,Derived food freq&gram,MEAT & EGGS,Other fish,g_= gram/day
+,b_fq_food147,,,sc1_fq_food147,,,,sc2_fq_food147,,,Derived food freq&gram,MEAT & EGGS,Cod/saithe/fish fingers,fq_= times/day (frequency)
+,b_g_food147,,,sc1_g_food147,,,,sc2_g_food147,,,Derived food freq&gram,MEAT & EGGS,Cod/saithe/fish fingers,g_= gram/day
+,,,d_fq_food148,sc1_fq_food148,,,f_fq_food148,sc2_fq_food148,,,Derived food freq&gram,MEAT & EGGS,Cod/saithe/plaice/grenadier,fq_= times/day (frequency)
+,,,d_g_food148,sc1_g_food148,,,f_g_food148,sc2_g_food148,,,Derived food freq&gram,MEAT & EGGS,Cod/saithe/plaice/grenadier,g_= gram/day
+,,,d_fq_food149,sc1_fq_food149,,,f_fq_food149,sc2_fq_food149,,,Derived food freq&gram,MEAT & EGGS,Pike/perch,fq_= times/day (frequency)
+,,,d_g_food149,sc1_g_food149,,,f_g_food149,sc2_g_food149,,,Derived food freq&gram,MEAT & EGGS,Pike/perch,g_= gram/day
+,,,d_fq_food150,sc1_fq_food150,,,f_fq_food150,sc2_fq_food150,,,Derived food freq&gram,MEAT & EGGS,Fish fingers,fq_= times/day (frequency)
+,,,d_g_food150,sc1_g_food150,,,f_g_food150,sc2_g_food150,,,Derived food freq&gram,MEAT & EGGS,Fish fingers,g_= gram/day
+,,,d_fq_food151,sc1_fq_food151,,,f_fq_food151,sc2_fq_food151,,,Derived food freq&gram,MEAT & EGGS,Other fish,fq_= times/day (frequency)
+,,,d_g_food151,sc1_g_food151,,,f_g_food151,sc2_g_food151,,,Derived food freq&gram,MEAT & EGGS,Other fish,g_= gram/day
+a_fq_food152,b_fq_food152,,d_fq_food152,sc1_fq_food152,,,f_fq_food152,sc2_fq_food152,,,Derived food freq&gram,MEAT & EGGS,"Shellfish (shrimp, crayfish)",fq_= times/day (frequency)
+a_g_food152,b_g_food152,,d_g_food152,sc1_g_food152,,,f_g_food152,sc2_g_food152,,,Derived food freq&gram,MEAT & EGGS,"Shellfish (shrimp, crayfish)",g_= gram/day
+,,,d_fq_food153,sc1_fq_food153,,,f_fq_food153,sc2_fq_food153,,,Derived food freq&gram,MEAT & EGGS,Roe (e.g. from lump fish),fq_= times/day (frequency)
+,,,d_g_food153,sc1_g_food153,,,f_g_food153,sc2_g_food153,,,Derived food freq&gram,MEAT & EGGS,Roe (e.g. from lump fish),g_= gram/day
+,b_fq_food154,,d_fq_food154,sc1_fq_food154,,,f_fq_food154,sc2_fq_food154,,,Derived food freq&gram,MEAT & EGGS,Swedish caviar,fq_= times/day (frequency)
+,b_g_food154,,d_g_food154,sc1_g_food154,,,f_g_food154,sc2_g_food154,,,Derived food freq&gram,MEAT & EGGS,Swedish caviar,g_= gram/day
+a_fq_food155,,,,,,,,,,,Derived food freq&gram,OTHER FOODS,Chips/popcorn/cheese puffs/salted nuts,fq_= times/day (frequency)
+a_g_food155,,,,,,,,,,,Derived food freq&gram,OTHER FOODS,Chips/popcorn/cheese puffs/salted nuts,g_= gram/day
+,b_fq_food156,,d_fq_food156,sc1_fq_food156,,,f_fq_food156,sc2_fq_food156,,,Derived food freq&gram,OTHER FOODS,Chips/popcorn/cheese puffs,fq_= times/day (frequency)
+,b_g_food156,,d_g_food156,sc1_g_food156,,,f_g_food156,sc2_g_food156,,,Derived food freq&gram,OTHER FOODS,Chips/popcorn/cheese puffs,g_= gram/day
+a_fq_food157,b_fq_food157,,d_fq_food157,sc1_fq_food157,,,f_fq_food157,sc2_fq_food157,,,Derived food freq&gram,OTHER FOODS,Pancakes/crepes,fq_= times/day (frequency)
+a_g_food157,b_g_food157,,d_g_food157,sc1_g_food157,,,f_g_food157,sc2_g_food157,,,Derived food freq&gram,OTHER FOODS,Pancakes/crepes,g_= gram/day
+,b_fq_food158,,d_fq_food158,sc1_fq_food158,,,f_fq_food158,sc2_fq_food158,,,Derived food freq&gram,OTHER FOODS,Pizza,fq_= times/day (frequency)
+,b_g_food158,,d_g_food158,sc1_g_food158,,,f_g_food158,sc2_g_food158,,,Derived food freq&gram,OTHER FOODS,Pizza,g_= gram/day
+,b_fq_food159,,d_fq_food159,sc1_fq_food159,,,f_fq_food159,sc2_fq_food159,,,Derived food freq&gram,OTHER FOODS,Ketchup,fq_= times/day (frequency)
+,b_g_food159,,d_g_food159,sc1_g_food159,,,f_g_food159,sc2_g_food159,,,Derived food freq&gram,OTHER FOODS,Ketchup,g_= gram/day
+,,,d_fq_food160,sc1_fq_food160,,,f_fq_food160,sc2_fq_food160,,,Derived food freq&gram,OTHER FOODS,Dried herbs,fq_= times/day (frequency)
+,,,d_g_food160,sc1_g_food160,,,f_g_food160,sc2_g_food160,,,Derived food freq&gram,OTHER FOODS,Dried herbs,g_= gram/day
+,,,d_fq_food161,sc1_fq_food161,,,f_fq_food161,sc2_fq_food161,,,Derived food freq&gram,OTHER FOODS,Cinnamon,fq_= times/day (frequency)
+,,,d_g_food161,sc1_g_food161,,,f_g_food161,sc2_g_food161,,,Derived food freq&gram,OTHER FOODS,Cinnamon,g_= gram/day
+,,,d_fq_food162,sc1_fq_food162,,,f_fq_food162,sc2_fq_food162,,,Derived food freq&gram,OTHER FOODS,Pepper,fq_= times/day (frequency)
+,,,d_g_food162,sc1_g_food162,,,f_g_food162,sc2_g_food162,,,Derived food freq&gram,OTHER FOODS,Pepper,g_= gram/day
+,,,d_fq_food163,sc1_fq_food163,,,f_fq_food163,sc2_fq_food163,,,Derived food freq&gram,OTHER FOODS,Table salt,fq_= times/day (frequency)
+,,,d_g_food163,sc1_g_food163,,,f_g_food163,sc2_g_food163,,,Derived food freq&gram,OTHER FOODS,Table salt,g_= gram/day
+,,,d_fq_bev01,sc1_fq_bev01,,,f_fq_bev01,sc2_fq_bev01,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Water (including mineral/carbonated),fq_= times/day (frequency)
+,,,d_g_bev01,sc1_g_bev01,,,f_g_bev01,sc2_g_bev01,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Water (including mineral/carbonated),g_= gram/day
+a_fq_bev02,b_fq_bev02,,d_fq_bev02,sc1_fq_bev02,,,f_fq_bev02,sc2_fq_bev02,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Orange/grapefruit juice,fq_= times/day (frequency)
+a_g_bev02,b_g_bev02,,d_g_bev02,sc1_g_bev02,,,f_g_bev02,sc2_g_bev02,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Orange/grapefruit juice,g_= gram/day
+a_fq_bev03,,,,,,,,,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Soda (unspecified) carbonated,fq_= times/day (frequency)
+a_g_bev03,,,,,,,,,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Soda (unspecified) carbonated,g_= gram/day
+a_fq_bev04,,,,sc1_fq_bev04,,,,,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Squash (unspecified) non-carbonated,fq_= times/day (frequency)
+a_g_bev04,,,,sc1_g_bev04,,,,,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Squash (unspecified) non-carbonated,g_= gram/day
+,b_fq_bev05,,,sc1_fq_bev05,,,,sc2_fq_bev05,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Soda/squash (unspecified) carbonated/non-carbonated,fq_= times/day (frequency)
+,b_g_bev05,,,sc1_g_bev05,,,,sc2_g_bev05,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Soda/squash (unspecified) carbonated/non-carbonated,g_= gram/day
+,,,d_fq_bev06,sc1_fq_bev06,,,f_fq_bev06,sc2_fq_bev06,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Coca-Cola/Pepsi,fq_= times/day (frequency)
+,,,d_g_bev06,sc1_g_bev06,,,f_g_bev06,sc2_g_bev06,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Coca-Cola/Pepsi,g_= gram/day
+,,,d_fq_bev07,sc1_fq_bev07,,,f_fq_bev07,sc2_fq_bev07,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,"Coca-Cola/Pepsi, light",fq_= times/day (frequency)
+,,,d_g_bev07,sc1_g_bev07,,,f_g_bev07,sc2_g_bev07,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,"Coca-Cola/Pepsi, light",g_= gram/day
+,,,d_fq_bev08,sc1_fq_bev08,,,f_fq_bev08,sc2_fq_bev08,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Other soda/squash (carbonated/non-carbonated),fq_= times/day (frequency)
+,,,d_g_bev08,sc1_g_bev08,,,f_g_bev08,sc2_g_bev08,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Other soda/squash (carbonated/non-carbonated),g_= gram/day
+,,,d_fq_bev09,sc1_fq_bev09,,,f_fq_bev09,sc2_fq_bev09,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,"Other soda/squash, light (carbonated/non-carbonated)",fq_= times/day (frequency)
+,,,d_g_bev09,sc1_g_bev09,,,f_g_bev09,sc2_g_bev09,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,"Other soda/squash, light (carbonated/non-carbonated)",g_= gram/day
+a_fq_bev10,b_fq_bev10,,,sc1_fq_bev10,,,,sc2_fq_bev10,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Tea (unspecified),fq_= times/day (frequency)
+a_g_bev10,b_g_bev10,,,sc1_g_bev10,,,,sc2_g_bev10,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Tea (unspecified),g_= gram/day
+,,,d_fq_bev11,sc1_fq_bev11,,,f_fq_bev11,sc2_fq_bev11,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Black tea,fq_= times/day (frequency)
+,,,d_g_bev11,sc1_g_bev11,,,f_g_bev11,sc2_g_bev11,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Black tea,g_= gram/day
+,,,d_fq_bev12,sc1_fq_bev12,,,f_fq_bev12,sc2_fq_bev12,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Green tea,fq_= times/day (frequency)
+,,,d_g_bev12,sc1_g_bev12,,,f_g_bev12,sc2_g_bev12,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Green tea,g_= gram/day
+,,,d_fq_bev13,sc1_fq_bev13,,,f_fq_bev13,sc2_fq_bev13,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Herbal/red tea,fq_= times/day (frequency)
+,,,d_g_bev13,sc1_g_bev13,,,f_g_bev13,sc2_g_bev13,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Herbal/red tea,g_= gram/day
+a_fq_bev14,b_fq_bev14,,,sc1_fq_bev14,,,,sc2_fq_bev14,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Coffee (unspecified),fq_= times/day (frequency)
+a_g_bev14,b_g_bev14,,,sc1_g_bev14,,,,sc2_g_bev14,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Coffee (unspecified),g_= gram/day
+,,,d_fq_bev15,sc1_fq_bev15,,,f_fq_bev15,sc2_fq_bev15,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Filtered/instant coffee,fq_= times/day (frequency)
+,,,d_g_bev15,sc1_g_bev15,,,f_g_bev15,sc2_g_bev15,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Filtered/instant coffee,g_= gram/day
+,,,d_fq_bev16,sc1_fq_bev16,,,f_fq_bev16,sc2_fq_bev16,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Unfiltered/other coffee,fq_= times/day (frequency)
+,,,d_g_bev16,sc1_g_bev16,,,f_g_bev16,sc2_g_bev16,,,Derived food freq&gram,NON-ALCOHOLIC BEVERAGES,Unfiltered/other coffee,g_= gram/day
+a_fq_alc01,b_fq_alc01,,d_fq_alc01,sc1_fq_alc01,,,f_fq_alc01,sc2_fq_alc01,,,Derived food freq&gram,ALCOHOLIC BEVERAGES,Light beer (?2.25% alcohol),fq_= times/day (frequency)
+a_g_alc01,b_g_alc01,,d_g_alc01,sc1_g_alc01,,,f_g_alc01,sc2_g_alc01,,,Derived food freq&gram,ALCOHOLIC BEVERAGES,Light beer (?2.25% alcohol),g_= gram/day
+a_fq_alc02,b_fq_alc02,,d_fq_alc02,sc1_fq_alc02,,,f_fq_alc02,sc2_fq_alc02,,,Derived food freq&gram,ALCOHOLIC BEVERAGES,Medium-strong beer (2.25-3.5% alcohol),fq_= times/day (frequency)
+a_g_alc02,b_g_alc02,,d_g_alc02,sc1_g_alc02,,,f_g_alc02,sc2_g_alc02,,,Derived food freq&gram,ALCOHOLIC BEVERAGES,Medium-strong beer (2.25-3.5% alcohol),g_= gram/day
+a_fq_alc03,b_fq_alc03,,d_fq_alc03,sc1_fq_alc03,,,f_fq_alc03,sc2_fq_alc03,,,Derived food freq&gram,ALCOHOLIC BEVERAGES,Strong beer (>3.5% alcohol),fq_= times/day (frequency)
+a_g_alc03,b_g_alc03,,d_g_alc03,sc1_g_alc03,,,f_g_alc03,sc2_g_alc03,,,Derived food freq&gram,ALCOHOLIC BEVERAGES,Strong beer (>3.5% alcohol),g_= gram/day
+a_fq_alc04,b_fq_alc04,,,sc1_fq_alc04,,,,sc2_fq_alc04,,,Derived food freq&gram,ALCOHOLIC BEVERAGES,Wine,fq_= times/day (frequency)
+a_g_alc04,b_g_alc04,,,sc1_g_alc04,,,,sc2_g_alc04,,,Derived food freq&gram,ALCOHOLIC BEVERAGES,Wine,g_= gram/day
+,,,d_fq_alc05,sc1_fq_alc05,,,f_fq_alc05,sc2_fq_alc05,,,Derived food freq&gram,ALCOHOLIC BEVERAGES,Red wine,fq_= times/day (frequency)
+,,,d_g_alc05,sc1_g_alc05,,,f_g_alc05,sc2_g_alc05,,,Derived food freq&gram,ALCOHOLIC BEVERAGES,Red wine,g_= gram/day
+,,,d_fq_alc06,sc1_fq_alc06,,,f_fq_alc06,sc2_fq_alc06,,,Derived food freq&gram,ALCOHOLIC BEVERAGES,White wine,fq_= times/day (frequency)
+,,,d_g_alc06,sc1_g_alc06,,,f_g_alc06,sc2_g_alc06,,,Derived food freq&gram,ALCOHOLIC BEVERAGES,White wine,g_= gram/day
+,b_fq_alc07,,,sc1_fq_alc07,,,,,,,Derived food freq&gram,ALCOHOLIC BEVERAGES,Fortified wine (>18% alcohol),fq_= times/day (frequency)
+,b_g_alc07,,,sc1_g_alc07,,,,,,,Derived food freq&gram,ALCOHOLIC BEVERAGES,Fortified wine (>18% alcohol),g_= gram/day
+,,,d_fq_alc08,sc1_fq_alc08,,,f_fq_alc08,sc2_fq_alc08,,,Derived food freq&gram,ALCOHOLIC BEVERAGES,Liqueur/sherry/fortified wine (>18% alcohol),fq_= times/day (frequency)
+,,,d_g_alc08,sc1_g_alc08,,,f_g_alc08,sc2_g_alc08,,,Derived food freq&gram,ALCOHOLIC BEVERAGES,Liqueur/sherry/fortified wine (>18% alcohol),g_= gram/day
+a_fq_alc09,b_fq_alc09,,d_fq_alc09,sc1_fq_alc09,,,f_fq_alc09,sc2_fq_alc09,,,Derived food freq&gram,ALCOHOLIC BEVERAGES,Spirits,fq_= times/day (frequency)
+a_g_alc09,b_g_alc09,,d_g_alc09,sc1_g_alc09,,,f_g_alc09,sc2_g_alc09,,,Derived food freq&gram,ALCOHOLIC BEVERAGES,Spirits,g_= gram/day
+a_nut01,b_nut01,,d_nut01,sc1_nut01,,,f_nut01,sc2_nut01,,,Derived Nutrients&Energy,Energy,Energy (kcal/day),Crude (nut)
+a_nut02,b_nut02,,d_nut02,sc1_nut02,,,f_nut02,sc2_nut02,,,Derived Nutrients&Energy,Macronutrients,Carbohydrates (g/day),Crude (nut)
+a_enut02,b_enut02,,d_enut02,sc1_enut02,,,f_enut02,sc2_enut02,,,Derived Nutrients&Energy,Macronutrients,Carbohydrates (g/day),Energy (kcal/day)
+a_nut03,b_nut03,,d_nut03,sc1_nut03,,,f_nut03,sc2_nut03,,,Derived Nutrients&Energy,Macronutrients,Monosaccharides (g/day),Crude (nut)
+a_enut03,b_enut03,,d_enut03,sc1_enut03,,,f_enut03,sc2_enut03,,,Derived Nutrients&Energy,Macronutrients,Monosaccharides (g/day),Energy (kcal/day)
+a_nut04,b_nut04,,d_nut04,sc1_nut04,,,f_nut04,sc2_nut04,,,Derived Nutrients&Energy,Macronutrients,Disacaccharides (g/day),Crude (nut)
+a_enut04,b_enut04,,d_enut04,sc1_enut04,,,f_enut04,sc2_enut04,,,Derived Nutrients&Energy,Macronutrients,Disacaccharides (g/day),Energy (kcal/day)
+a_nut05,b_nut05,,d_nut05,sc1_nut05,,,f_nut05,sc2_nut05,,,Derived Nutrients&Energy,Macronutrients,Sucrose (g/day),Crude (nut)
+a_enut05,b_enut05,,d_enut05,sc1_enut05,,,f_enut05,sc2_enut05,,,Derived Nutrients&Energy,Macronutrients,Sucrose (g/day),Energy (kcal/day)
+a_nut06,b_nut06,,d_nut06,sc1_nut06,,,f_nut06,sc2_nut06,,,Derived Nutrients&Energy,Macronutrients,Dietary fibre (g/day),Crude (nut)
+a_enut06,b_enut06,,d_enut06,sc1_enut06,,,f_enut06,sc2_enut06,,,Derived Nutrients&Energy,Macronutrients,Dietary fibre (g/day),Energy (kcal/day)
+,,,d_nut07,sc1_nut07,,,f_nut07,sc2_nut07,,,Derived Nutrients&Energy,Macronutrients,Wholegrain total (g),Crude (nut)
+,,,d_enut07,sc1_enut07,,,f_enut07,sc2_enut07,,,Derived Nutrients&Energy,Macronutrients,Wholegrain total (g),Energy (kcal/day)
+a_nut08,b_nut08,,d_nut08,sc1_nut08,,,f_nut08,sc2_nut08,,,Derived Nutrients&Energy,Macronutrients,Protein (g/day),Crude (nut)
+a_enut08,b_enut08,,d_enut08,sc1_enut08,,,f_enut08,sc2_enut08,,,Derived Nutrients&Energy,Macronutrients,Protein (g/day),Energy (kcal/day)
+a_nut09,b_nut09,,d_nut09,sc1_nut09,,,f_nut09,sc2_nut09,,,Derived Nutrients&Energy,Macronutrients,Fat (g/day),Crude (nut)
+a_enut09,b_enut09,,d_enut09,sc1_enut09,,,f_enut09,sc2_enut09,,,Derived Nutrients&Energy,Macronutrients,Fat (g/day),Energy (kcal/day)
+a_nut10,b_nut10,,d_nut10,sc1_nut10,,,f_nut10,sc2_nut10,,,Derived Nutrients&Energy,Macronutrients,"Fatty acids, monounsaturated (g/d)",Crude (nut)
+a_enut10,b_enut10,,d_enut10,sc1_enut10,,,f_enut10,sc2_enut10,,,Derived Nutrients&Energy,Macronutrients,"Fatty acids, monounsaturated (g/d)",Energy (kcal/day)
+a_nut11,b_nut11,,d_nut11,sc1_nut11,,,f_nut11,sc2_nut11,,,Derived Nutrients&Energy,Macronutrients,"Fatty acids, polyunsaturated (g/d)",Crude (nut)
+a_enut11,b_enut11,,d_enut11,sc1_enut11,,,f_enut11,sc2_enut11,,,Derived Nutrients&Energy,Macronutrients,"Fatty acids, polyunsaturated (g/d)",Energy (kcal/day)
+a_nut12,b_nut12,,d_nut12,sc1_nut12,,,f_nut12,sc2_nut12,,,Derived Nutrients&Energy,Macronutrients,"Fatty acids, saturated (g/day)",Crude (nut)
+a_enut12,b_enut12,,d_enut12,sc1_enut12,,,f_enut12,sc2_enut12,,,Derived Nutrients&Energy,Macronutrients,"Fatty acids, saturated (g/day)",Energy (kcal/day)
+a_nut13,b_nut13,,d_nut13,sc1_nut13,,,f_nut13,sc2_nut13,,,Derived Nutrients&Energy,Macronutrients,Lauric acid/C12:0 (g/day),Crude (nut)
+a_enut13,b_enut13,,d_enut13,sc1_enut13,,,f_enut13,sc2_enut13,,,Derived Nutrients&Energy,Macronutrients,Lauric acid/C12:0 (g/day),Energy (kcal/day)
+a_nut14,b_nut14,,d_nut14,sc1_nut14,,,f_nut14,sc2_nut14,,,Derived Nutrients&Energy,Macronutrients,Myristic acid/C14:0 (g/day),Crude (nut)
+a_enut14,b_enut14,,d_enut14,sc1_enut14,,,f_enut14,sc2_enut14,,,Derived Nutrients&Energy,Macronutrients,Myristic acid/C14:0 (g/day),Energy (kcal/day)
+a_nut15,b_nut15,,d_nut15,sc1_nut15,,,f_nut15,sc2_nut15,,,Derived Nutrients&Energy,Macronutrients,Palmitic acid/C16:0 (g/day),Crude (nut)
+a_enut15,b_enut15,,d_enut15,sc1_enut15,,,f_enut15,sc2_enut15,,,Derived Nutrients&Energy,Macronutrients,Palmitic acid/C16:0 (g/day),Energy (kcal/day)
+a_nut16,b_nut16,,d_nut16,sc1_nut16,,,f_nut16,sc2_nut16,,,Derived Nutrients&Energy,Macronutrients,Palmitoleic acid/C16:1 (g/day),Crude (nut)
+a_enut16,b_enut16,,d_enut16,sc1_enut16,,,f_enut16,sc2_enut16,,,Derived Nutrients&Energy,Macronutrients,Palmitoleic acid/C16:1 (g/day),Energy (kcal/day)
+a_nut17,b_nut17,,d_nut17,sc1_nut17,,,f_nut17,sc2_nut17,,,Derived Nutrients&Energy,Macronutrients,Stearic acid/C18:0 (g/day),Crude (nut)
+a_enut17,b_enut17,,d_enut17,sc1_enut17,,,f_enut17,sc2_enut17,,,Derived Nutrients&Energy,Macronutrients,Stearic acid/C18:0 (g/day),Energy (kcal/day)
+a_nut18,b_nut18,,d_nut18,sc1_nut18,,,f_nut18,sc2_nut18,,,Derived Nutrients&Energy,Macronutrients,Oleic acid/C18:1 (g/day),Crude (nut)
+a_enut18,b_enut18,,d_enut18,sc1_enut18,,,f_enut18,sc2_enut18,,,Derived Nutrients&Energy,Macronutrients,Oleic acid/C18:1 (g/day),Energy (kcal/day)
+a_nut19,b_nut19,,d_nut19,sc1_nut19,,,f_nut19,sc2_nut19,,,Derived Nutrients&Energy,Macronutrients,Linoleic acid/C18:2 (g/day),Crude (nut)
+a_enut19,b_enut19,,d_enut19,sc1_enut19,,,f_enut19,sc2_enut19,,,Derived Nutrients&Energy,Macronutrients,Linoleic acid/C18:2 (g/day),Energy (kcal/day)
+a_nut20,b_nut20,,d_nut20,sc1_nut20,,,f_nut20,sc2_nut20,,,Derived Nutrients&Energy,Macronutrients,Alpha-Linoleic acid/C18:3 (g/day),Crude (nut)
+a_enut20,b_enut20,,d_enut20,sc1_enut20,,,f_enut20,sc2_enut20,,,Derived Nutrients&Energy,Macronutrients,Alpha-Linoleic acid/C18:3 (g/day),Energy (kcal/day)
+a_nut21,b_nut21,,d_nut21,sc1_nut21,,,f_nut21,sc2_nut21,,,Derived Nutrients&Energy,Macronutrients,Arachidic acid/C20:0 (g/day),Crude (nut)
+a_enut21,b_enut21,,d_enut21,sc1_enut21,,,f_enut21,sc2_enut21,,,Derived Nutrients&Energy,Macronutrients,Arachidic acid/C20:0 (g/day),Energy (kcal/day)
+a_nut22,b_nut22,,d_nut22,sc1_nut22,,,f_nut22,sc2_nut22,,,Derived Nutrients&Energy,Macronutrients,Arachidonic acid/C20:4 (g/day),Crude (nut)
+a_enut22,b_enut22,,d_enut22,sc1_enut22,,,f_enut22,sc2_enut22,,,Derived Nutrients&Energy,Macronutrients,Arachidonic acid/C20:4 (g/day),Energy (kcal/day)
+a_nut23,b_nut23,,d_nut23,sc1_nut23,,,f_nut23,sc2_nut23,,,Derived Nutrients&Energy,Macronutrients,Eicosapentaenoic acid/C20:5 (g/day),Crude (nut)
+a_enut23,b_enut23,,d_enut23,sc1_enut23,,,f_enut23,sc2_enut23,,,Derived Nutrients&Energy,Macronutrients,Eicosapentaenoic acid/C20:5 (g/day),Energy (kcal/day)
+a_nut24,b_nut24,,d_nut24,sc1_nut24,,,f_nut24,sc2_nut24,,,Derived Nutrients&Energy,Macronutrients,Docosapentaenoic acid/C22:5 (g/day),Crude (nut)
+a_enut24,b_enut24,,d_enut24,sc1_enut24,,,f_enut24,sc2_enut24,,,Derived Nutrients&Energy,Macronutrients,Docosapentaenoic acid/C22:5 (g/day),Energy (kcal/day)
+a_nut25,b_nut25,,d_nut25,sc1_nut25,,,f_nut25,sc2_nut25,,,Derived Nutrients&Energy,Macronutrients,Docosahexaenoic acid/C22:6 (g/day),Crude (nut)
+a_enut25,b_enut25,,d_enut25,sc1_enut25,,,f_enut25,sc2_enut25,,,Derived Nutrients&Energy,Macronutrients,Docosahexaenoic acid/C22:6 (g/day),Energy (kcal/day)
+a_nut26,b_nut26,,d_nut26,sc1_nut26,,,f_nut26,sc2_nut26,,,Derived Nutrients&Energy,Macronutrients,Fatty acids C4:0-C10:0 (g/day),Crude (nut)
+a_enut26,b_enut26,,d_enut26,sc1_enut26,,,f_enut26,sc2_enut26,,,Derived Nutrients&Energy,Macronutrients,Fatty acids C4:0-C10:0 (g/day),Energy (kcal/day)
+a_nut27,b_nut27,,d_nut27,sc1_nut27,,,f_nut27,sc2_nut27,,,Derived Nutrients&Energy,Macronutrients,Cholesterol (mg/day),Crude (nut)
+a_enut27,b_enut27,,d_enut27,sc1_enut27,,,f_enut27,sc2_enut27,,,Derived Nutrients&Energy,Macronutrients,Cholesterol (mg/day),Energy (kcal/day)
+a_nut28,b_nut28,,d_nut28,sc1_nut28,,,f_nut28,sc2_nut28,,,Derived Nutrients&Energy,Macronutrients,Alcohol (ethanol) (g/day),Crude (nut)
+a_enut28,b_enut28,,d_enut28,sc1_enut28,,,f_enut28,sc2_enut28,,,Derived Nutrients&Energy,Macronutrients,Alcohol (ethanol) (g/day),Energy (kcal/day)
+,b_nut28_alt,,,,,,,,,,Derived Nutrients&Energy,Macronutrients,"Derived variable: Alcohol (g/day). Alternative calculation (b_der_alc10_v, b_der_alc11_v, and b_der_alc13_v, were used instead of standard portions)",Crude (nut)
+a_nut29,b_nut29,,d_nut29,sc1_nut29,,,f_nut29,sc2_nut29,,,Derived Nutrients&Energy,Micronutrients,Thiamin/Vitamin B1 (mg/day),Crude (nut)
+a_enut29,b_enut29,,d_enut29,sc1_enut29,,,f_enut29,sc2_enut29,,,Derived Nutrients&Energy,Micronutrients,Thiamin/Vitamin B1 (mg/day),Energy (kcal/day)
+a_nut30,b_nut30,,d_nut30,sc1_nut30,,,f_nut30,sc2_nut30,,,Derived Nutrients&Energy,Micronutrients,Riboflavin/Vitamin B2 (mg/day),Crude (nut)
+a_enut30,b_enut30,,d_enut30,sc1_enut30,,,f_enut30,sc2_enut30,,,Derived Nutrients&Energy,Micronutrients,Riboflavin/Vitamin B2 (mg/day),Energy (kcal/day)
+a_nut31,b_nut31,,d_nut31,sc1_nut31,,,f_nut31,sc2_nut31,,,Derived Nutrients&Energy,Micronutrients,Niacin/Vitamin B3 (mg/day),Crude (nut)
+a_enut31,b_enut31,,d_enut31,sc1_enut31,,,f_enut31,sc2_enut31,,,Derived Nutrients&Energy,Micronutrients,Niacin/Vitamin B3 (mg/day),Energy (kcal/day)
+a_nut32,b_nut32,,d_nut32,sc1_nut32,,,f_nut32,sc2_nut32,,,Derived Nutrients&Energy,Micronutrients,Niacin equivalents (mg/day),Crude (nut)
+a_enut32,b_enut32,,d_enut32,sc1_enut32,,,f_enut32,sc2_enut32,,,Derived Nutrients&Energy,Micronutrients,Niacin equivalents (mg/day),Energy (kcal/day)
+a_nut33,b_nut33,,d_nut33,sc1_nut33,,,f_nut33,sc2_nut33,,,Derived Nutrients&Energy,Micronutrients,Pyridoxin/Vitamin B6 (mg/day),Crude (nut)
+a_enut33,b_enut33,,d_enut33,sc1_enut33,,,f_enut33,sc2_enut33,,,Derived Nutrients&Energy,Micronutrients,Pyridoxin/Vitamin B6 (mg/day),Energy (kcal/day)
+a_nut34,b_nut34,,d_nut34,sc1_nut34,,,f_nut34,sc2_nut34,,,Derived Nutrients&Energy,Micronutrients,Folate/Vitamin B9 (ÃÂµg/day),Crude (nut)
+a_enut34,b_enut34,,d_enut34,sc1_enut34,,,f_enut34,sc2_enut34,,,Derived Nutrients&Energy,Micronutrients,Folate/Vitamin B9 (ÃÂµg/day),Energy (kcal/day)
+a_nut35,b_nut35,,d_nut35,sc1_nut35,,,f_nut35,sc2_nut35,,,Derived Nutrients&Energy,Micronutrients,Cobalamin/Vitamin B12 (ÃÂµg/day),Crude (nut)
+a_enut35,b_enut35,,d_enut35,sc1_enut35,,,f_enut35,sc2_enut35,,,Derived Nutrients&Energy,Micronutrients,Cobalamin/Vitamin B12 (ÃÂµg/day),Energy (kcal/day)
+a_nut36,b_nut36,,d_nut36,sc1_nut36,,,f_nut36,sc2_nut36,,,Derived Nutrients&Energy,Micronutrients,Ascorbic acid/Vitamin C (mg/day),Crude (nut)
+a_enut36,b_enut36,,d_enut36,sc1_enut36,,,f_enut36,sc2_enut36,,,Derived Nutrients&Energy,Micronutrients,Ascorbic acid/Vitamin C (mg/day),Energy (kcal/day)
+a_nut37,b_nut37,,d_nut37,sc1_nut37,,,f_nut37,sc2_nut37,,,Derived Nutrients&Energy,Micronutrients,Beta-carotene/Provitamin A (ÃÂµg/day),Crude (nut)
+a_enut37,b_enut37,,d_enut37,sc1_enut37,,,f_enut37,sc2_enut37,,,Derived Nutrients&Energy,Micronutrients,Beta-carotene/Provitamin A (ÃÂµg/day),Energy (kcal/day)
+a_nut38,b_nut38,,d_nut38,sc1_nut38,,,f_nut38,sc2_nut38,,,Derived Nutrients&Energy,Micronutrients,Retinol activity equivalents (ÃÂµg/d),Crude (nut)
+a_enut38,b_enut38,,d_enut38,sc1_enut38,,,f_enut38,sc2_enut38,,,Derived Nutrients&Energy,Micronutrients,Retinol activity equivalents (ÃÂµg/d),Energy (kcal/day)
+a_nut39,b_nut39,,d_nut39,sc1_nut39,,,f_nut39,sc2_nut39,,,Derived Nutrients&Energy,Micronutrients,Retinol/Vitamin A (ÃÂµg/day),Crude (nut)
+a_enut39,b_enut39,,d_enut39,sc1_enut39,,,f_enut39,sc2_enut39,,,Derived Nutrients&Energy,Micronutrients,Retinol/Vitamin A (ÃÂµg/day),Energy (kcal/day)
+a_nut40,b_nut40,,d_nut40,sc1_nut40,,,f_nut40,sc2_nut40,,,Derived Nutrients&Energy,Micronutrients,Calciferol/Vitamin D (ÃÂµg/day),Crude (nut)
+a_enut40,b_enut40,,d_enut40,sc1_enut40,,,f_enut40,sc2_enut40,,,Derived Nutrients&Energy,Micronutrients,Calciferol/Vitamin D (ÃÂµg/day),Energy (kcal/day)
+a_nut41,b_nut41,,d_nut41,sc1_nut41,,,f_nut41,sc2_nut41,,,Derived Nutrients&Energy,Micronutrients,Tocopherols & tocotrienols/ Vitamin E (mg/day),Crude (nut)
+a_enut41,b_enut41,,d_enut41,sc1_enut41,,,f_enut41,sc2_enut41,,,Derived Nutrients&Energy,Micronutrients,Tocopherols & tocotrienols/ Vitamin E (mg/day),Energy (kcal/day)
+a_nut42,b_nut42,,,sc1_nut42,,,,,,,Derived Nutrients&Energy,Micronutrients,Alfa-Tocopherol (mg/day),Crude (nut)
+a_enut42,b_enut42,,,sc1_enut42,,,,,,,Derived Nutrients&Energy,Micronutrients,Alfa-Tocopherol (mg/day),Energy (kcal/day)
+a_nut43,b_nut43,,d_nut43,sc1_nut43,,,f_nut43,sc2_nut43,,,Derived Nutrients&Energy,Micronutrients,Calcium (mg/day),Crude (nut)
+a_enut43,b_enut43,,d_enut43,sc1_enut43,,,f_enut43,sc2_enut43,,,Derived Nutrients&Energy,Micronutrients,Calcium (mg/day),Energy (kcal/day)
+a_nut44,b_nut44,,d_nut44,sc1_nut44,,,f_nut44,sc2_nut44,,,Derived Nutrients&Energy,Micronutrients,Iron (mg/day),Crude (nut)
+a_enut44,b_enut44,,d_enut44,sc1_enut44,,,f_enut44,sc2_enut44,,,Derived Nutrients&Energy,Micronutrients,Iron (mg/day),Energy (kcal/day)
+a_nut45,b_nut45,,d_nut45,sc1_nut45,,,f_nut45,sc2_nut45,,,Derived Nutrients&Energy,Micronutrients,Magnesium (mg/day),Crude (nut)
+a_enut45,b_enut45,,d_enut45,sc1_enut45,,,f_enut45,sc2_enut45,,,Derived Nutrients&Energy,Micronutrients,Magnesium (mg/day),Energy (kcal/day)
+a_nut46,b_nut46,,d_nut46,sc1_nut46,,,f_nut46,sc2_nut46,,,Derived Nutrients&Energy,Micronutrients,Phosphor (mg/day),Crude (nut)
+a_enut46,b_enut46,,d_enut46,sc1_enut46,,,f_enut46,sc2_enut46,,,Derived Nutrients&Energy,Micronutrients,Phosphor (mg/day),Energy (kcal/day)
+a_nut47,b_nut47,,d_nut47,sc1_nut47,,,f_nut47,sc2_nut47,,,Derived Nutrients&Energy,Micronutrients,Potassium (mg/day),Crude (nut)
+a_enut47,b_enut47,,d_enut47,sc1_enut47,,,f_enut47,sc2_enut47,,,Derived Nutrients&Energy,Micronutrients,Potassium (mg/day),Energy (kcal/day)
+a_nut48,b_nut48,,d_nut48,sc1_nut48,,,f_nut48,sc2_nut48,,,Derived Nutrients&Energy,Micronutrients,Selenium (micro g/day),Crude (nut)
+a_enut48,b_enut48,,d_enut48,sc1_enut48,,,f_enut48,sc2_enut48,,,Derived Nutrients&Energy,Micronutrients,Selenium (micro g/day),Energy (kcal/day)
+a_nut49,b_nut49,,d_nut49,sc1_nut49,,,f_nut49,sc2_nut49,,,Derived Nutrients&Energy,Micronutrients,Sodium (mg/day),Crude (nut)
+a_enut49,b_enut49,,d_enut49,sc1_enut49,,,f_enut49,sc2_enut49,,,Derived Nutrients&Energy,Micronutrients,Sodium (mg/day),Energy (kcal/day)
+a_nut50,b_nut50,,d_nut50,sc1_nut50,,,f_nut50,sc2_nut50,,,Derived Nutrients&Energy,Micronutrients,Zinc (mg/day),Crude (nut)
+a_enut50,b_enut50,,d_enut50,sc1_enut50,,,f_enut50,sc2_enut50,,,Derived Nutrients&Energy,Micronutrients,Zinc (mg/day),Energy (kcal/day)
+a_nut51,b_nut51,,d_nut51,sc1_nut51,,,f_nut51,sc2_nut51,,,Derived Nutrients&Energy,Others,Water (g/day),Crude (nut)
+a_enut51,b_enut51,,d_enut51,sc1_enut51,,,f_enut51,sc2_enut51,,,Derived Nutrients&Energy,Others,Water (g/day),Energy (kcal/day)
+a_nut52,b_nut52,,d_nut52,sc1_nut52,,,f_nut52,sc2_nut52,,,Derived Nutrients&Energy,Others,Ash (g/day),Crude (nut)
+a_enut52,b_enut52,,d_enut52,sc1_enut52,,,f_enut52,sc2_enut52,,,Derived Nutrients&Energy,Others,Ash (g/day),Energy (kcal/day)
+a_nut53,b_nut53,,d_nut53,sc1_nut53,,,f_nut53,sc2_nut53,,,Derived Nutrients&Energy,Others,Refuse from raw food (%/day),Crude (nut)
+a_enut53,b_enut53,,d_enut53,sc1_enut53,,,f_enut53,sc2_enut53,,,Derived Nutrients&Energy,Others,Refuse from raw food (%/day),Energy (kcal/day)

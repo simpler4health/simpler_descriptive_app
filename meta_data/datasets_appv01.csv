@@ -1,0 +1,12 @@
+Basic demographic,Questionnaires,Register data,Metabolome Profile,Proteome Profile,GWAS,Metagenome Profile,health exam,biochemical measurements
+participant_sex,FFQ1987,dead,metabolomics_lc_ms_cycl1,Olink.target96_cycl1,GWAS,Fecal metagenomics,dxa_cycl1,clinical_chemistry_cycl1
+,FFQ1997,any_cancer,metabolomics_nmr_cycl1,Olink.explore_cycl1,,,dxa_cycl2,clinical_chemistry_cycl2
+,HQ2008,cvd,metabolomics_nmr_cycl2,,,,tanita,metals_cycl1
+,FFQ2009,diabetes,,,,,,
+,HQ cycle1,fracture,,,,,,
+,Toilet Habits cycle1,hip_frac,,,,,,
+,HQ2019,,,,,,,
+,FFQ2019,,,,,,,
+,HQ cycle2,,,,,,,
+,Standr. Health Interview cycle2,,,,,,,
+,Toilet Habits cycle2,,,,,,,

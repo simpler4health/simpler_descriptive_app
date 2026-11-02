@@ -1,0 +1,58 @@
+# Citation metadata for the SIMPLER Descriptive App.
+# GitHub shows a "Cite this repository" button from this file, and Zenodo reads it
+# (authors, title, licence) when it archives a release.
+# TODO: add ORCID iDs if available
+#       (e.g.   orcid: "https://orcid.org/0000-0000-0000-0000").
+
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+title: "SIMPLER Descriptive App"
+abstract: >-
+  An R Shiny application for researchers preparing a data application to SIMPLER
+  (Swedish Infrastructure for Medical Population-Based Life-Course and Environmental
+  Research). It lets users browse the available variables, estimate how many participants
+  match a combination of variables using an anonymised dataset, estimate the cost of a
+  request, and download the selected variables.
+authors:
+  - family-names: "Sayols-Baixeras"
+    given-names: "Sergi"
+    affiliation: "Uppsala University"
+  - family-names: "Al Jewari"
+    given-names: "Caesar"
+    affiliation: "Uppsala University"
+  - family-names: "Håkansson"
+    given-names: "Niclas"
+    affiliation: "Uppsala University"
+  - family-names: "Mola-Caminal"
+    given-names: "Marina"
+    affiliation: "Uppsala University"
+  - family-names: "Martínez"
+    given-names: "Javier"
+    affiliation: "Uppsala University"
+  - family-names: "Kolseth"
+    given-names: "Anna-Karin"
+    affiliation: "Uppsala University"
+  - family-names: "Michaëlsson"
+    given-names: "Karl"
+    affiliation: "Uppsala University"
+license: MIT
+keywords:
+  - SIMPLER
+  - cohort
+  - biobank
+  - epidemiology
+  - Shiny app
+  - web application
+  - R
+  - data access
+  - anonymisation
+references:
+  - type: article
+    title: "The Swedish infrastructure for medical population-based life-course and environmental research"
+    authors:
+      - family-names: "Warensjö Lemming"
+        given-names: "E."
+    journal: "European Journal of Epidemiology"
+    year: 2026
+    doi: "10.1007/s10654-026-01455-6"

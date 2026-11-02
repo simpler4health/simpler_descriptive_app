@@ -1,0 +1,44 @@
+# ==============================================================================
+# SIMPLER Descriptive App - files that must NEVER be committed
+# ==============================================================================
+
+# --- Participant-level data (plain or encrypted) ---
+overview_data/
+*.rds
+*.RData
+*.rda
+
+# --- Usage logs (pseudonymised, 90-day retention) ---
+logs/
+
+# --- Secrets: data key, login credentials, Docker env files ---
+.env
+*.env
+.simpler_data_key
+.Renviron
+key_code/
+*key*.txt
+
+# --- MaxMind GeoLite2 database (licence does not allow redistribution) ---
+GeoLite2-Country/
+*.mmdb
+
+# --- GWAS manifest ZIPs (served from a server volume) ---
+manifests/
+*.zip
+
+# --- Export folders used to move files out of Bianca ---
+export/
+
+# --- R / RStudio ---
+.Rhistory
+.Rapp.history
+.Rproj.user/
+*.Rproj
+rsconnect/
+
+# --- OS / editor files ---
+.DS_Store
+Thumbs.db
+*.swp
+*~

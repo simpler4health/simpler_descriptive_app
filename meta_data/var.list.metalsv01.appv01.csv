@@ -1,0 +1,32 @@
+cycle1,cycle2,Label
+sc1_uSb,sc2_USb,U-Antimony (µg/L)
+sc1_USb_lodadj,sc2_USb_lodadj,"U-Antimony, LOD adj (µg/L)"
+sc1_uAs,sc2_UAs,U-Arsenic (µg/L)
+sc1_uCd,sc2_UCd,U-Cadmium (µg/L)
+sc1_UCd_lodadj,sc2_UCd_lodadj,"U-Cadmium, LOD adj (µg/L)"
+sc1_uCa,sc2_UCa,U-Calcium (µg/L)
+sc1_uCo,sc2_UCo,U-Cobalt (µg/L)
+sc1_UCo_lodadj,sc2_UCo_lodadj,"U-Cobalt, LOD adj (µg/L)"
+sc1_uCu,sc2_UCu,U-Copper (µg/L)
+sc1_UCu_lodadj,sc2_UCu_lodadj,"U-Copper, LOD adj (µg/L)"
+sc1_uCreat_g,,U-Creatinine (g/l)
+sc1_uCreat_mm,sc2_uCreat_mm,U-Creatinine (mmol/l)
+sc1_udensity,,U-Density
+sc1_uF,,U-Fluoride (µg/L)
+sc1_uFe,sc2_UFe,U-Iron (µg/L)
+sc1_UFe_lodadj,sc2_UFe_lodadj,"U-Iron, LOD adj (µg/L)"
+sc1_uPb,sc2_UPb,U-Lead (µg/L)
+sc1_UPb_lodadj,sc2_UPb_lodadj,"U-Lead, LOD adj (µg/L)"
+sc1_uMg,sc2_UMg,U-Magnesium (µg/L)
+sc1_uMn,sc2_UMn,U-Manganese (µg/L)
+sc1_UMn_lodadj,sc2_UMn_lodadj,"U-Manganese, LOD adj (µg/L)"
+sc1_uMo,sc2_UMo,U-Molybdenum (µg/L)
+sc1_uP,sc2_UP,U-Phosphorus (µg/L)
+sc1_uK,sc2_UK,U-Potassium (µg/L)
+sc1_uSe,sc2_USe,U-Selenium (µg/L)
+sc1_uNa,sc2_UNa,U-Sodium (µg/L)
+sc1_UTi,sc2_UTi,U-Titanium (µg/L)
+sc1_UTi_lodadj,sc2_UTi_lodadj,"U-Titanium, LOD adj (µg/L)"
+sc1_uU,,U-Uranium (µg/L)
+sc1_uZn,sc2_UZn,U-Zink (µg/L)
+sc1_upH,,U-pH (mean)
