@@ -72,6 +72,10 @@ usability. No personal data or identifiable information is stored. Usage logs ar
 ├── www/                               logos
 ├── SIMPLER_white_paper/
 │   └── SIMPLER_European_Journal_of_Epidemiology.pdf   (CC BY)
+├── renv.lock                          exact R package versions (used to build the Docker image)
+├── Dockerfile                         Docker image for SciLifeLab Serve (code only, no data)
+├── .dockerignore                      files that must never enter the image
+├── .github/workflows/docker.yml       builds and publishes the image automatically (GitHub Actions)
 ├── CITATION.cff                       citation metadata (authors, licence)
 ├── LICENSE
 └── README.md
@@ -82,36 +86,46 @@ Files and folders that are **not** in the repository and must be provided at dep
 | Path | Content | Notes |
 |---|---|---|
 | `overview_data/underlying_overview_datav03.enc.rds` | anonymised participant-level data, encrypted (AES-256-GCM) | provided by SIMPLER; decrypted in memory at start-up |
+| `overview_data/key_code.txt` | data key file | see *Configuration* |
 | `manifests/` | Illumina GSA manifest ZIPs (GWAS tab) | optional; without it the manifest links do not work |
 | `GeoLite2-Country/GeoLite2-Country.mmdb` | MaxMind GeoLite2 Country database | optional; see below |
-| `logs/` | usage logs | created automatically |
+| `logs/` | usage logs | created automatically when running locally; must exist in the Serve volume |
 
 ---
 
 ## Requirements
 
-- R (≥ 4.1) with the packages:
-  `shiny`, `shinyjs`, `shinyWidgets`, `shinyBS`, `shinymanager`, `DT`, `rio`,
-  `compareGroups`, `ggplot2`, `Hmisc`, `ComplexUpset`, `openxlsx`, `digest`, `openssl`,
+- R 4.3.2 (the version recorded in `renv.lock`) with the packages:
+  `shiny`, `shinyjs`, `shinyWidgets`, `shinymanager`, `DT`, `compareGroups`, `ggplot2`, 
+  `Hmisc`, `ComplexUpset`, `openxlsx`, `digest`, `openssl`,
   `rgeolocate`, `jsonlite`, `htmltools`
 - [pandoc](https://pandoc.org/) ≥ 2 (Word export of the Table tab)
 
+The exact package versions are recorded in `renv.lock`. To install them:
+
 ```r
-install.packages(c("shiny", "shinyjs", "shinyWidgets", "shinyBS", "shinymanager", "DT", "rio",
-                   "compareGroups", "ggplot2", "Hmisc", "ComplexUpset", "openxlsx", "digest",
-                   "openssl", "rgeolocate", "jsonlite", "htmltools"))
+install.packages("renv")
+renv::restore()
 ```
+
+> **Note:** the Combination Plot (ComplexUpset 1.3.3) needs **ggplot2 3.4.x** and the matching
+> versions of `patchwork`, `scales` and `gtable` recorded in `renv.lock`. It does not work with
+> ggplot2 ≥ 4.0.
 
 ---
 
 ## Configuration
+
+The app needs a key to decrypt the data file. It is read from the environment variable
+`SIMPLER_DATA_KEY` or from a key file stored with the data . **Never commit the key.**
 
 The app reads its settings from environment variables (never commit their values):
 
 | Variable | Required | Purpose |
 |---|---|---|
 | `SIMPLER_DATA_KEY` | yes | key used to decrypt the data file |
-| `SIMPLER_USER`, `SIMPLER_PASS` | no | if both are set, a login screen is shown |
+| `SIMPLER_USER`, `SIMPLER_PASS` | no | if both are set, a login screen is shown (not 
+used on Serve, where access is controlled by the app's visibility setting)|
 
 ---
 
@@ -125,6 +139,20 @@ database. Its licence does not allow redistribution, so it is not included here:
    `GeoLite2-Country/GeoLite2-Country.mmdb`.
 
 Without the database the app works normally and the country is logged as `Unknown`.
+
+---
+
+## Deployment on SciLifeLab Serve
+
+1. **Image.** Every push to `main` that changes the app builds a Docker image with GitHub
+   Actions and publishes it on the GitHub Container Registry with a unique date-time tag,
+   e.g. `ghcr.io/simpler4health/simpler_descriptive_app:20261103-1500`. The address of each
+   image is shown in the summary of the run (tab *Actions*). The image is public and
+   contains only code.
+2. **Data.** Upload the data files (see the table in *Repository structure*) to the project
+   volume (`project-vol`) with the Serve File Manager, including an empty `logs/` folder.
+3. **App settings on Serve.** Image: the address from step 1 (never `latest`);
+   Port: `3838`; Mount path: `/srv/shiny-server/data`.
 
 ---
 
