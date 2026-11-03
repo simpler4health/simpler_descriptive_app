@@ -1,0 +1,21 @@
+# Files that must NEVER enter the Docker image (the image is public).
+# They live in the project volume on SciLifeLab Serve instead.
+overview_data/
+manifests/
+GeoLite2-Country/
+logs/
+*.rds
+*.mmdb
+*.zip
+*.env
+*key*
+.Rhistory
+.RData
+
+# Not needed in the image
+.git/
+.github/
+renv/
+.Rprofile
+.Rproj.user/
+*.Rproj

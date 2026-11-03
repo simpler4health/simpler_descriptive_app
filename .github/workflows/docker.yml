@@ -1,0 +1,60 @@
+# ==============================================================================
+# Build the Docker image and publish it on the GitHub Container Registry (ghcr.io)
+# ==============================================================================
+# Runs on every push to 'main' that changes the app (not for README/licence-only
+# changes), and can also be started by hand from the 'Actions' tab.
+#
+# Each image gets a unique tag (date-time, UTC), as required by SciLifeLab Serve:
+#   ghcr.io/<organisation>/<repository>:YYYYMMDD-HHMM
+# The newest image is also tagged 'latest' (do NOT use 'latest' on Serve).
+# ==============================================================================
+name: Build and publish Docker image
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "README.md"
+      - "CITATION.cff"
+      - "LICENSE"
+      - ".gitignore"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Create the image tag (date-time, UTC)
+        id: tag
+        run: echo "tag=$(date -u +%Y%m%d-%H%M)" >> "$GITHUB_OUTPUT"
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to the GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push the image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          platforms: linux/amd64
+          push: true
+          tags: |
+            ghcr.io/${{ github.repository }}:${{ steps.tag.outputs.tag }}
+            ghcr.io/${{ github.repository }}:latest
+
+      - name: Show the image address to use on SciLifeLab Serve
+        run: echo "Image for Serve -> ghcr.io/${{ github.repository }}:${{ steps.tag.outputs.tag }}" >> "$GITHUB_STEP_SUMMARY"
