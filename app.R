@@ -32,14 +32,12 @@
 # ============================================================
 library(shiny)
 library(shinyjs)
-library(rio)              # fast file import
 library(compareGroups)    # statistical summary tables
 library(shinyWidgets)     # nicer UI inputs
 library(ggplot2)
 library(Hmisc)            # cut2()
 library(ComplexUpset)     # upset plots
 library(DT)
-library(shinyBS)
 # digest + openssl + rgeolocate: pseudonymised usage logging (see 'Random daily key' below)
 # shinymanager: optional login screen (only active when SIMPLER_USER / SIMPLER_PASS are set)
 library(digest)
@@ -86,21 +84,21 @@ for (col_name in colnames(dataset_map)) {
 }
 
 # Anonymised participant-level data, stored encrypted (AES-256-GCM) and decrypted
+data_key_file <- "overview_data/key_code.txt"
+if (!nzchar(Sys.getenv("SIMPLER_DATA_KEY")) && file.exists(data_key_file)) {
+  readRenviron(data_key_file)
+}
 data_key_hex <- Sys.getenv("SIMPLER_DATA_KEY")
-if (nchar(data_key_hex) != 64) stop("SIMPLER_DATA_KEY is missing or not 64 hex characters")
+if (nchar(data_key_hex) != 64) stop("Data key not found: set SIMPLER_DATA_KEY or provide overview_data/key_code.txt")
 data_key <- as.raw(strtoi(substring(data_key_hex, seq(1, 63, 2), seq(2, 64, 2)), 16L))
 data_enc <- readRDS("overview_data/underlying_overview_datav03.enc.rds")
 dades <- unserialize(openssl::aes_gcm_decrypt(data_enc, key = data_key, iv = attr(data_enc, "iv")))
-rm(data_key_hex, data_key, data_enc)   # remove the key from memory once the data is loaded
+Sys.unsetenv("SIMPLER_DATA_KEY")   # the key is no longer needed once the data is loaded
+rm(data_key_file, data_key_hex, data_key, data_enc)   # remove the key from memory once the data is loaded
 
 # Size of the original cohort before anonymisation; used to report how many participants were removed
 n_original_cohort <- 107339
 
-
-# Variable metadata table (category, description...).
-# NOTE: not used directly in app.R; the module reads its own copy of var.list_app02.csv.
-var.list<-rio::import("meta_data/var.list_app02.csv",header=T)
-var.list[var.list==""]=NA
 
 # Builds the grouped choices (group -> variables) for the pickerInputs of Table and Combination Plot.
 # Only variables that exist in `dades` are kept.
