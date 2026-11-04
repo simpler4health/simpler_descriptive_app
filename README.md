@@ -191,8 +191,8 @@ Using this app to prepare a data application does not require citing the app.
 it (see the **"Cite this repository"** button on GitHub, generated from
 [`CITATION.cff`](CITATION.cff)):
 
-> Sayols-Baixeras S, Al Jewari C, Håkansson N, Mola-Caminal M, Martínez FJ, Nguyen D, Olsson E,
-> Kolseth AK, Michaëlsson K. SIMPLER Descriptive App.
+> Sayols-Baixeras S, Al Jewari C, Håkansson N, Mola-Caminal M, Martínez FJ, Carlsson F,
+> Nguyen D, Olsson E, Kolseth AK, Michaëlsson K. SIMPLER Descriptive App.
 
 ---
 
