@@ -174,25 +174,23 @@ This design was approved by the SIMPLER Data Office.
 
 ## Citation
 
-**Using SIMPLER data.** Publications based on SIMPLER data must cite the SIMPLER white paper
-and follow the SIMPLER
-[publication policy](https://www.simpler4health.se/w/sh/en/researchers/publication-policy):
+**This app.** To cite the SIMPLER Descriptive App, use the **"Cite this repository"** button
+on the GitHub page (generated from [`CITATION.cff`](CITATION.cff)):
+
+> Sayols-Baixeras S, Al Jewari C, Håkansson N, Mola-Caminal M, Kolseth AK, Michaëlsson K.
+> SIMPLER Descriptive App.
+
+**SIMPLER.** To describe or cite SIMPLER, please use the white paper:
 
 > Warensjö Lemming E, et al. The Swedish infrastructure for medical population-based
 > life-course and environmental research. *Eur J Epidemiol*. 2026 Oct 12.
-> doi:[10.1007/s10654-026-01455-6](https://doi.org/10.1007/s10654-026-01455-6)
+> doi:[10.1007/s10654-026-01455-6](https://link.springer.com/article/10.1007/s10654-026-01455-6)
+
+Please also follow the SIMPLER
+[publication policy](https://www.simpler4health.se/w/sh/en/researchers/publication-policy).
 
 The PDF in `SIMPLER_white_paper/` is an open access article distributed under the terms of
 the Creative Commons Attribution (CC BY) licence.
-
-Using this app to prepare a data application does not require citing the app.
-
-**Using or adapting this software.** If you reuse or adapt the code of this app, please cite
-it (see the **"Cite this repository"** button on GitHub, generated from
-[`CITATION.cff`](CITATION.cff)):
-
-> Sayols-Baixeras S, Al Jewari C, Håkansson N, Mola-Caminal M, Martínez FJ, Carlsson F,
-> Nguyen D, Olsson E, Kolseth AK, Michaëlsson K. SIMPLER Descriptive App.
 
 ---
 
@@ -205,7 +203,9 @@ The following are **not** covered by the MIT License:
 - the SIMPLER data (not included in this repository);
 - the logos in `www/`, which belong to their respective institutions;
 - the white paper in `SIMPLER_white_paper/` (CC BY, see above);
-- the content of `faq/simpler_faq.csv` (© SIMPLER, Uppsala University).
+-  the content of `faq/simpler_faq.csv`, which may be reused and adapted under
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), provided that the SIMPLER white
+  paper (see *Citation*) is cited as the source.
 
 ---
 
