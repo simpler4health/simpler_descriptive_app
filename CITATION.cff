@@ -5,7 +5,10 @@
 #       (e.g.   orcid: "https://orcid.org/0000-0000-0000-0000").
 
 cff-version: 1.2.0
-message: "If you use this software, please cite it using the metadata from this file."
+message: >-
+  If you use SIMPLER data, please cite the SIMPLER white paper
+  (doi:10.1007/s10654-026-01455-6) and follow the SIMPLER publication policy.
+  If you reuse or adapt this software, please cite it using the metadata from this file.
 type: software
 title: "SIMPLER Descriptive App"
 abstract: >-
@@ -28,7 +31,13 @@ authors:
     given-names: "Marina"
     affiliation: "Uppsala University"
   - family-names: "Martínez"
-    given-names: "Javier"
+    given-names: "Francisco Javier"
+    affiliation: "Uppsala University"
+  - family-names: "Nguyen"
+    given-names: "Diem"
+    affiliation: "Uppsala University"
+  - family-names: "Olsson"
+    given-names: "Erika"
     affiliation: "Uppsala University"
   - family-names: "Kolseth"
     given-names: "Anna-Karin"
