@@ -75,6 +75,7 @@ usability. No personal data or identifiable information is stored. Usage logs ar
 ├── renv.lock                          exact R package versions (used to build the Docker image)
 ├── Dockerfile                         Docker image for SciLifeLab Serve (code only, no data)
 ├── .dockerignore                      files that must never enter the image
+├── shiny-server.conf                  Shiny Server settings (app logs written to the data volume)
 ├── .github/workflows/docker.yml       builds and publishes the image automatically (GitHub Actions)
 ├── CITATION.cff                       citation metadata (authors, licence)
 ├── LICENSE
