@@ -178,8 +178,8 @@ This design was approved by the SIMPLER Data Office.
 **This app.** To cite the SIMPLER Descriptive App, use the **"Cite this repository"** button
 on the GitHub page (generated from [`CITATION.cff`](CITATION.cff)):
 
-> Sayols-Baixeras S, Al Jewari C, Håkansson N, Mola-Caminal M, Kolseth AK, Michaëlsson K.
-> SIMPLER Descriptive App.
+> Sayols-Baixeras S, Al Jewari C, Håkansson N, Mola-Caminal M, Martínez FJ, Carlsson F,
+> Nguyen D, Olsson E, Kolseth AK, Michaëlsson K. SIMPLER Descriptive App.
 
 **SIMPLER.** To describe or cite SIMPLER, please use the white paper:
 
