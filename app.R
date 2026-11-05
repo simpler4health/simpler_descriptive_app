@@ -244,13 +244,17 @@ log_event <- function(event_name, session, info=NULL){
     event = event_name
   )
   
-  write.table(
-    log,
-    file = paste0("logs/log_events_", format(Sys.Date(), "%Y-%m-%d"),".csv"),
-    sep = ",",
-    row.names = FALSE,
-    col.names = !file.exists(paste0("logs/log_events_", format(Sys.Date(), "%Y-%m-%d"),".csv")),
-    append = TRUE
+# Logging must never stop the app: if the log file cannot be written, only a warning is printed
+  tryCatch(
+    write.table(
+      log,
+      file = paste0("logs/log_events_", format(Sys.Date(), "%Y-%m-%d"),".csv"),
+      sep = ",",
+      row.names = FALSE,
+      col.names = !file.exists(paste0("logs/log_events_", format(Sys.Date(), "%Y-%m-%d"),".csv")),
+      append = TRUE
+    ),
+    error = function(e) warning("Could not write the event log: ", conditionMessage(e))
   )
 }
 
@@ -266,13 +270,17 @@ log_visit <- function(session) {
     country = info$country
   )
   
-  write.table(
-    log,
-    file = paste0("logs/log_visits_", format(Sys.Date(), "%Y-%m-%d"),".csv"),
-    sep = ",",
-    row.names = FALSE,
-    col.names = !file.exists(paste0("logs/log_visits_", format(Sys.Date(), "%Y-%m-%d"),".csv")),
-    append = TRUE
+# Logging must never stop the app: if the log file cannot be written, only a warning is printed
+  tryCatch(
+    write.table(
+      log,
+      file = paste0("logs/log_visits_", format(Sys.Date(), "%Y-%m-%d"),".csv"),
+      sep = ",",
+      row.names = FALSE,
+      col.names = !file.exists(paste0("logs/log_visits_", format(Sys.Date(), "%Y-%m-%d"),".csv")),
+      append = TRUE
+    ),
+    error = function(e) warning("Could not write the visit log: ", conditionMessage(e))
   )
 }
 
