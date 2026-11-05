@@ -722,9 +722,8 @@ explore_variable_server <- function(input, output, session, log_event_fn=NULL, s
         if (length(click_c)==0) {
           sheet_df <- raw
         } else {
-          row_match <- rowSums(
-            sapply(click_c,function(col) !is.na(raw[[col]])&raw[[col]]%in%basket),
-            na.rm=TRUE)>0
+          hit_mat <- do.call(cbind, lapply(click_c, function(col) !is.na(raw[[col]]) & raw[[col]] %in% basket))
+          row_match <- rowSums(hit_mat, na.rm=TRUE) > 0
           sheet_df <- raw[row_match,,drop=FALSE]
           for (col in click_c)
             sheet_df[[col]] <- ifelse(!is.na(sheet_df[[col]])&sheet_df[[col]]%in%basket,

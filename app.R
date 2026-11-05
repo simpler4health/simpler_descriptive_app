@@ -1178,8 +1178,8 @@ Shiny.addCustomMessageHandler("ev_trigger_gwas_dl", function(msg) {
                   explore_variable_tab_ui()
                 ),
                 # Table tab: disclaimer, table (HTML) and dataset info banner, all rendered by the server
-                tabPanel("Table", br(), uiOutput("table_disclaimer"), uiOutput("restab"), uiOutput("table_info_banner")),
-                tabPanel("Combination Plot", br(), uiOutput("plot2_disclaimer"), uiOutput("plot2_error_msg"), plotOutput("plot2", height="600px"), uiOutput("plot2_info_banner"))
+                tabPanel("Table", br(), uiOutput("table_placeholder"), uiOutput("table_disclaimer"), uiOutput("restab"), uiOutput("table_info_banner")),
+                tabPanel("Combination Plot", br(), uiOutput("plot2_placeholder"), uiOutput("plot2_disclaimer"), uiOutput("plot2_error_msg"), plotOutput("plot2", height="600px"), uiOutput("plot2_info_banner"))
               )
     )
     
@@ -1564,6 +1564,20 @@ server <- function(input, output, session){
     rv$table <- tbl
   })
   
+# Help text shown in the Table tab until the first table is created
+  output$table_placeholder <- renderUI({
+    if (!is.null(rv$table)) return(NULL)
+    div(style = "padding:40px;color:#888;text-align:center;",
+        icon("info-circle"), " Select variables and click Run table.")
+  })
+
+  # Help text shown in the Combination Plot tab until the first plot is created
+  output$plot2_placeholder <- renderUI({
+    if (!is.null(rv$plot2) || !is.null(rv$plot2_error)) return(NULL)
+    div(style = "padding:40px;color:#888;text-align:center;",
+        icon("info-circle"), " Select variables and click Run combination plot.")
+  })
+
   # Render table (HTML)
   output$restab <- renderUI({
     req(rv$table)
@@ -1639,7 +1653,7 @@ server <- function(input, output, session){
   # TABLE DOWNLOAD (Word / .docx)
   # ------------------------------------------------------------
   output$download_table <- downloadHandler(
-    filename = function(){ paste0("table_", Sys.Date(), ".docx") },
+    filename = function(){ paste0("simpler_descriptive_table_", Sys.Date(), ".docx") },
     content = function(file){
       
       log_event("download_table", session, info=session_info())
@@ -1900,7 +1914,7 @@ server <- function(input, output, session){
   
   # Download of the current plot as PDF
   output$download_plot2 <- downloadHandler(
-    filename = "plot2.pdf",
+    filename = function(){ paste0("simpler_combination_plot_", Sys.Date(), ".pdf") },
     content = function(file) {
       log_event("download_plot2",session)
       
