@@ -31,10 +31,9 @@ RUN apt-get update && \
 
 # Install the exact package versions from renv.lock into the system library.
 # Posit Package Manager provides pre-built Linux binaries, so the build is much faster.
-ENV RENV_CONFIG_REPOS_OVERRIDE=https://packagemanager.posit.co/cran/__linux__/jammy/latest
 COPY renv.lock /tmp/renv.lock
-RUN Rscript -e 'install.packages("renv")' && \
-    Rscript -e 'renv::restore(lockfile = "/tmp/renv.lock", library = .libPaths()[1], prompt = FALSE)' && \
+RUN Rscript -e 'install.packages("renv", repos = "https://cloud.r-project.org")' && \
+    Rscript -e 'options(renv.config.repos.override = c(PPM = "https://packagemanager.posit.co/cran/__linux__/jammy/latest", CRAN = "https://cloud.r-project.org")); renv::restore(lockfile = "/tmp/renv.lock", library = .libPaths()[1], prompt = FALSE)' && \
     rm /tmp/renv.lock
 
 # Copy the app code and public files (nothing else: no data, no key, no logs)
@@ -52,6 +51,9 @@ RUN ln -s data/overview_data    /srv/shiny-server/overview_data && \
     ln -s data/manifests        /srv/shiny-server/manifests && \
     ln -s data/GeoLite2-Country /srv/shiny-server/GeoLite2-Country && \
     ln -s data/logs             /srv/shiny-server/logs
+
+# Shiny Server settings: app logs are written to the mounted volume (data/logs)
+COPY shiny-server.conf /etc/shiny-server/shiny-server.conf
 
 # Make sure the 'shiny' user has UID 999, as required by SciLifeLab Serve
 RUN if id shiny >/dev/null 2>&1 && [ "$(id -u shiny)" -ne 999 ]; then \
