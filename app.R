@@ -96,6 +96,43 @@ dades <- unserialize(openssl::aes_gcm_decrypt(data_enc, key = data_key, iv = att
 Sys.unsetenv("SIMPLER_DATA_KEY")   # the key is no longer needed once the data is loaded
 rm(data_key_file, data_key_hex, data_key, data_enc)   # remove the key from memory once the data is loaded
 
+# ------------------------------------------------------------
+# Participants removed by the anonymisation, per variable
+# Values are global per variable (whole cohort): they never depend on the level or on the
+# stratification. Counts below 400 are shown as "<400".
+# If the file is missing, the Table tab shows the N column.
+# ------------------------------------------------------------
+removed_file <- "overview_data/removed_participants_by_variable.csv"
+removed_counts <- if (file.exists(removed_file)) {
+  b <- read.csv(removed_file, stringsAsFactors = FALSE, check.names = FALSE, colClasses = "character")
+  setNames(b[, 1:2], c("variable", "removed"))
+} else NULL
+
+# Footnote explaining the "Removed*" column (shown under the table and in the Word caption)
+removed_footnote <- paste(
+  "* Removed: participants removed by the anonymisation, counted for the whole cohort",
+  "(not by level or stratum): participants with YES for YES/NO variables, and participants",
+  "with any value for the other variables. Numbers below 400 are shown as <400."
+)
+
+# Replaces the values of the N column of a compareGroups table by the number of removed
+# participants of each variable, and renames the column to "Removed*".
+replace_n_with_removed <- function(tbl, counts) {
+  if (is.null(counts) || !"N" %in% colnames(tbl$descr)) return(tbl)
+  vn  <- attr(tbl, "varnames")
+  nr  <- attr(tbl, "nr")                      # number of table rows of each variable
+  first_row <- cumsum(c(1, head(nr, -1)))     # first row of each variable in descr
+  new_n <- rep("", nrow(tbl$descr))
+  for (i in seq_along(vn)) {
+    r <- counts$removed[counts$variable == vn[i]]
+    new_n[first_row[i]] <- if (length(r)) r[1] else "-"
+  }
+  tbl$descr[, "N"] <- new_n
+  colnames(tbl$descr)[colnames(tbl$descr) == "N"] <- "Removed*"
+  tbl
+}
+
+
 # Size of the original cohort before anonymisation; used to report how many participants were removed
 n_original_cohort <- 107339
 
@@ -334,7 +371,7 @@ purge_old_logs <- function(dir = "logs", keep_days = LOG_RETENTION_DAYS) {
 data_disclaimer_banner <- function() {
   div(
     style = "background:#fff3cd; border-left:4px solid #ffc107;
-              padding:10px 14px; border-radius:4px; font-size:13px;
+              padding:12px 16px; border-radius:4px; font-size:16px;
               margin-bottom:12px; box-sizing:border-box; max-width:100%;",
     icon("exclamation-triangle", style="color:#856404; margin-right:6px;"),
     tags$b("Note: "),
@@ -388,7 +425,7 @@ dades <- chr_to_factor_no_yes(dades)
 dataset_info_banner <- function() {
   div(
     style = "background:#e8f4fd; border-left:4px solid #3c8dbc;
-              padding:10px 14px; border-radius:4px; font-size:13px;
+              padding:12px 16px; border-radius:4px; font-size:15px;
               margin-top:12px; box-sizing:border-box; max-width:100%;",
     icon("info-circle", style="color:#3c8dbc; margin-right:6px;"),
     "For more detailed information about the datasets shown above, please visit the ",
@@ -901,7 +938,7 @@ Shiny.addCustomMessageHandler("ev_trigger_gwas_dl", function(msg) {
                       tags$h2("SIMPLER Descriptive App", style="margin-bottom:20px;"),
                       
                       tags$p(style="font-size:14pt;",
-                             "This application allows users to explore the SIMPLER dataset, estimate the number of participants eligible for a potential research project, and select the variables to be requested. ",
+                             "This app allows users to explore the SIMPLER dataset, estimate the number of participants eligible for a potential research project, and select the variables to be requested. ",
                              "Users can review variable frequencies and assess participant availability based on the selected variables."
                       ),
                       
@@ -936,8 +973,8 @@ Shiny.addCustomMessageHandler("ev_trigger_gwas_dl", function(msg) {
                                 "."
                               ),
                               tags$li(tags$b("Important — data protection notice: "),
-                                      "The data available in this application is intended solely for the preparation of research proposals and not for research purposes. ",
-                                      "SIMPLER does not permit any misuse of this application, including any attempt to re-identify participants, share data with unauthorized third parties, or use the data for purposes other than preparing a research proposal. "
+                                      "The data available in this app is intended solely for the preparation of research proposals and not for research purposes. ",
+                                      "SIMPLER does not permit any misuse of this app, including any attempt to re-identify participants, share data with unauthorized third parties, or use the data for purposes other than preparing a research proposal. "
                               ),
                               tags$li(
                                 "To request data, please follow the instructions available on the ",
@@ -957,12 +994,12 @@ Shiny.addCustomMessageHandler("ev_trigger_gwas_dl", function(msg) {
                               
                               tags$li(
                                 
-                                "This application collects anonymous usage statistics (such as visits, interaction events, and country-level geographic information) ",
+                                "This app collects anonymous usage statistics (such as visits, interaction events, and country-level geographic information) ",
                                 "to improve performance and usability. No personal data or identifiable information is stored. Usage logs are retained for 90 days and then automatically deleted."
                                 
                               ),
                               tags$li(
-                                "For getting exact numbers, studying rare conditions or if you encounter any bugs or have feedback, please contact: ",
+                                "To obtain exact numbers, study rare conditions, or if you encounter any bugs or have feedback, contact: ",
                                 tags$a(href="mailto:simpler@surgsci.uu.se", target="_blank","simpler@surgsci.uu.se", .noWS="after"),
                                 "."
                               )
@@ -1506,22 +1543,7 @@ server <- function(input, output, session){
       
     }
     
-    # Only the analysed variables (without the stratification variable)
-    tmp <- dat[, vars, drop=FALSE]
-    
-    # ------------------------------------------------------------
-    # FAST FILTERING
-    # Removes rows where all variables are NO/NA
-    # Key performance optimization
-    # ------------------------------------------------------------
-    if(ncol(tmp)==1){
-      keep <- !is.na(tmp[[1]]) & tmp[[1]]!="NO"
-    } else {
-      keep <- rowSums(as.matrix(!(tmp %in% c("NO", NA)))) > 0
-    }
-    
-    dat <- dat[keep,,drop=FALSE]
-    
+        
     if (!is.null(main_var) && main_var != "") {
       dat <- dat[!is.na(dat[[main_var]]),]
     }
@@ -1558,6 +1580,9 @@ server <- function(input, output, session){
     )
     
     tbl <- createTable(res, show.p.overall=FALSE, show.n = TRUE, hide.no="NO")
+
+# Replace the N column (identical in every row) by the removed participants per variable
+    tbl <- replace_n_with_removed(tbl, removed_counts)
     
     # Save to cache
     cache$table[[key]] <- tbl
@@ -1581,7 +1606,11 @@ server <- function(input, output, session){
   # Render table (HTML)
   output$restab <- renderUI({
     req(rv$table)
-    HTML(export2md(rv$table,strip=TRUE,first.strip=TRUE,format="html"))
+    tagList(
+      HTML(export2md(rv$table,strip=TRUE,first.strip=TRUE,format="html")),
+     if (!is.null(removed_counts))
+        tags$p(style = "font-size:12px;color:#666;margin-top:6px;", removed_footnote)
+    )
   })
   
   output$table_disclaimer <- renderUI({
@@ -1664,7 +1693,8 @@ server <- function(input, output, session){
         rv$table,
         file = file,
         strip = TRUE,
-        first.strip = TRUE
+        first.strip = TRUE,
+        caption = if (!is.null(removed_counts)) removed_footnote else NULL
       )
     }
   )

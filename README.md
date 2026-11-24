@@ -32,9 +32,9 @@ SIMPLER white paper (Warensjö Lemming E, et al. *Eur J Epidemiol* 2026.
 doi:[10.1007/s10654-026-01455-6](https://doi.org/10.1007/s10654-026-01455-6)), also available
 as a PDF in [`SIMPLER_white_paper/`](SIMPLER_white_paper/SIMPLER_European_Journal_of_Epidemiology.pdf).
 
-> **Important — data protection notice.** The data available in this application is intended
+> **Important — data protection notice.** The data available in this app is intended
 > solely for the preparation of research proposals and not for research purposes. SIMPLER does
-> not permit any misuse of this application, including any attempt to re-identify participants,
+> not permit any misuse of this app, including any attempt to re-identify participants,
 > share data with unauthorized third parties, or use the data for purposes other than preparing
 > a research proposal.
 
@@ -48,7 +48,7 @@ In the current version, a subset of 7,669 participants out of 107,339 has been r
 any possible combination of variables contains at least 10 individuals. The numbers shown in
 the app are therefore approximate.
 
-**Usage statistics.** This application collects anonymous usage statistics (such as visits,
+**Usage statistics.** This app collects anonymous usage statistics (such as visits,
 interaction events, and country-level geographic information) to improve performance and
 usability. No personal data or identifiable information is stored. Usage logs are retained for
 90 days and then automatically deleted (details in the section *Privacy and usage logging* below).

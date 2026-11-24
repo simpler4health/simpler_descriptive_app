@@ -345,7 +345,7 @@ ev_dt_draw_callback <- function(label, click_c) {
 ev_datatable <- function(df, label, click_c) {
   DT::datatable(df, escape=FALSE, selection="none", filter="top", rownames=FALSE,
     options=list(
-      pageLength=4, autoWidth=FALSE, dom="ftip", scrollX=TRUE,
+      pageLength=5, lengthMenu=c(5, 10, 25, 50, 100), autoWidth=FALSE, dom="lftip", scrollX=TRUE,
       initComplete=DT::JS("function(settings,json){var api=this.api();setTimeout(function(){api.columns.adjust().draw(false);},150);}"),
       drawCallback=DT::JS(ev_dt_draw_callback(label, click_c)),
       columnDefs=list(list(width="35px",targets=0))
@@ -357,7 +357,7 @@ ev_datatable <- function(df, label, click_c) {
 ev_info_box <- function(label) {
   txt <- ev_dataset_descriptions[[label]]
   if (is.null(txt)) txt <- paste0("Variables available in ",label,".")
-  div(style="background:#e8f4fd;border-left:4px solid #3c8dbc;padding:10px 14px;border-radius:4px;font-size:13px;margin-bottom:12px;",
+  div(style="background:#e8f4fd;border-left:4px solid #3c8dbc;padding:12px 16px;border-radius:4px;font-size:15px;margin-bottom:12px;",
       icon("info-circle",style="color:#3c8dbc;margin-right:6px;"), txt)
 }
 
@@ -645,7 +645,7 @@ explore_variable_server <- function(input, output, session, log_event_fn=NULL, s
 
     # Last tab: cost estimate
     cost_tab <- tabPanel("Cost", br(),
-      div(style="background:#e8f4fd;border-left:4px solid #3c8dbc;padding:10px 14px;border-radius:4px;font-size:13px;margin-bottom:16px;box-sizing:border-box;max-width:100%;",
+      div(style="background:#e8f4fd;border-left:4px solid #3c8dbc;padding:12px 16px;border-radius:4px;font-size:15px;margin-bottom:16px;box-sizing:border-box;max-width:100%;",
           icon("info-circle",style="color:#3c8dbc;margin-right:6px;"),
           "The estimated cost of your project is calculated based on the datasets from which you have selected variables. The application fee (5,000 SEK) is always included, and will be deducted from the total cost once the project is approved. Costs are charged per project, not per variable.",
           tags$br(), tags$br(),
