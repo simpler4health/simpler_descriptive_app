@@ -1910,7 +1910,26 @@ server <- function(input, output, session){
           axis.text.x = element_blank(),
           legend.position = "top"
         )
-      
+
+# Caption under the plot (also in the PDF): removed participants of each selected variable.
+# Global per variable, same values as the "Removed*" column of the Table tab.
+
+      if (!is.null(removed_counts)) {
+        plot_vars <- unique(c(input$over_var, row_var, col_var))
+        vals <- vapply(plot_vars, function(v) {
+          r <- removed_counts$removed[removed_counts$variable == v]
+          paste0(v, ": ", if (length(r)) r[1] else "-")
+        }, character(1))
+        caption_txt <- paste0(
+          "Removed*: ", paste(vals, collapse = "; "), "\n",
+          paste(strwrap(removed_footnote, width = 150), collapse = "\n")
+        )
+        p <- p + patchwork::plot_annotation(
+          caption = caption_txt,
+          theme   = theme(plot.caption = element_text(size = 12, hjust = 0, colour = "grey30"))
+        )
+      }
+
       cache$plot2[[key]] <- p
       rv$plot2 <- p
     })
