@@ -1545,7 +1545,7 @@ server <- function(input, output, session){
     formula_cg <- if (is.null(main_var) || main_var == "") {
       as.formula("~ .")
     } else {
-      as.formula(paste(main_var, "~ ."))
+      as.formula(paste0("`", main_var, "` ~ ."))
     }
     
     
