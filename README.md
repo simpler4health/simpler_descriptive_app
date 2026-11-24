@@ -9,9 +9,10 @@ The app helps researchers prepare a data application. They can:
 - **Explore Variable** – browse the variables available in each dataset, generate a list of
   the variables to request, see an estimated cost, and download the selection as an Excel file ready to upload to
   [iLab](https://uu.ilab.agilent.com/service_center/show_external/3659).
-- **Table** – get descriptive tables (optionally stratified) to estimate how many participants
-  match a combination of variables; download as Word.
-- **Combination Plot** – see the overlap between variables with an UpSet plot; download as PDF.
+- **Table** – get descriptive tables (optionally stratified) for the whole cohort, to estimate how many participants
+  match a combination of variables; download as Word. The column *Removed\** shows how many participants of each variable were removed by the anonymisation.
+- **Combination Plot** – see the overlap between variables with an UpSet plot; download as PDF. 
+A note under the plot shows the participants removed for each selected variable.
 - **Search FAQ** – a keyword-based FAQ assistant (no AI involved).
 
 **No participant data are included in this repository.**
@@ -88,6 +89,7 @@ Files and folders that are **not** in the repository and must be provided at dep
 |---|---|---|
 | `overview_data/underlying_overview_datav03.enc.rds` | anonymised participant-level data, encrypted (AES-256-GCM) | provided by SIMPLER; decrypted in memory at start-up |
 | `overview_data/key_code.txt` | data key file | see *Configuration* |
+| `overview_data/removed_participants_by_variable.csv` | participants removed by the anonymisation, per variable (numbers below 400 shown as <400) | optional; without it the Table tab shows the N column instead of *Removed\** |
 | `manifests/` | Illumina GSA manifest ZIPs (GWAS tab) | optional; without it the manifest links do not work |
 | `GeoLite2-Country/GeoLite2-Country.mmdb` | MaxMind GeoLite2 Country database | optional; see below |
 | `logs/` | usage logs | created automatically when running locally; must exist in the Serve volume |
@@ -127,6 +129,17 @@ The app reads its settings from environment variables (never commit their values
 | `SIMPLER_DATA_KEY` | yes | key used to decrypt the data file |
 | `SIMPLER_USER`, `SIMPLER_PASS` | no | if both are set, a login screen is shown (not 
 used on Serve, where access is controlled by the app's visibility setting)|
+
+---
+
+## Updating the data (on Bianca)
+
+1. Run the anonymisation script (k = 10). It also writes  `removed_participants_by_variable.csv`.
+2. Encrypt the anonymised data (`underlying_overview_datavXX.enc.rds`).
+3. Have the new version approved by the Data Office.
+4. Export through the wharf only the encrypted data file and the CSV .
+5. Upload both files to `project-vol/overview_data/` on SciLifeLab Serve. No new image is needed,
+   unless the file name of the data changed (then update it in `app.R`).
 
 ---
 
