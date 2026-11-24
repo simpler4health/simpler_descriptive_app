@@ -111,8 +111,7 @@ removed_counts <- if (file.exists(removed_file)) {
 # Footnote explaining the "Removed*" column (shown under the table and in the Word caption)
 removed_footnote <- paste(
   "* Removed: participants removed by the anonymisation, counted for the whole cohort",
-  "(not by level or stratum): participants with YES for YES/NO variables, and participants",
-  "with any value for the other variables. Numbers below 400 are shown as <400."
+  "(not by level or stratum). Numbers below 400 are shown as <400."
 )
 
 # Replaces the values of the N column of a compareGroups table by the number of removed
